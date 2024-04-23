@@ -33,7 +33,7 @@ export default function Home() {
           <div className='flex flex-col gap-2 '>
             <h2 className='cooper font-bold'>Making a difference, together</h2>
             <p className='text-lg md:text-xl'>
-            We hope to enact environmental, health-focused, social, and educational change through charitable activities that make a lasting impact on the lives of vulnerable children."
+            We hope to enact environmental, health-focused, social, and educational change through charitable activities that make a lasting impact on the lives of vulnerable children.
             </p>
           </div>
           <section className='flex flex-col md:flex-row items-center gap-10'>
@@ -43,7 +43,7 @@ export default function Home() {
                   <p className='text-lg md:text-xl'>
                   Through sharing stories, resources, and information, we raise awareness about the critical environmental and health issues affecting our target areas.
                   <br/> <br/> Currently, our initiative is focused on raising funds through local businesses and sponsors for the Divine Wounds of Jesus Christ Orphanage Home in Enugu, Nigeria.
-                  <br/> <br/> If you'd like to support our cause, you can follow us on Instagram, where we've partnered with the Houston Climate Strike to create explainers about how our local actions can impact international environmental and health wellbeing.
+                  <br/> <br/> If you&apos;d like to support our cause, you can follow us on Instagram, where we have partnered with the Houston Climate Strike to create explainers about how our local actions can impact international environmental and health wellbeing.
                   </p>
                 </div>
               </div>
@@ -70,8 +70,8 @@ export default function Home() {
         </section>
         <section className='flex flex-col md:grid grid-cols-2 gap-10'>
             {pillars.map((item,index)=>(
-              <div className='flex flex-row gap-5 '>
-                <ListIcon value={<Icon icon={item.icon} className='fill-[--clr-green-base]' />}/>
+              <div className='flex flex-row gap-5'>
+                <ListIcon value={<Icon icon={item.icon} className='fill-[--clr-green-base]'/>}/>
                 <div key={index} className='flex flex-col gap-2'>
                   <h5>{item.name}</h5>
                   <p className='text-base md:text-lg'>{item.text}</p>
@@ -82,7 +82,7 @@ export default function Home() {
 
         <section className='flex flex-col gap-10'>
             <div className='flex flex-col gap-5'>
-              <h2 className='cooper'>Here's what we're working on</h2>
+              <h2 className='cooper'>Here&apos;s what we&apos;re working on</h2>
               <p className='text-lg md:text-xl'>
               We are focused on using our resources in Houston to give back to 
               disenfranchised communities in south Nigeria and on raising 

@@ -12,7 +12,7 @@ export default function AboutPage() {
             <header className='flex flex-col gap-5'>
                 <h1 className='cooper'>Who We Are</h1>
                 <p className='text-xl'>
-                    Omelora (which means 'One who does good for the community') is a social good initiative established by Kyra Ezikeuzor, a high school student from Texas, to give resources and aid to vulnerable children in rural communities in south Nigeria.<br/> <br/> 
+                    Omelora (which means &apos;One who does good for the community&apos;) is a social good initiative established by Kyra Ezikeuzor, a high school student from Texas, to give resources and aid to vulnerable children in rural communities in south Nigeria.<br/> <br/> 
                     We hope to enact environmental, health-focused, social, and educational change through charitable activities.<br/> 
                     Through stories, resources, and information, we create awareness of the critical environmental and health-focused wellbeing of our target areas.<br/> <br/>
                     Our current initiative is raising funds via local businesses and sponsors for the Divine Wounds of Jesus Christ Orphanage Home in Enugu, Nigeria.
