@@ -70,7 +70,7 @@ export default function Home() {
         </section>
         <section className='flex flex-col md:grid grid-cols-2 gap-10'>
             {pillars.map((item,index)=>(
-              <div className='flex flex-row gap-5'>
+              <div key={index} className='flex flex-row gap-5'>
                 <ListIcon value={<Icon icon={item.icon} className='fill-[--clr-green-base]'/>}/>
                 <div key={index} className='flex flex-col gap-2'>
                   <h5>{item.name}</h5>
