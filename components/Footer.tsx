@@ -22,7 +22,7 @@ function Footer() {
     bg-[--clr-blue-dark] text-[--clr-cream-base]`}>
       
       <section className={styles.section}>
-        <div className='flex flex-row gap-20 justify-start'>
+        <div className='flex flex-row gap-10 justify-start'>
           {footer.map((item,index) => (
             <div key={index} className='flex flex-col gap-3'>
               <span className='text-2xl font-bold'>{item.name}</span>
@@ -35,7 +35,7 @@ function Footer() {
           ))}
         </div>
         <div className='flex flex-col justify-self-start'>
-          <div className='flex flex-row gap-5 md:grid grid-cols-4 gap-2'>
+          <div className='flex flex-row gap-3'>
             <Link target="_blank" href="http://instagram.com/omeloraorg" > 
                 <Icon icon="Instagram" size='lg' className='fill-white'/>
             </Link>

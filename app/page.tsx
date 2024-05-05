@@ -14,9 +14,9 @@ export default function Home() {
         <header className='flex flex-col gap-5 '>
           <div className=' flex flex-col gap-5'>
             <span className='text-2xl font-bold flex flex-row gap-2 items-center'>WELCOME TO OMELORA </span>
-            <h1 className=' inline-block cooper'>We are on a mission <Graphic src={'/g/red-quarter-circle.png'}/> to send 1,000 kits <Graphic src={'/g/yellow-rounded-star.png'}/> to rural youth in Nigeria. <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> </h1>
+            <h1 className=' inline-block cooper'>We are on a mission <Graphic src={'/g/red-quarter-circle.png'}/> to give <br className='hidden md:block'/> 1,000 kits <Graphic src={'/g/yellow-rounded-star.png'}/> to rural youth in Nigeria. <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> </h1>
             <p className='text-lg lg:text-xl '>
-            Based in Houston, Texas, Omelora is a nonprofit that aims to empower rural Nigerian youth with health and educational kits and offers clear explainers on West African culture and current events.
+            Based in Houston, Texas, Omelora is a social good initiative that aims to empower rural Nigerian youth with health and educational kits and creates content focused on West African environmental, social, and health-related wellness. 
             </p>
           </div>
           <div className='flex flex-row gap-2 items-center'>
@@ -54,8 +54,8 @@ export default function Home() {
                   ]}/>
 
                   <div className='z-40 absolute left-5 right-5 bottom-5 w-fit flex flex-row gap-3 px-4 py-2 rounded-lg bg-white/75 backdrop-blur shadow-sm'>
-                    <Icon icon='Sun' className='fill-pink-500' />
-                    <div className="flex-col gap-1 items-center text-[--clr-base-text]">
+                    <Icon icon='Sun' className='fill-pink-500' size='lg' />
+                    <div className="flex-col gap-1 items-center text-black">
                       <h3 className="font-bold text-base md:text-lg">
                         Children from the Divine Wounds Orphanage.
                       </h3>
@@ -108,7 +108,7 @@ export default function Home() {
 
             <iframe 
             src="https://hcb.hackclub.com/donations/start/omelora" 
-            className='w-full md:w-1/2 h-[1000px] border-[1px] border-[#bfcbda88] rounded-xl'
+            className='w-full md:w-1/2 h-[1000px] border-4 border-[--clr-base-accent] rounded-xl'
             aria-hidden="false"/>
         </section>
     </section>

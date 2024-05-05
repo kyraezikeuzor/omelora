@@ -9,9 +9,9 @@ export default function OurInitiativesPage() {
         <section className="flex flex-col gap-10">
             <header className='flex flex-col gap-5'>
                 <h1 className='cooper'>Our Initiatives</h1>
-                <p className='text-xl'>
-                  Our initiatives are focused on our four pillars of health, environment, social good, and education
-                  For the following 2024 summer season, our first initiative will be raising $500 in donations for the <Link className='font-semibold' href={divineWoundsSiteLink}>Divine Wounds of Jesus Christ Orphanage Home</Link> in Enugu, Nigeria.
+                <p className='text-lg md:text-xl'>
+                  Our current focus is the children of 
+                  the <Link className='font-semibold' href={divineWoundsSiteLink}>Divine Wounds of Jesus Christ Orphanage Home</Link> in Enugu, Nigeria.
                 </p>
             </header>
 

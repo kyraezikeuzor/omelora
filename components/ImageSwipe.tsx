@@ -23,22 +23,22 @@ export default function ImageSwipe({images}:{images:any}) {
     return (
         <div className='relative '>
             <div className='h-full w-full'>
-                <button className="z-20 absolute -left-8 top-0 bottom-0 text-4xl text-neutral-400" onClick={prevSlide}>
+                <button className="z-20 absolute left-0 top-0 bottom-0 text-4xl text-neutral-300" onClick={prevSlide}>
                     &#10094;
                 </button>
 
-                <div className='relative'>
-                    <img className='w-full h-[400px] rounded-lg origin-center -rotate-3 shadow-lg' src={images[next]}/>
+                <div className='relative mx-8'>
+                    <img className='w-full h-[400px] rounded-lg origin-center -rotate-3 shadow-xl' src={images[next]}/>
                     {images.map((image:any, index:number) => (
                     <div key={index} className='absolute top-0 bottom-0 left-0 right-0'>
                         {index === currentIndex && 
-                        <img src={image} alt={`Slide ${index}`} className='w-full h-[400px] shadow-lg rounded-lg object-cover origin-center rotate-3 '/>
+                        <img src={image} alt={`Slide ${index}`} className='w-full h-[400px] shadow-xl rounded-lg object-cover origin-center rotate-3 '/>
                         }
                     </div>
                     ))}
                 </div>
                 
-                <button className="z-20 absolute -right-8 top-0 bottom-0 text-4xl text-neutral-400" onClick={nextSlide}>
+                <button className="z-20 absolute right-0 top-0 bottom-0 text-4xl text-neutral-300" onClick={nextSlide}>
                     &#10095;
                 </button>
             </div>

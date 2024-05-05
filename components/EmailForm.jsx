@@ -33,14 +33,14 @@ function EmailForm() {
             <p>Learn about our latest events, resources, programs, and more!</p>
         </div>
 
-        <fieldset className='flex flex-col md:flex-row gap-5 placeholder-text-color-[--clr-grey-dark]'>
+        <fieldset className='flex flex-col md:flex-row gap-5'>
             <input
                 id="FNAME"
                 type="text"
                 placeholder="First name"
                 value={fields.FNAME}
                 onChange={handleFieldChange}
-                className='py-2 px-4 rounded-md bg-[--clr-base]'
+                className='py-2 px-4 border-none rounded-md bg-[--clr-base] placeholder:text-[--clr-grey-base]'
             />
             <input
                 id="LNAME"
@@ -48,7 +48,7 @@ function EmailForm() {
                 placeholder="Last name"
                 value={fields.LNAME}
                 onChange={handleFieldChange}
-                className='py-2 px-4 rounded-md bg-[--clr-base]'
+                className='py-2 px-4 border-none rounded-md bg-[--clr-base] placeholder:text-[--clr-grey-base]'
             />
         </fieldset>
         <input
@@ -57,7 +57,7 @@ function EmailForm() {
           placeholder="Email"
           value={fields.EMAIL}
           onChange={handleFieldChange}
-          className='py-2 px-4 rounded-md bg-[--clr-base]'
+          className='py-2 px-4 border-none rounded-md bg-[--clr-base] placeholder:text-[--clr-grey-base]'
         />
         <button className='bg-[--clr-green-light] text-lg text-[--clr-green-dark] font-semibold rounded-3xl px-4 py-2'>
             Subscribe <Icon className='fill-[--clr-green-dark] inline' icon="ArrowTopRight" size='sm'/>

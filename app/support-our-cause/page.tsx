@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Icon from '@/components/Icon'
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Support Our Cause",
@@ -8,14 +9,25 @@ export const metadata: Metadata = {
 export default function SupportOurCausePage() {
 
     return (
-        <section className="flex flex-col gap-20">
-            <header className='flex flex-col gap-5'>
+        <section className="flex flex-row gap-20 items-center">
+            <header className='w-full md:w-1/2 flex flex-col gap-5'>
                 <h1 className='cooper'>Support Our Cause</h1>
-                <p className='text-xl'>
-                    Omelora as a social good initiative is currently looking for fiscal sponsorship to establish a secure way to receive donations. <br/> <br/>
-                    Those who would like to support our cause can follow our <Link href='https://www.instagram.com/omeloraorg/' className='font-semibold'>Instagram</Link> where we have partnered with the <Link className='font-semibold' href='https://www.instagram.com/htxclimatestrike/'>Houston Climate Strike</Link> to create explainers about the effects our local actions can have on international environmental and health-focused wellbeing.
+                <p className='text-lg md:text-xl'>
+                    Based in Houston, Texas, Omelora is a social good initiative aiming to empower rural Nigerian youth with health and educational kits and create content for the environmental and health-related wellness of West African communities.
+                    <br/><br/>Your donation helps us send 1,000 health and science kits to rural youth in Nigeria. 
+                    <br/><br/>These kits are packed with science pamphlets, books, and school supplies, giving students the tools they need to learn and explore. 
+                    <br/><br/>But it&apos;s not just about books and supplies; these kits are designed to make learning fun and hands-on. They&apos;re toolkits for curiosity, sparking an interest in health and science that goes beyond the classroom. 
+                    <br/><br/>Your support makes a big difference in bridging the education gap for rural communities.
+                    <br/><br/>As they engage with these materials, students become knowledgeable members of their communities, fostering discussions about wellness and innovation.
+                    <br/><br/>Follow our <Link href='https://www.instagram.com/omeloraorg/' className='font-semibold'>Instagram <Icon icon="Instagram" className='inline'/></Link> page!
+                    <br/><br/>We have we have partnered with the <Link className='font-semibold' href='https://www.instagram.com/htxclimatestrike/'>Houston Climate Strike</Link> to create explainers about the effects our local actions can have on international environmental and health-focused wellbeing.
                 </p>
             </header>
+            <iframe 
+            src="https://hcb.hackclub.com/donations/start/omelora" 
+            className='w-full md:w-1/2 h-[1000px] border-4 border-[--clr-base-accent] rounded-xl'
+            aria-hidden="false"
+            />
         </section>
     )
 }
