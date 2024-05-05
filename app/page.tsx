@@ -82,7 +82,7 @@ export default function Home() {
         <section className='flex flex-col md:flex-row-reverse gap-10'>
             <section className='w-full md:w-1/2 flex flex-col gap-5'>
               <div className='flex flex-col gap-5'>
-                <h2 className='cooper'>Donate to our cause</h2>
+                <h2 className='cooper'>Donate to our cause.</h2>
                 <p className='text-lg md:text-xl'>
                 Donate to help us accomplish our mission of helping empower
                 children in rural Nigerian communities.
