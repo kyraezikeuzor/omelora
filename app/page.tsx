@@ -14,7 +14,7 @@ export default function Home() {
         <header className='flex flex-col gap-5 '>
           <div className=' flex flex-col gap-5'>
             <span className='text-2xl font-bold flex flex-row gap-2 items-center'>WELCOME TO OMELORA </span>
-            <h1 className=' inline-block cooper'>We are on a mission <Graphic src={'/g/red-quarter-circle.png'}/> to give <br className='hidden md:block'/> 1,000 kits <Graphic src={'/g/yellow-rounded-star.png'}/> to rural youth in Nigeria. <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> </h1>
+            <h1 className=' inline-block cooper'>We are on a mission <Graphic src={'/g/red-quarter-circle.png'}/> to give <br className='hidden 2xl:block'/> 1,000 kits <Graphic src={'/g/yellow-rounded-star.png'}/> to rural youth in Nigeria. <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> </h1>
             <p className='text-lg lg:text-xl '>
             Based in Houston, Texas, Omelora is a social good initiative that aims to empower rural Nigerian youth with health and educational kits and creates content focused on West African environmental, social, and health-related wellness. 
             </p>
