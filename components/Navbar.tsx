@@ -32,10 +32,10 @@ export default function Navbar() {
             <div className='w-full flex flex-row md:hidden px-5 py-[1vh] justify-between items-center'>
                 <Logo/>
                 <Modal
-                modalClassName='absolute top-10 right-2'
+                modalClassName='absolute top-8 right-4'
                 toggleElement={<Icon icon='HamburgerMenu'/>}
                 >
-                    <ul className='flex flex-col items-start gap-5'>
+                    <ul className='flex flex-col items-start gap-3 text-lg font-semibold '>
                         {navList}
                     </ul>
                 </Modal>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function SupportOurCausePage() {
 
     return (
-        <section className="flex flex-row gap-20 items-center">
+        <section className="flex flex-col md:flex-row gap-20 items-center">
             <header className='w-full md:w-1/2 flex flex-col gap-5'>
                 <h1 className='cooper'>Support Our Cause</h1>
                 <p className='text-lg md:text-xl'>
