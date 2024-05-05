@@ -26,13 +26,16 @@
     --clr-pink-light: rgb(255, 242, 244);
     --clr-pink-dark: rgb(205, 66, 89);
  
-    --clr-green-light:#ecfcc5;
+    --clr-green-light:#d5ed97;
     --clr-green-base:#628B21;
+    --clr-green-dark:#344f0a;
 
     --clr-yellow-light:#f3d266;
 
     --clr-grey-light:rgb(233, 233, 233);
     --clr-grey-base:rgb(119, 118, 118);
+
+    --clr-blue-dark:rgb(4, 2, 28);
 
 
     --color-1: #fefefe;
@@ -74,7 +77,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-  color: var(--clr-grey-base);
+  color: var(--clr-grey-dark);
 }
 
 a {

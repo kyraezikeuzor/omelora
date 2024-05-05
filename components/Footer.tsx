@@ -37,10 +37,10 @@ function Footer() {
         <div className='flex flex-col justify-self-start'>
           <div className='flex flex-row gap-5 md:grid grid-cols-4 gap-2'>
             <Link target="_blank" href="http://instagram.com/omeloraorg" > 
-                <Icon icon="Instagram" size='lg' className=''/>
+                <Icon icon="Instagram" size='lg' className='fill-white'/>
             </Link>
             <Link target="_blank" href="mailto:omelorachildren@gmail.com" > 
-                <Icon icon="Mail" size='lg' className=''/>
+                <Icon icon="Mail" size='lg' className='fill-white'/>
             </Link>
 
             <Link target="_blank" href="d" className='hidden'> 

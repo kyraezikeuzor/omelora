@@ -44,21 +44,21 @@ export const pillars = [
 
 export const initiatives = [
     {
-        "title":"2024 Social Good Fundraiser",
+        "title":"2024 Summer & Fall Social Good Fund",
         "description":"Support our cause to raise $1000 for rural Nigerian children Your donation will go towards purchasing baby supplies such as diapers, formula, and clothing. ",
         "startDate": "2024-05-01",
         "endDate": "2024-07-31",
         "goalValue": 1000,
-        "currentValue": 5,
+        "currentValue": 50,
         "measurement": "$",
         "details":["Diapers","Baby blankets","Bedding (cribs, bassinets)","Baby bottles","Baby supplies"]
     },
     {
-        "title":"2024 Kits for Kids Project",
-        "description":"Support our cause to create 60 kits for rural Nigerian children. Your donation will go towards giving a notebook, 5-pack colored pencils, 5-pack #2 pencils, and pencil pouch to a child.",
+        "title":"2024 Summer & Fall Kits for Kids Campaign",
+        "description":"Support our cause to create 100 kits for rural Nigerian children. Your donation will go towards giving a notebook, 5-pack colored pencils, 5-pack #2 pencils, and pencil pouch to a child.",
         "startDate": "2024-07-01",
         "endDate": "2024-07-31",
-        "goalValue": 60,
+        "goalValue": 100,
         "currentValue": 0,
         "measurement": "kits",
         "details":["Diapers","Baby blankets","Bedding (cribs, bassinets)","Baby bottles","Baby supplies"]

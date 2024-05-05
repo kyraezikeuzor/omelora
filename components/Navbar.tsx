@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
         <nav className='w-full flex flex-col items-center sticky top-0 z-50
-         shadow-sm bg-[--clr-base]/50 backdrop-blur'>
+         shadow-sm bg-[--clr-base]/90 backdrop-blur'>
             
             <div className='hidden md:flex w-full flex-row md:px-[10vw] py-[2vh]
             justify-between items-center font-medium '>

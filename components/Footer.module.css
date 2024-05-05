@@ -2,6 +2,8 @@
     display:grid;
     grid-template-columns: 3fr 2fr 3fr;
     gap:80px;
+    background-color:var(--clr-blue-dark);
+    color:white;
 }
 
 @media (max-width: 768px) {
