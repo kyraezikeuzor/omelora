@@ -60,7 +60,7 @@ export default function Home() {
                         Children from the Divine Wounds Orphanage.
                       </h3>
                       <p className='text-sm md:text-base'>
-                        The orphanage works to give vulnerable children emotional and educational support.
+                        The orphanage is located in Enugu, Nigeria.
                       </p>
                     </div>
                   </div>
