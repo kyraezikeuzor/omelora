@@ -28,11 +28,11 @@ export default function ImageSwipe({images}:{images:any}) {
                 </button>
 
                 <div className='relative mx-2'>
-                    <img className='w-full h-[400px] rounded-lg origin-center -rotate-3 shadow-xl' src={images[next]}/>
+                    <img className='w-full h-[400px] rounded-3xl origin-center -rotate-3 shadow-xl' src={images[next]}/>
                     {images.map((image:any, index:number) => (
                     <div key={index} className='absolute top-0 bottom-0 left-0 right-0'>
                         {index === currentIndex && 
-                        <img src={image} alt={`Slide ${index}`} className='w-full h-[400px] shadow-xl rounded-lg object-cover origin-center rotate-3 '/>
+                        <img src={image} alt={`Slide ${index}`} className='w-full h-[400px] shadow-xl rounded-3xl object-cover origin-center rotate-3 shadow-2xl '/>
                         }
                     </div>
                     ))}

@@ -15,7 +15,7 @@ export default function OurInitiativesPage() {
                 </p>
             </header>
 
-            <div className='flex flex-col md:grid md:grid-cols-3 gap-5'>
+            <div className='flex flex-col lg:grid grid-cols-3 gap-5'>
               {initiatives.map((item,index)=>(
                 <Campaign
                 value={index+1}

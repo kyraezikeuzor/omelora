@@ -26,6 +26,9 @@ export default function Navbar() {
                 <Logo/>
                 <ul className='hidden md:flex flex-row items-center gap-5 justify-center'>
                     {navList}
+                    <Button path='https://hcb.hackclub.com/donations/start/omelora'>
+                        Donate <Icon icon='HeartFilled' size='sm' className='fill-white'/>
+                    </Button>
                 </ul>
             </div>
 
@@ -35,8 +38,11 @@ export default function Navbar() {
                 modalClassName='absolute top-8 right-4'
                 toggleElement={<Icon icon='HamburgerMenu'/>}
                 >
-                    <ul className='flex flex-col items-start gap-3 text-lg font-semibold '>
+                    <ul className='flex flex-col items-start gap-3 text-lg font-medium '>
                         {navList}
+                        <Button path='https://hcb.hackclub.com/donations/start/omelora'>
+                            Donate <Icon icon='HeartFilled' size='sm' className='fill-white'/>
+                        </Button>
                     </ul>
                 </Modal>
             </div>

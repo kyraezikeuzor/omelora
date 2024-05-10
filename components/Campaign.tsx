@@ -33,7 +33,7 @@ export default function Campaign({title,description, startDate, endDate, goalVal
         <div className='flex flex-col gap-5 p-5 border-2 border-[--clr-base-accent] bg-[--clr-base] rounded-xl shadow-sm'>
             <ListIcon value={value}/>
             <div className='flex flex-col gap-2'>
-                <span className='font-bold text-lg md:text-2xl'>{title}</span>
+                <span className='font-bold text-2xl md:text-3xl'>{title}</span>
                 <p className='text-sm md:text-base'>{description}</p>
                 <div className='flex flex-row justify-between text-sm font-medium'>
                    <span>

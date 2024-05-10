@@ -24,7 +24,7 @@ export default function Home() {
               Learn More <Icon icon="ArrowTopRight" className='fill-white' size="sm"/>
             </Button>
             <Button outline path='/support-our-cause'>
-              Get Involved <Icon icon="ArrowTopRight"  size="sm"/>
+              Support Us <Icon icon="Location" size='sm'/>
             </Button>
           </div>
         </header>
@@ -36,7 +36,7 @@ export default function Home() {
             We hope to enact environmental, health-focused, social, and educational change through charitable activities that make a lasting impact on the lives of vulnerable children.
             </p>
           </div>
-          <section className='flex flex-col md:flex-row-reverse items-center gap-10'>
+          <section className='flex flex-col lg:flex-row-reverse items-center gap-10'>
               <div className='w-full flex flex-col gap-5'>
                 <h2 className='cooper'>Taking action through changing stories.</h2>
                 <div className='flex flex-col gap-5 '>
@@ -67,7 +67,7 @@ export default function Home() {
               </div>
           </section>
         </section>
-        <section className='flex flex-col md:grid grid-cols-2 gap-10'>
+        <section className='flex flex-col lg:grid grid-cols-2 gap-10'>
             {pillars.map((item,index)=>(
               <div key={index} className='flex flex-row gap-5'>
                 <ListIcon value={<Icon icon={item.icon} className='fill-[--clr-green-base]'/>}/>
@@ -79,8 +79,8 @@ export default function Home() {
             ))}
         </section>
 
-        <section className='flex flex-col md:flex-row-reverse gap-10'>
-            <section className='w-full md:w-1/2 flex flex-col gap-5'>
+        <section className='flex flex-col lg:flex-row-reverse gap-10'>
+            <section className='w-full lg:w-1/2 flex flex-col gap-5'>
               <div className='flex flex-col gap-5'>
                 <h2 className='cooper'>Donate to our cause.</h2>
                 <p className='text-lg md:text-xl'>
@@ -108,7 +108,7 @@ export default function Home() {
 
             <iframe 
             src="https://hcb.hackclub.com/donations/start/omelora" 
-            className='w-full md:w-1/2 h-[850px] border-2 border-[--clr-base-accent] rounded-xl overflow-hidden'
+            className='w-full lg:w-1/2 h-[850px] border-2 border-[--clr-base-accent] rounded-xl overflow-hidden'
             aria-hidden="false"/>
         </section>
     </section>
