@@ -14,9 +14,9 @@ export default function Home() {
         <header className='flex flex-col gap-5 '>
           <div className=' flex flex-col gap-5'>
             <span className='text-2xl font-bold flex flex-row gap-2 items-center'>WELCOME TO OMELORA </span>
-            <h1 className=' inline-block cooper'>We are on a mission <Graphic src={'/g/red-quarter-circle.png'}/> to give <br className='hidden 2xl:block'/> 1,000 kits <Graphic src={'/g/yellow-rounded-star.png'}/> to rural youth in Nigeria. <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> </h1>
+            <h1 className=' inline-block cooper text-7xl'>We are giving <Graphic src={'/g/modern-bold-asterisk.png'}/> <Graphic src={'/g/red-quarter-circle.png'}/> 1,000 kits to <br className='hidden 2xl:block'/> youth <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> in rural <Graphic src={'/g/yellow-rounded-star.png'}/>  Nigeria.</h1>
             <p className='text-lg lg:text-xl '>
-            Based in Houston, Texas, Omelora is a social good initiative that aims to empower rural Nigerian youth with health and educational kits and creates content focused on West African environmental, social, and health-related wellness. 
+              Based in Houston, Texas, Omelora empowers rural Nigerian youth with health and education kits and creates West African wellness content. Our goal is to eventually distribute 1,000 kits to rural Nigerian youth.
             </p>
           </div>
           <div className='flex flex-row gap-2 items-center'>
@@ -108,7 +108,7 @@ export default function Home() {
 
             <iframe 
             src="https://hcb.hackclub.com/donations/start/omelora" 
-            className='w-full md:w-1/2 h-[1000px] border-4 border-[--clr-base-accent] rounded-xl'
+            className='w-full md:w-1/2 h-[850px] border-2 border-[--clr-base-accent] rounded-xl overflow-hidden'
             aria-hidden="false"/>
         </section>
     </section>

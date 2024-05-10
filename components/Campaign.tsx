@@ -30,7 +30,7 @@ function ProgressBar({goalValue, currentValue}: {goalValue:number, currentValue:
 
 export default function Campaign({title,description, startDate, endDate, goalValue, currentValue, measurement, details, value}:CampaignProps) {
     return (
-        <div className='flex flex-col gap-5 p-5 border-4 border-[--clr-base-accent] bg-[--clr-base] rounded-xl shadow-sm'>
+        <div className='flex flex-col gap-5 p-5 border-2 border-[--clr-base-accent] bg-[--clr-base] rounded-xl shadow-sm'>
             <ListIcon value={value}/>
             <div className='flex flex-col gap-2'>
                 <span className='font-bold text-lg md:text-2xl'>{title}</span>
