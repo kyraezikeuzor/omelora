@@ -44,8 +44,8 @@ export const pillars = [
 
 export const initiatives = [
     {
-        "title":"2024 Summer & Fall Social Good Fund",
-        "description":"Support our cause to raise $1000 for rural Nigerian children Your donation will go towards purchasing baby supplies such as diapers, formula, and clothing. ",
+        "title":"2024 Social Good Fundraiser",
+        "description":"Raising $1000 for funding the creation of kits for the Divine Wounds of Jesus Christ Orphanage. ",
         "startDate": "2024-05-01",
         "endDate": "2024-07-31",
         "goalValue": 1000,
@@ -54,13 +54,23 @@ export const initiatives = [
         "details":["Diapers","Baby blankets","Bedding (cribs, bassinets)","Baby bottles","Baby supplies"]
     },
     {
-        "title":"2024 Summer & Fall Kits for Kids Campaign",
-        "description":"Support our cause to create 100 kits for rural Nigerian children. Your donation will go towards giving a notebook, 5-pack colored pencils, 5-pack #2 pencils, and pencil pouch to a child.",
+        "title":"2024 Summer Kits for Kids Project",
+        "description":"Creating kits containing 1 notebook, 5-pack colored pencils, 5-pack #2 pencils, 1 book, and pencil pouch for each child.",
         "startDate": "2024-07-01",
         "endDate": "2024-07-31",
-        "goalValue": 100,
+        "goalValue": 50,
         "currentValue": 0,
         "measurement": "kits",
+        "details":["Diapers","Baby blankets","Bedding (cribs, bassinets)","Baby bottles","Baby supplies"]
+    },
+    {
+        "title":"2024 Summer Book Drive",
+        "description":"Collecting book donations to atleast supply each kit with 1 book.",
+        "startDate": "2024-05-01",
+        "endDate": "2024-07-31",
+        "goalValue": 50,
+        "currentValue": 0,
+        "measurement": "books",
         "details":["Diapers","Baby blankets","Bedding (cribs, bassinets)","Baby bottles","Baby supplies"]
     }
 ]

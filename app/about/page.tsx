@@ -10,7 +10,7 @@ export default function AboutPage() {
     return (
         <section className="flex flex-col gap-20 justify-between">
             <header className='flex flex-col gap-5'>
-                <h1 className='cooper'>Who We Are</h1>
+                <h1 className='ft-cooper'>Who We Are</h1>
                 <p className='text-lg md:text-xl'>
                     Omelora, founded by Kyra, a high school student from Texas, is a social initiative aimed at providing resources and aid to vulnerable children in rural communities in southern Nigeria. Our goal is to drive environmental, health-focused, social, and educational change through various charitable activities.
                     <br/><br/>Through sharing stories, sharing resources, and sharing information, we aim to raise awareness about the critical environmental and health challenges facing our target areas. By highlighting these issues, we hope to empower individuals and communities to take action for positive change.

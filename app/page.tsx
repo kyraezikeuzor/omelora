@@ -6,17 +6,36 @@ import Button from '@/components/Button'
 import ImageSwipe from '@/components/ImageSwipe'
 import Campaign from "@/components/Campaign";
 import ListIcon from '@/components/ListIcon'
+import Highlight from '@/components/Highlight'
 
 export default function Home() {
+
+  const kitHeaderHoverModal = 
+  <Highlight toggleElement={<span className='ft-cooper'>kits</span>}>
+    <div className='flex flex-col gap-1 ft-inter font-medium'>
+      All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, & a pencil pouch.
+    </div>
+  </Highlight>
+
+const ruralHeaderHoverModal = 
+<Highlight toggleElement={<span className='ft-cooper'>rural</span>}>
+  <div className='flex flex-col gap-1 ft-inter font-medium'>
+    All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, & a pencil pouch.
+  </div>
+</Highlight>
+
+
   return (
     <section className="flex min-h-screen flex-col gap-20 justify-between">
 
         <header className='flex flex-col gap-5 '>
           <div className=' flex flex-col gap-5'>
             <span className='text-2xl font-bold flex flex-row gap-2 items-center'>WELCOME TO OMELORA </span>
-            <h1 className=' inline-block cooper 2xl:text-[76px]'>We are giving <Graphic src={'/g/red-quarter-circle.png'}/> 1,000 kits to <br className='hidden 2xl:block'/> youth <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> in rural <Graphic src={'/g/yellow-rounded-star.png'}/> <Graphic src={'/g/modern-bold-asterisk.png'}/> Nigeria.</h1>
+            <h1 className=' inline-block 2xl:text-[76px]'> 
+              <span className='ft-cooper'>We are giving <Graphic src={'/g/red-quarter-circle.png'}/> 1,000</span> {kitHeaderHoverModal} <span className='ft-cooper'>to <br className='hidden 2xl:block'/> youth <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> in </span> {ruralHeaderHoverModal} <span className='ft-cooper'><Graphic src={'/g/yellow-rounded-star.png'}/> <Graphic src={'/g/modern-bold-asterisk.png'}/> Nigeria.</span>
+            </h1>
             <p className='text-lg lg:text-xl '>
-              Based in Houston, Texas, Omelora provides health and educational kits to empower rural Nigerian youth through wellness initiatives in West Africa. Our goal is to eventually distribute 1,000 kits to rural youth.
+              Based in Houston, Texas, Omelora provides health and educational kits to empower rural Nigerian youth through wellness initiatives in West Africa. Our goal is to eventually distribute 1,000 kits.
             </p>
           </div>
           <div className='flex flex-row gap-2 items-center'>
@@ -30,16 +49,10 @@ export default function Home() {
         </header>
 
         <section className='flex flex-col gap-20 items-start'>
-          <div className='flex flex-col gap-2 hidden'>
-            <h2 className=' font-bold'>Making a difference, together</h2>
-            <p className='text-lg md:text-xl'>
-            We hope to enact environmental, health-focused, social, and educational change through charitable activities that make a lasting impact on the lives of vulnerable children.
-            </p>
-          </div>
           <section className='flex flex-col lg:flex-row-reverse items-center gap-10'>
-              <div className='w-full flex flex-col gap-5'>
-                <h2 className='cooper'>Taking action through changing stories.</h2>
-                <div className='flex flex-col gap-5 '>
+              <div className='w-full flex flex-col gap-3'>
+                <h2 className='ft-cooper'>Taking action through changing stories.</h2>
+                <div className='flex flex-col '>
                   <p className='text-lg md:text-xl'>
                   Through sharing stories, resources, and information, we raise awareness about the critical environmental and health issues affecting our target areas.
                   <br/> <br/> Currently, our initiative is focused on raising funds through local businesses and sponsors for the Divine Wounds of Jesus Christ Orphanage Home in Enugu, Nigeria.
@@ -70,10 +83,10 @@ export default function Home() {
         <section className='flex flex-col lg:grid grid-cols-2 gap-10'>
             {pillars.map((item,index)=>(
               <div key={index} className='flex flex-row gap-5'>
-                <ListIcon value={<Icon icon={item.icon} className='fill-[--clr-green-base]'/>}/>
+                <ListIcon value={<Icon icon={item.icon} className='fill-white'/>}/>
                 <div key={index} className='flex flex-col gap-2'>
                   <h5>{item.name}</h5>
-                  <p className='text-base md:text-lg'>{item.text}</p>
+                  <p className='text-lg md:text-xl'>{item.text}</p>
                 </div>
               </div>
             ))}
@@ -81,8 +94,8 @@ export default function Home() {
 
         <section className='flex flex-col lg:flex-row-reverse gap-10'>
             <section className='w-full lg:w-1/2 flex flex-col gap-5'>
-              <div className='flex flex-col gap-5'>
-                <h2 className='cooper'>Donate to our cause.</h2>
+              <div className='flex flex-col gap-3'>
+                <h2 className='ft-cooper'>What we&apos;re doing.</h2>
                 <p className='text-lg md:text-xl'>
                 Donate to help us accomplish our mission of helping empower
                 children in rural Nigerian communities.

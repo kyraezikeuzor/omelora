@@ -11,7 +11,7 @@ export default function SupportOurCausePage() {
     return (
         <section className="flex flex-col lg:flex-row-reverse gap-10 items-center">
             <header className='w-full lg:w-3/5 flex flex-col gap-5'>
-                <h1 className='cooper'>Support Our Cause</h1>
+                <h1 className='ft-cooper'>Support Our Cause</h1>
                 <p className='text-lg md:text-xl'>
                     Based in Houston, Texas, Omelora is a social good initiative aiming to empower rural Nigerian youth with health and educational kits and create content for the environmental and health-related wellness of West African communities.
                     <br/><br/>Your donation helps us send 1,000 health and science kits to rural youth in Nigeria. 

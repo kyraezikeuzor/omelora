@@ -2,19 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 @font-face {
   font-family: "Cooper";
   src: url("/fonts/CooperLtBT-Regular.ttf");
 }
 
-.cooper {
+.ft-cooper {
   font-family: "Cooper", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
+.ft-inter {
+  font-family: "Inter", sans-serif;
+}
+
 
 :root {
     --bg-base: linear-gradient(to bottom, #ffff, #fdfdfa, #fefef4);
@@ -26,9 +30,9 @@
     --clr-pink-light: rgb(255, 242, 244);
     --clr-pink-dark: rgb(205, 66, 89);
  
-    --clr-green-light:#d5ed97;
-    --clr-green-base:#628B21;
-    --clr-green-dark:#344f0a;
+    --clr-green-light:#D5EC9D;
+    --clr-green-base:#70D465; /*#628B21*/
+    --clr-green-dark:#42961E;
 
     --clr-yellow-light:#f3d266;
 
