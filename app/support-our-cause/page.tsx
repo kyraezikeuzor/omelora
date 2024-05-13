@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Icon from '@/components/Icon'
+import Highlight from '@/components/Highlight'
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Support Our Cause",
@@ -8,9 +9,16 @@ export const metadata: Metadata = {
 
 export default function SupportOurCausePage() {
 
+    const DwaHighlight = 
+  <Highlight toggleElement={<span className='font-semibold ' >Divine</span>}>
+    <div className='flex flex-col gap-1 font-medium'>
+      All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, and a pencil pouch.
+    </div>
+  </Highlight>
+
     return (
         <section className="flex flex-col lg:flex-row-reverse gap-10 items-center">
-            <header className='w-full lg:w-3/5 flex flex-col gap-5'>
+            <header className='w-full lg:w-2/3 flex flex-col gap-5'>
                 <h1 className='ft-cooper'>Support Our Cause</h1>
                 <p className='text-lg md:text-xl'>
                     Based in Houston, Texas, Omelora is a social good initiative aiming to empower rural Nigerian youth with health and educational kits and create content for the environmental and health-related wellness of West African communities.
@@ -23,7 +31,7 @@ export default function SupportOurCausePage() {
             </header>
             <iframe 
             src="https://hcb.hackclub.com/donations/start/omelora" 
-            className='w-full lg:w-2/5 h-[850px] border-2 border-[--clr-base-accent] rounded-xl'
+            className='w-full lg:w-1/3 h-[1000px] border-2 border-[--clr-base-accent] rounded-xl'
             aria-hidden="false"
             />
         </section>

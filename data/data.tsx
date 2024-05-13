@@ -49,7 +49,7 @@ export const initiatives = [
         "startDate": "2024-05-01",
         "endDate": "2024-07-31",
         "goalValue": 1000,
-        "currentValue": 50,
+        "currentValue": 9.3,
         "measurement": "$",
         "details":["Diapers","Baby blankets","Bedding (cribs, bassinets)","Baby bottles","Baby supplies"]
     },
@@ -68,7 +68,7 @@ export const initiatives = [
         "description":"Collecting book donations to atleast supply each kit with 1 book.",
         "startDate": "2024-05-01",
         "endDate": "2024-07-31",
-        "goalValue": 50,
+        "goalValue": 100,
         "currentValue": 0,
         "measurement": "books",
         "details":["Diapers","Baby blankets","Bedding (cribs, bassinets)","Baby bottles","Baby supplies"]

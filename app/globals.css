@@ -19,6 +19,14 @@
   font-family: "Inter", sans-serif;
 }
 
+.txt-underline-base {
+  text-decoration:underline;
+  text-underline-offset: 2px;
+  text-decoration-color:var(--clr-green-base);
+  text-decoration-thickness: 2px;
+  font-weight:600;
+}
+
 
 :root {
     --bg-base: linear-gradient(to bottom, #ffff, #fdfdfa, #fefef4);

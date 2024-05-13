@@ -10,19 +10,19 @@ import Highlight from '@/components/Highlight'
 
 export default function Home() {
 
-  const kitHeaderHoverModal = 
+  const KitsHighlight = 
   <Highlight toggleElement={<span className='ft-cooper'>kits</span>}>
-    <div className='flex flex-col gap-1 ft-inter font-medium'>
+    <div className='flex flex-col gap-1 font-semibold'>
       All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, & a pencil pouch.
     </div>
   </Highlight>
 
-const ruralHeaderHoverModal = 
-<Highlight toggleElement={<span className='ft-cooper'>rural</span>}>
-  <div className='flex flex-col gap-1 ft-inter font-medium'>
-    All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, & a pencil pouch.
-  </div>
-</Highlight>
+  const RuralHighlight = 
+  <Highlight toggleElement={<span className='ft-cooper'>rural</span>}>
+    <div className='flex flex-col gap-1 font-semibold'>
+      All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, & a pencil pouch.
+    </div>
+  </Highlight>
 
 
   return (
@@ -32,7 +32,7 @@ const ruralHeaderHoverModal =
           <div className=' flex flex-col gap-5'>
             <span className='text-2xl font-bold flex flex-row gap-2 items-center'>WELCOME TO OMELORA </span>
             <h1 className=' inline-block 2xl:text-[76px]'> 
-              <span className='ft-cooper'>We are giving <Graphic src={'/g/red-quarter-circle.png'}/> 1,000</span> {kitHeaderHoverModal} <span className='ft-cooper'>to <br className='hidden 2xl:block'/> youth <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> in </span> {ruralHeaderHoverModal} <span className='ft-cooper'><Graphic src={'/g/yellow-rounded-star.png'}/> <Graphic src={'/g/modern-bold-asterisk.png'}/> Nigeria.</span>
+              <span className='ft-cooper'>We are giving <Graphic src={'/g/red-quarter-circle.png'}/> 1,000</span> {KitsHighlight} <span className='ft-cooper'>to <br className='hidden 2xl:block'/> youth <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> in </span> {RuralHighlight} <span className='ft-cooper'><Graphic src={'/g/yellow-rounded-star.png'}/> <Graphic src={'/g/modern-bold-asterisk.png'}/> Nigeria.</span>
             </h1>
             <p className='text-lg lg:text-xl '>
               Based in Houston, Texas, Omelora provides health and educational kits to empower rural Nigerian youth through wellness initiatives in West Africa. Our goal is to eventually distribute 1,000 kits.
