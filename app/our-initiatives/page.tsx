@@ -9,7 +9,7 @@ export default function OurInitiativesPage() {
   const dwaHoverModal = 
   <Highlight toggleElement={<Link className='font-semibold ' href={divineWoundsSiteLink}>Divine Wounds of Jesus Christ Orphanage Home</Link>}>
     <div className='flex flex-col gap-1 font-medium'>
-      All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, & a pencil pouch.
+      All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, and a pencil pouch.
     </div>
   </Highlight>
 
@@ -20,7 +20,7 @@ export default function OurInitiativesPage() {
                 <p className='text-lg md:text-xl'>
                   Our current focus is the children of 
                   the {dwaHoverModal} in Enugu, Nigeria.
-                  We're extending educational support through charitable endeavors.
+                  We&apos;re extending educational support through charitable endeavors.
                 </p>
             </header>
 
