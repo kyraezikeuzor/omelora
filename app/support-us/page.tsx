@@ -15,7 +15,7 @@ export default function SupportOurCausePage() {
     const ThousandHighlight = 
     <Highlight toggleElement={<span className='font-semibold ' >1,000</span>}>
       <div className='flex flex-col gap-1 font-medium'>
-        Our current goal is to create 1,000 kits of health, learning, and children's supplies and distribute them to our target locations in southeast Nigeria.
+        Our current goal is to create 1,000 kits of health, learning, and children&apos;s supplies and distribute them to our target locations in southeast Nigeria.
       </div>
     </Highlight>
 
@@ -30,7 +30,7 @@ export default function SupportOurCausePage() {
                 Your donation helps us send {ThousandHighlight} health and science kits to rural youth in Nigeria. These kits are filled with science pamphlets, books, and school supplies, providing students with the tools they need to learn and explore in a fun, hands-on way.
                 </p>
                 <p className='text-base md:text-lg'>
-                In addition, each donation directly supports Omelora's initiatives for sustainable development, improving the lives of many young individuals. We aim to inspire a lasting interest in health and science among youth, not just providing immediate resources.
+                In addition, each donation directly supports Omelora&apos;s initiatives for sustainable development, improving the lives of many young individuals. We aim to inspire a lasting interest in health and science among youth, not just providing immediate resources.
                 </p>
                 <p className='text-base md:text-lg'>
                 In addition to providing kits, Omelora leads community projects inspiring learning through books and science activities. These projects involve youth in hands-on activities that promote curiosity. With your support, together we make a lasting impact on young lives and communities.

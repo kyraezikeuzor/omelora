@@ -177,7 +177,7 @@ export default function Home() {
                     <div className='flex flex-col gap-2'>
                       <h5>Giving Aid, Gathering Support.</h5>
                       <p className='text-base md:text-lg'>
-                      Omelora's primary mode of action involves raising funds and gathering resources through donation crowdfunding. 
+                      Omelora&apos;s primary mode of action involves raising funds and gathering resources through donation crowdfunding. 
                       This enables us to acquire the necessary kits and supplies for our initiatives.
                       </p>
                     </div>
@@ -188,7 +188,7 @@ export default function Home() {
 
         <section className='w-full flex flex-col gap-10'>
             <div className='flex flex-col gap-3'>
-              <h2 className='ft-cooper'>What's in a kit?</h2>
+              <h2 className='ft-cooper'>What&apos;s in a kit?</h2>
               <p className='text-base md:text-lg'>
               Our kits are packed with tools for creativity, learning, and 
               giving. Each kit includes educational supplies, creative materials, 

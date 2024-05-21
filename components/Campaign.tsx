@@ -54,7 +54,7 @@ export default function Campaign({title, description, startDate, endDate, goalVa
                     <span className='flex flex-row'>
                         {orgsSupporting.map((item,index)=>(  
                         <span className='inline rounded-full bg-[--clr-green-extralight] h-6 w-6 flex flex-col items-center -mr-2'>
-                            <Icon icon="Sun" className='inline fill-[--clr-green-dark]' size='sm'/> 
+                            <Icon key={index} icon="Sun" className='inline fill-[--clr-green-dark]' size='sm'/> 
                         </span>
                         ))}
                     </span>
