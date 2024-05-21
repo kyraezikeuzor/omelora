@@ -41,8 +41,8 @@ export default function ImageSwipe({content}:ImageSwipeProps) {
 
                 <div className='relative mx-2'>
                     <div className='flex flex-col origin-center -rotate-3 shadow-xl rounded-3xl'>
-                      <img className='w-full h-[450px] object-cover  rounded-t-3xl' src={images[next]}/>
-                      <div className='h-10 bg-[--clr-base]/75 rounded-b-3xl px-5 py-2 font-semibold'>
+                      <img className='w-full h-[200px] md:h-[450px] object-cover  rounded-t-3xl' src={images[next]}/>
+                      <div className='md:h-10 bg-[--clr-base]/75 rounded-b-3xl px-5 py-2 font-semibold text-xs md:text-sm'>
                         {alts[next]}
                       </div>
                     </div>
@@ -51,10 +51,10 @@ export default function ImageSwipe({content}:ImageSwipeProps) {
                     <div key={index} className='absolute top-0 bottom-0 left-0 right-0'>
                         {index === currentIndex && 
                         <div className='flex flex-col origin-center rotate-3 shadow-xl rounded-3xl'>
-                          <img className='w-full h-[450px] object-cover rounded-t-3xl' src={images[index]}/>
-                          <div className='h-10 bg-[--clr-base] rounded-b-3xl px-5 py-2 font-semibold'>
+                          <img className='w-full h-[200px] md:h-[450px] object-cover rounded-t-3xl' src={images[index]}/>
+                          <p className='md:h-10 bg-[--clr-base] rounded-b-3xl px-5 py-2 font-semibold text-xs md:text-sm'>
                             {alts[index]}
-                          </div>
+                          </p>
                         </div>
                         }
                     </div>

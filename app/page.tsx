@@ -59,10 +59,10 @@ export default function Home() {
     <section className="w-full flex min-h-screen flex-col gap-20 justify-between">
 
         <header className='relative w-full flex flex-col gap-5'>
-          <div className=' flex flex-col gap-5'>
+          <div className=' flex flex-col gap-3'>
             <span className='text-2xl font-bold flex flex-row gap-2 items-center'>WELCOME TO OMELORA </span>
             <h1 className=' inline-block 2xl:text-[76px]'> 
-              <span className='ft-cooper'>We <Graphic src={'/g/yellow-rounded-star.png'}/> are giving 1,000</span> {KitsHighlight} <span className='ft-cooper'>to <Graphic src={'/g/red-bold-asterisk.png'}/> <br className='hidden 2xl:block'/> children <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> in </span> {RuralHighlight} <span className='ft-cooper'> Nigeria.</span>
+              <span className='ft-cooper'>We <Graphic src={'/g/yellow-rounded-star.png'}/> are giving 1,000</span> {KitsHighlight} <span className='ft-cooper'>to <br className='hidden 2xl:block'/> kids <Graphic src={'/g/pastel-pink-abstract-flower.png'}/> in </span> {RuralHighlight} <span className='ft-cooper'> Nigeria.</span>
             </h1>
             <p className='text-lg lg:text-xl '>
             Based in Houston, Texas, Omelora hopes to provide support for youth through 
