@@ -200,12 +200,12 @@ export default function Home() {
                   <div 
                   key={index}
                   className='rounded-xl p-5'
-                  style={{borderWidth: '4px', borderColor: `var(--clr-green-light)`, borderStyle:'dotted'}}
+                  style={{borderWidth: '4px', borderColor: `var(--clr-grey-light)`, borderStyle:'dotted'}}
                   >
                     <span 
                     className='text-lg font-bold' 
                     style={{color:`var(--clr-${item.kitColor}-base)`}}>
-                      {item.ageRange}
+                      Ages {item.ageRange}
                     </span>
                     <ul className='ml-5' >
                       {item.supplies.map((item,index)=>(
