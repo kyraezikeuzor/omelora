@@ -1,8 +1,20 @@
 'use client'
 import React, {useState} from 'react'
-import {getNextIndex} from '@/data/utils'
+import {getNextIndex} from '@/data/helpers'
 
-export default function ImageSwipe({images}:{images:any}) {
+type Content = {
+  image:any,
+  alt:any
+}
+
+type ImageSwipeProps = {
+  content: Content[]
+}
+
+export default function ImageSwipe({content}:ImageSwipeProps) {
+
+    const images = content.map(item => item.image);
+    const alts = content.map(item => item.alt);
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -28,11 +40,22 @@ export default function ImageSwipe({images}:{images:any}) {
                 </button>
 
                 <div className='relative mx-2'>
-                    <img className='w-full h-[400px] rounded-3xl origin-center -rotate-3 shadow-xl' src={images[next]}/>
+                    <div className='flex flex-col origin-center -rotate-3 shadow-xl rounded-3xl'>
+                      <img className='w-full h-[450px] object-cover  rounded-t-3xl' src={images[next]}/>
+                      <div className='h-10 bg-[--clr-base]/75 rounded-b-3xl px-5 py-2 font-semibold'>
+                        {alts[next]}
+                      </div>
+                    </div>
+
                     {images.map((image:any, index:number) => (
                     <div key={index} className='absolute top-0 bottom-0 left-0 right-0'>
                         {index === currentIndex && 
-                        <img src={image} alt={`Slide ${index}`} className='w-full h-[400px] shadow-xl rounded-3xl object-cover origin-center rotate-3 shadow-2xl '/>
+                        <div className='flex flex-col origin-center rotate-3 shadow-xl rounded-3xl'>
+                          <img className='w-full h-[450px] object-cover rounded-t-3xl' src={images[index]}/>
+                          <div className='h-10 bg-[--clr-base] rounded-b-3xl px-5 py-2 font-semibold'>
+                            {alts[index]}
+                          </div>
+                        </div>
                         }
                     </div>
                     ))}

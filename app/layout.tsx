@@ -20,6 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="description" content="Based in Houston, Texas, Omelora hopes to provide support for youth through health and educational kits. Our wellness initiatives aim to enrich lives across West Africa, with a goal of distributing 1,000 kits."/>
+        <meta property="og:image" content="/img/dwo-img1.jpg" />
+        
+        <link href="https://api.fontshare.com/v2/css?f[]=zodiak@401&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+      </head>
       <body className={inter.className}>
         <Navbar/>
         <main className='px-5 py-[10vh] md:px-[13vw] md:py-[10vh]'>

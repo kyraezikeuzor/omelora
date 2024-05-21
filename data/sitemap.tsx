@@ -1,7 +1,8 @@
 export const navbar = [
-    'About',
-    'Support Our Cause',
-    'Our Initiatives'
+    'About Us',
+    'Support Us',
+    'Initiatives',
+    'Partnerships',
 ]
 
 

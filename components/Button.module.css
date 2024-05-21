@@ -1,12 +1,12 @@
 .button {
-    padding:.2rem 1.0rem;
-    background-color: rgb(6, 4, 24);
+    padding:.4rem 1.0rem;
+    background-color: var(--clr-navy-dark);
     border-radius: 12px;
     color: white;
     fill: white;
     white-space: nowrap;
     font-weight:600;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     flex-direction: row;
     gap: 5px;

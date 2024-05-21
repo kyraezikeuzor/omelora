@@ -8,7 +8,7 @@ import Icon from './Icon'
 import EmailForm from './EmailForm'
 import {footer} from '@/data/sitemap';
 
-import {toPath} from '@/data/utils';
+import {toPath} from '@/data/helpers';
 
 function Footer() {
 

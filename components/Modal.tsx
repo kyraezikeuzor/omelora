@@ -48,11 +48,9 @@ export default function Modal({children, modalClassName, toggleElement}:ModalPro
             <div onClick={handleToggleModal} className='flex flex-col items-center absolute top-2 right-2 bg-[--clr-base-accent] rounded-full p-1 cursor-pointer'>
                 <Icon icon='X' size='sm' className='block fill-[--clr-grey-dark]' />
             </div>
-
             <div className="flex flex-col modal-content mt-5">
               {children}
             </div>
-
             <div className="modal-overlay"></div>
           </div>
         )}

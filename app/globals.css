@@ -21,9 +21,9 @@
 
 .txt-underline-base {
   text-decoration:underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 4px;
   text-decoration-color:var(--clr-green-base);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 4px;
   font-weight:600;
 }
 
@@ -34,20 +34,38 @@
     --clr-base-accent:rgb(243, 243, 243);
     --clr-base-text: #434242;
 
-    --clr-pink-base: #f5aece;
-    --clr-pink-light: rgb(255, 242, 244);
+    --clr-pink-extralight: #fdf7fd;
+    --clr-pink-light: #fff2f4;
+    --clr-pink-base: #ef9dc2;
     --clr-pink-dark: rgb(205, 66, 89);
- 
-    --clr-green-light:#D5EC9D;
-    --clr-green-base:#70D465; /*#628B21*/
-    --clr-green-dark:#42961E;
 
-    --clr-yellow-light:#f3d266;
+    --clr-purple-light:#F5E8F8;
+    --clr-purple-base:#EACEFE;
+    --clr-purple-dark:#5A2A87;
+ 
+    --clr-green-extralight:#eefce6; /*#f5f9eb*/
+    --clr-green-light:#d2eec2;
+    --clr-green-base:#70D465; /*#628B21*/
+    --clr-green-dark:#51AF74; /*#369e4e*/
+    --clr-green-extradark:#0FA481; /*#155a25*/
+
+    --clr-red-extralight:rgb(255, 247, 247); 
+    --clr-red-base: rgb(218, 98, 118);
+
+    --clr-orange-extralight:rgb(255, 253, 249);
+    --clr-orange-base:rgb(255, 192, 74);
+
+    --clr-yellow-extralight: #fffefb;
+    --clr-yellow-base:#f3d266;
 
     --clr-grey-light:rgb(233, 233, 233);
     --clr-grey-base:rgb(119, 118, 118);
 
+    --clr-blue-extralight:rgb(246, 250, 251);
+    --clr-blue-base:rgb(101, 190, 237);
     --clr-blue-dark:#141425;
+
+    --clr-navy-dark:rgb(6, 4, 24);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,8 +73,10 @@
     --bg-base:#1e1d1d;
     --clr-base: #1d1d1d;
     --clr-base-text: #ffffff;
-    --clr-base-accent: rgb(85, 83, 83);
-    --clr-grey-base:rgb(158, 157, 157);
+    --clr-base-accent: rgb(46, 45, 45);
+
+    --clr-grey-light:rgb(70, 70, 70);
+    --clr-grey-base:rgb(162, 162, 162);
 
     --clr-blue-dark:#0f0f15;
   }
@@ -77,6 +97,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height:1;
 }
 
+
 p {
   color: var(--clr-grey-dark);
 }
@@ -94,6 +115,11 @@ input:focus {
   outline:none;
 }
 
+
+iframe::-webkit-scrollbar {
+  width: 0px;
+  height:0px;
+}
 
 @media screen and (min-width: 1024px) {
   h1 {font-size: 4.5rem;}

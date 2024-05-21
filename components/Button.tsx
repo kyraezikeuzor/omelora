@@ -12,16 +12,16 @@ const Button = ({children, path, outline}:ButtonProps) => {
     return (
         <>
             {
-                path ? 
-                <Link href={path}>
-                    <button className={outline == true ? `${styles.outline} ${styles.button} ` : `${styles.button}`}>
-                        {children}
-                    </button>
-                </Link>
-                :
+            path ? 
+            <Link href={path} target='_blank'>
                 <button className={outline == true ? `${styles.outline} ${styles.button} ` : `${styles.button}`}>
                     {children}
                 </button>
+            </Link>
+            :
+            <button className={outline == true ? `${styles.outline} ${styles.button} ` : `${styles.button}`}>
+                {children}
+            </button>
             }
         </>
     )

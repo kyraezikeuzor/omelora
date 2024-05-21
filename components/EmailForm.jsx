@@ -59,8 +59,8 @@ function EmailForm() {
           onChange={handleFieldChange}
           className='py-2 px-4 border-none rounded-md bg-[--clr-base] placeholder:text-[--clr-grey-base]'
         />
-        <button className='bg-[--clr-green-light] text-lg text-[--clr-green-dark] font-semibold rounded-3xl px-4 py-2'>
-            Subscribe <Icon className='fill-[--clr-green-dark] inline' icon="ArrowTopRight" size='sm'/>
+        <button className='bg-[--clr-green-dark] text-lg text-white font-semibold rounded-3xl px-4 py-2'>
+            Subscribe <Icon className='fill-white inline' icon="ExternalLink" size='sm'/>
         </button>
       </form>
       {loading && "Submitting..."}

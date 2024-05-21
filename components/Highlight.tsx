@@ -44,51 +44,55 @@ export default function Highlight({ children, toggleElement }: ModalProps) {
     } else {
       modalWidth =  0
     } 
+
+    console.log(toggleXPosition, 'x corr')
+    console.log(modalWidth, 'modal Width')
+    console.log(screenWidth, 'screen Width')
+    console.log(positionLeft, 'modal position')
   
     setPositionTop(toggleYPosition + toggleHeight)
     setPositionLeft(toggleXPosition)
 
-    if (toggleXPosition + modalWidth > screenWidth) {
+    if (toggleXPosition + modalWidth > screenWidth) { // Solution for modal overflowing right side of screen
       setPositionLeft(toggleXPosition - (modalWidth * .66))
+    } 
+
+    if (screenWidth - modalWidth < toggleXPosition) { // Solution for modal overflowing left side of screenn
+      setPositionLeft(screenWidth - modalWidth)
     }
 
   }, [isOpen, toggleRef.current?.offsetLeft, toggleRef.current?.scrollLeft, toggleRef.current?.clientLeft]);
 
-  //span className='inline-block w-fit relative'
-
   return (
     <>
+      <span
+        className='ease-in relative w-fit inline cursor-pointer underline 
+        underline-offset-4 decoration-[--clr-green-base] decoration-4'
+        onMouseEnter={showModal}
+        onMouseLeave={hideModal}
+        ref={toggleRef}
+      >
+        {toggleElement}
+        {!isOpen && (
         <span
-          className='relative w-fit inline cursor-pointer underline 
-          underline-offset-2 decoration-[--clr-green-base] decoration-2'
-          onMouseEnter={showModal}
-          onMouseLeave={hideModal}
-          ref={toggleRef}
+          className='z-40 w-6 h-6 inline whitespace-nowrap w-fit font-bold text-xs absolute left-0 right-0 top-[85%] 
+          bg-[--clr-green-base] text-white px-2 py-1 rounded-b-2xl rounded-r-2xl shadow-xl'
         >
-          {toggleElement}
-
-          {!isOpen && (
-          <span
-            className='z-40 inline whitespace-nowrap w-fit font-bold text-xs absolute left-0 right-0 top-[85%] 
-            bg-[--clr-green-base] text-white px-3 py-1 rounded-b-2xl rounded-r-2xl'
-          >
-            <Icon icon='Sun' className='fill-white' />
-          </span>
-        )}
+          <Icon icon='Sun' size='sm' className='fill-white' />
         </span>
-        
-        {isOpen && (
-          <div ref={modalRef}
-            className={`z-50 absolute p-3 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-lg shadow-lg`}
-            style={{ width: '300px', top: positionTop, left: positionLeft}}
-          >
-            <div className="flex flex-col text-base">
-              {children}
-            </div>
-            <div className="modal-overlay"></div>
-          </div>
         )}
+      </span>
       
+      {isOpen && (
+        <div ref={modalRef}
+          className={`min-w-[300px] max-w-[500px] z-50 absolute ease-in p-3 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-lg shadow-lg`}
+          style={{ top: positionTop, left: positionLeft}}
+        >
+          <div className="flex flex-col text-base">
+            {children}
+          </div>
+        </div>
+      )}
     </>
   );
 }
