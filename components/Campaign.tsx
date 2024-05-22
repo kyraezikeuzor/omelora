@@ -84,7 +84,7 @@ export default function Campaign({title, description, startDate, endDate, goalVa
 
             <div className='w-full flex flex-row items-center justify-between px-4 py-3'>
                 <Link href={donateSiteLink} className='w-full'>
-                    <button className='w-full bg-[--clr-green-dark] rounded-2xl text-white text-base font-semibold py-1'>
+                    <button className='w-full bg-[--clr-green-base] rounded-2xl text-white text-base font-semibold py-1'>
                         Donate <Icon icon='HeartFilled' size='sm' className='fill-white inline'/>
                     </button>
                 </Link>

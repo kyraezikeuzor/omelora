@@ -24,8 +24,8 @@ export default function OurInitiativesPage() {
             <header className='flex flex-col gap-5'>
                 <h1 className='ft-cooper'>Our Initiatives</h1>
                 <p className='text-base md:text-lg'>
-                  Our current focus is the children of 
-                  the {DwaHighlight} <span className='txt-underline-base'>Wounds of Jesus Christ Orphanage Home</span> in Enugu, Nigeria.
+                  Our current focus is the children of the 
+                  Divine Wounds of Jesus Christ Orphanage Home in Enugu, Nigeria.
                   We&apos;re extending educational support through charitable endeavors.
                 </p>
                 <p className='text-base md:text-lg'>
