@@ -16,35 +16,19 @@ export default function Home() {
   const KitsHighlight = 
   <Highlight toggleElement={<span className='ft-cooper'>kits</span>}>
     <div className='flex flex-col gap-1 font-medium'>
-    Our kits are designed to span six age ranges, tailored to ages 6 to 16. 
-    Each kit includes items that support learning and creativity.
+    Our kits span 6 ages ranges from kids aged 6 to 16, 
+    each kit including items that support learning and creativity.
     </div>
   </Highlight>
 //
   const RuralHighlight = 
   <Highlight toggleElement={<span className='ft-cooper'>southeast</span>}>
-    <div className='flex flex-row gap-3 font-medium items-center'>
-      <img className='w-1/4 h-' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Igbo_Community_in_Nigeria_and_Africa.svg/480px-Igbo_Community_in_Nigeria_and_Africa.svg.png'/>
-      <p className='w-3/4'>
+    <div className='flex flex-col md:flex-row gap-3 font-medium items-center'>
+      <img className='w-2/3 md:w-1/4 h-' src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Igbo_Community_in_Nigeria_and_Africa.svg/480px-Igbo_Community_in_Nigeria_and_Africa.svg.png'/>
+      <p className='w-full md:w-3/4'>
       Southeastern Nigeria includes states such as Enugu, Anambra, Imo, Abia, and Ebonyi. 
       This region is characterized by its rolling hills, lush rainforests, and rich agricultural land.
       </p>
-    </div>
-  </Highlight>
-
-  const ChangeHighlight = 
-  <Highlight toggleElement={<span className='ft-cooper'>change.</span>}>
-    <div className='flex flex-col gap-1 font-medium'>
-    Southeastern Nigeria includes states such as Enugu, Anambra, Imo, Abia, and Ebonyi. 
-    This region is characterized by its rolling hills, lush rainforests, and rich agricultural land.
-    </div>
-  </Highlight>
-
-  const DonationHighlight = 
-  <Highlight toggleElement={<span className='ft-cooper'>donation</span>}>
-    <div className='flex flex-col gap-1 font-semibold'>
-    Southeastern Nigeria includes states such as Enugu, Anambra, Imo, Abia, and Ebonyi. 
-    This region is characterized by its rolling hills, lush rainforests, and rich agricultural land.
     </div>
   </Highlight>
 
@@ -75,7 +59,7 @@ export default function Home() {
               Learn More <Icon icon="ExternalLink" className='fill-white' size="sm"/>
             </Button>
             <Button outline path='/support-us'>
-              Support Us <Icon icon="ArrowTopRight" size='sm' className='fill-inherit'/>
+              Support Us <Icon icon="ExternalLink" size='sm' className='fill-inherit'/>
             </Button>
           </div>
         </header>
