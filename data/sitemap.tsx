@@ -9,10 +9,10 @@ export const navbar = [
 export const footer = [
     {
         "name" : "Resources",
-        "pages" : ["About","Support Our Cause"]
+        "pages" : ["About Us","Support Us"]
     },
     {
         "name" : "Community",
-        "pages" : ["Initiatives"]
+        "pages" : ["Initiatives", "Partnerships"]
     }
 ]

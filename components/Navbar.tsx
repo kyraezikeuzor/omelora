@@ -9,7 +9,10 @@ import {toPath} from '@/data/helpers'
 
 const navList = 
 navbar.map((item,index)=>(
-    <Link key={index} href={`/${toPath(item)}`}>
+    <Link 
+    key={index} 
+    href={`/${toPath(item)}`} 
+    className='hover:underline underline-offset-4 decoration-2 decoration-[--clr-green-base]'>
         <li>{item}</li>
     </Link>
 ))     
