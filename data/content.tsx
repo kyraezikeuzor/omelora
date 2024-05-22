@@ -5,7 +5,7 @@ export const pillars = [
         "icon":"Heart"
     },
     {
-        "name": "Environmental Awareness",
+        "name": "Environment",
         "text": "We work to create a cleaner and safer environment for vulnerable children by using our platforms to promote sustainable practices and addressing environmental challenges such as pollution and lack of clean water.",
         "icon": "Sun"
     },
@@ -15,7 +15,7 @@ export const pillars = [
         "icon":"House"
     },
     {
-        "name": "Education",
+        "name": "Learning",
         "text": "We believe in the power of education to transform lives. We hope to provide educational resources and support to children in rural areas, empowering them to build a brighter future for themselves and their communities.",
         "icon":"Compass"
     }
@@ -33,7 +33,7 @@ export const initiatives = [
         "currentValue": 85,
         "measurement": "books",
         'orgsSupporting':['Divine Wounds of Jesus Christ Orphanage'],
-        "image":"https://th-thumbnailer.cdn-si-edu.com/O5bw3-CPEPtSetpZRiPVgudqo8k=/1000x750/filters:no_upscale():focal(800x602:801x603)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/bd/cb/bdcb79fa-6bbf-4d61-ac7a-026a84ee5060/booklist-2023-childrens.jpg"
+        "image":"https://ik.imagekit.io/panmac/tr:f-auto,w-740,pr-true//bcd02f72-b50c-0179-8b4b-5e44f5340bd4/4c94745b-611a-44f8-a074-8144636caf4e/Classic-children%27s-books.jpg"
     },
     {
         "title":"2024 Kits for Kids",

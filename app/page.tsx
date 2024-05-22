@@ -124,7 +124,7 @@ export default function Home() {
         <section className='w-full flex flex-col lg:grid grid-cols-2 gap-10'>
             {pillars.map((item,index)=>(
               <div key={index} className='flex flex-row gap-5'>
-                <ListIcon value={<Icon icon={item.icon} size='sm' className='fill-[--clr-green-extradark]'/>}/>
+                <ListIcon value={<Icon icon={item.icon} size='sm' className='fill-white'/>}/>
                 <div key={index} className='flex flex-col gap-2'>
                   <h5>{item.name}</h5>
                   <p className='text-base md:text-lg'>
@@ -133,6 +133,17 @@ export default function Home() {
                 </div>
               </div>
             ))}
+        </section>
+
+        <section className='w-full flex flex-col gap-10 items-center'>
+          <div className='flex flex-col gap-3'>
+            <h2 className='ft-cooper'>Shaping a digital platform for social good.</h2>
+            <p className='text-base md:text-lg'>
+            Omelora serves as a digital platform for youth involved in health and environment initiatives 
+            in West Africa and the US. Through our platform, we aim to inspire 
+            change on a worldwide scale by creating, explainers, and resources.
+            </p>
+          </div>
         </section>
 
         <section className='w-full flex flex-col gap-10 items-center justify-center'>
@@ -145,7 +156,7 @@ export default function Home() {
               </p>
             </section>
             <section className='w-full flex flex-col md:flex-row items-center gap-10'>
-              <div className='w-full md:w-3/5 flex flex-col md:flex-row gap-5'>
+              <div className='w-full flex flex-col md:grid md:grid-cols-3 3xl:grid-cols-5 gap-5'>
                 {currentInitiatives?.map((item,index)=>(
                   <Campaign
                   key={index}
@@ -161,27 +172,6 @@ export default function Home() {
                   image={item.image}
                   />
                 ))}
-              </div>
-              <div className='w-full md:w-2/5 flex flex-col gap-10'>
-                  <div className='w-full flex flex-row gap-5'>
-                    <div className='flex flex-col gap-2'>
-                      <h5>Sharing for Social Good.</h5>
-                      <p className='text-base md:text-lg'>
-                      Omelora serves as a digital platform for youth involved in health and environment initiatives 
-                      in West Africa and the US. Through our platform, we aim to inspire 
-                      change on a worldwide scale by creating, explainers, and resources.
-                      </p>
-                    </div>
-                  </div>
-                  <div className='w-full flex flex-row gap-5'>
-                    <div className='flex flex-col gap-2'>
-                      <h5>Giving Aid, Gathering Support.</h5>
-                      <p className='text-base md:text-lg'>
-                      Omelora&apos;s primary mode of action involves raising funds and gathering resources through donation crowdfunding. 
-                      This enables us to acquire the necessary kits and supplies for our initiatives.
-                      </p>
-                    </div>
-                  </div>
               </div>
             </section>
         </section>
@@ -223,21 +213,21 @@ export default function Home() {
 
         <section className='w-full flex flex-col md:flex-row gap-10 '>
           <div className='w-full md:w-1/2 flex flex-col gap-3 justify-center'>
-              <h2 className='ft-cooper'>Support us. Make a donation today.</h2>
-              <p className='text-base md:text-lg'>
-              All donations are tracked and displayed on our HCB account, ensuring complete transparency. 
-              You can see exactly how your contributions are making a difference.
-              </p>
-              <p className='text-base md:text-lg'>
-              Every donation directly funds the creation of our kits and supports our operational 
-              processes. Your generosity helps us provide essential resources to those in need.
-              </p>
-              <p className='text-base md:text-lg'>
-              We rely on your support to create and distribute our kits. 
-              Your donations are crucial in helping us reach more children and make a lasting impact on their lives.
-              </p>
-              <br/>
-              <Button path={hcbSiteLink}>See Our Transactions <Icon className='inline fill-white' size='sm' icon='ExternalLink'/></Button>
+            <h2 className='ft-cooper'>Support us. Make a donation today.</h2>
+            <p className='text-base md:text-lg'>
+            All donations are tracked and displayed on our HCB account, ensuring complete transparency. 
+            You can see exactly how your contributions are making a difference.
+            </p>
+            <p className='text-base md:text-lg'>
+            Every donation directly funds the creation of our kits and supports our operational 
+            processes. Your generosity helps us provide essential resources to those in need.
+            </p>
+            <p className='text-base md:text-lg'>
+            We rely on your support to create and distribute our kits. 
+            Your donations are crucial in helping us reach more children and make a lasting impact on their lives.
+            </p>
+            <br/>
+            <Button path={hcbSiteLink}>See Our Transactions <Icon className='inline fill-white' size='sm' icon='ExternalLink'/></Button>
           </div>
           <div className='w-full md:w-1/2'>
             <Donate />

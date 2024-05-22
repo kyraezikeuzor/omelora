@@ -25,7 +25,7 @@ function ProgressBar({goalValue, currentValue}: {goalValue:number, currentValue:
     return (
     <div className='w-full h-2 bg-[--clr-grey-light] rounded-xl'>
         <div 
-        className='h-full justify-center bg-[--clr-green-dark] rounded-xl ' 
+        className='h-full justify-center bg-[--clr-green-base] rounded-xl ' 
         style={{width: percentage}}
         />
     </div>
