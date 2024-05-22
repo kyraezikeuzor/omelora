@@ -21,7 +21,7 @@ export default function Navbar() {
 
     return (
         <nav className='w-full flex flex-col items-center sticky top-0 z-[100]
-         shadow-sm bg-[--clr-base]/95 backdrop-blur'>
+         shadow-sm bg-[--clr-base] backdrop-blur'>
             
             <div className='hidden lg:flex w-full flex-row md:px-[10vw] py-[2vh]
             justify-between items-center font-medium '>
