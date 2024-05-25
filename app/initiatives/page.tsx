@@ -12,13 +12,6 @@ export const metadata: Metadata = {
 
 export default function OurInitiativesPage() {
 
-    const DwaHighlight = 
-    <Highlight toggleElement={<span className='font-semibold ' >Divine</span>}>
-      <div className='flex flex-col gap-1 font-medium'>
-        All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, and a pencil pouch.
-      </div>
-    </Highlight>
-
     return (
         <section className="flex flex-col gap-10">
             <header className='flex flex-col gap-5'>
@@ -29,7 +22,7 @@ export default function OurInitiativesPage() {
                   We&apos;re extending educational support through charitable endeavors.
                 </p>
                 <p className='text-base md:text-lg'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas risus orci, hendrerit vitae placerat at, tincidunt id risus. Nulla id risus eleifend, bibendum nisi in, feugiat lorem. Ut dignissim lacinia dolor eget tempor. Integer vitae pretium mi. Sed faucibus felis nec quam efficitur egestas ut in tellus. 
+                  In Houston, we're collaborating with local businesses to gather essential school supplies for the Divine Wounds of Jesus Christ Orphanage Home in Enugu, Nigeria, ensuring these children have the tools they need to learn and grow. Through community efforts, we're making education accessible and impactful for those in need.
                 </p>
             </header>
 

@@ -33,7 +33,7 @@ export const initiatives = [
         "currentValue": 85,
         "measurement": "books",
         'orgsSupporting':['Divine Wounds of Jesus Christ Orphanage'],
-        "image":"https://ik.imagekit.io/panmac/tr:f-auto,w-740,pr-true//bcd02f72-b50c-0179-8b4b-5e44f5340bd4/4c94745b-611a-44f8-a074-8144636caf4e/Classic-children%27s-books.jpg"
+        "image":"https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/07/10/13/childrens-book-collage-lifestyle-imagery.jpg?width=1200"
     },
     {
         "title":"2024 Kits for Kids",

@@ -53,8 +53,8 @@ export default function Campaign({title, description, startDate, endDate, goalVa
                 <div className='flex flex-row gap-4 items-center text-[--clr-grey-base]'>
                     <span className='flex flex-row'>
                         {orgsSupporting.map((item,index)=>(  
-                        <span key={index} className='inline rounded-full bg-[--clr-green-extralight] h-6 w-6 flex flex-col items-center -mr-2'>
-                            <Icon icon="Sun" className='inline fill-[--clr-green-dark]' size='sm'/> 
+                        <span key={index} className='inline rounded-full bg-[--clr-green-dark] h-6 w-6 flex flex-col items-center -mr-2'>
+                            <Icon icon="Sun" className='inline fill-white' size='sm'/> 
                         </span>
                         ))}
                     </span>
@@ -84,7 +84,7 @@ export default function Campaign({title, description, startDate, endDate, goalVa
 
             <div className='w-full flex flex-row items-center justify-between px-4 py-3'>
                 <Link href={donateSiteLink} className='w-full'>
-                    <button className='w-full bg-[--clr-green-extradark] rounded-2xl text-white text-base font-semibold py-1'>
+                    <button className='w-full bg-[--clr-green-dark] rounded-2xl text-white text-base font-semibold py-1'>
                         Donate <Icon icon='HeartFilled' size='sm' className='fill-white inline'/>
                     </button>
                 </Link>

@@ -10,13 +10,13 @@ export default function Partnerships() {
             <header className='flex flex-col gap-5'>
                 <h1 className='ft-cooper'>Partnerships</h1>
                 <p className='text-base md:text-lg'>
-                Through sharing stories, sharing resources, and sharing information, we aim to 
-                raise awareness about the critical environmental and health challenges facing our 
-                target areas. By highlighting these issues, we hope to empower individuals and 
-                communities to take action for positive change.
+                We are establishing strong partnerships with local businesses to support 
+                our mission, enhancing our impact and reach. Additionally, we welcome 
+                media inquiries and collaboration opportunities. For more information 
+                or to get involved, please contact us.
                 </p>
                 <p>
-                    For partnership inquiries, contact us at <b>omelorachildren@gmail.com</b>.
+                For partnership inquiries, contact us at <b>omelorachildren@gmail.com</b>.
                 </p>
             </header>
         </section>

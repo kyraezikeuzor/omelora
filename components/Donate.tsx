@@ -55,7 +55,7 @@ export default function Donate() {
             aria-hidden="false"
             />
             <div 
-            className='h-20 w-20 absolute top-4 right-4 rounded-r-2xl pointer-events-none'
+            className='hidden h-20 w-20 absolute top-4 right-4 rounded-r-2xl pointer-events-none'
             style={{background:`#${primaryColor}`}}
             />
         </div>
