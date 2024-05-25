@@ -22,7 +22,10 @@ export default function OurInitiativesPage() {
                   We&apos;re extending educational support through charitable endeavors.
                 </p>
                 <p className='text-base md:text-lg'>
-                  In Houston, we're collaborating with local businesses to gather essential school supplies for the Divine Wounds of Jesus Christ Orphanage Home in Enugu, Nigeria, ensuring these children have the tools they need to learn and grow. Through community efforts, we're making education accessible and impactful for those in need.
+                  In Houston, we&apos;re collaborating with local businesses to gather 
+                  essential school supplies for the Divine Wounds of Jesus Christ Orphanage Home 
+                  in Enugu, Nigeria, ensuring these children have the tools they need to learn and grow. 
+                  Through community efforts, we&apos;re making education accessible and impactful for those in need.
                 </p>
             </header>
 

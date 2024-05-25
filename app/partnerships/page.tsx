@@ -16,7 +16,7 @@ export default function Partnerships() {
                 or to get involved, please contact us.
                 </p>
                 <p>
-                For partnership inquiries, contact us at <b>omelorachildren@gmail.com</b>.
+                For any inquiries, contact us at <b>omelorachildren@gmail.com</b>.
                 </p>
             </header>
         </section>
