@@ -11,7 +11,7 @@ export default function AboutPage() {
     const OmeloraHighlight = 
     <Highlight toggleElement={<span className='font-semibold ' >Omelora</span>}>
         <div className='flex flex-col gap-1 font-medium'>
-        All kits contain basic school supplies including 1 notebook, colored pencils, a book, custom STEM pamphlet, and a pencil pouch.
+        Omelora is an Igbo Nigerian word that means "One who does good for the community."
         </div>
     </Highlight>
 

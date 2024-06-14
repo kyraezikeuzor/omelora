@@ -32,9 +32,23 @@ export default function Home() {
     </div>
   </Highlight>
 
+  const EssentialResourcesHighlight = 
+  <Highlight toggleElement={<span className='font-semibold'>essential resources</span>}>
+    <div className='flex flex-col gap-1 font-medium'>
+    Essential resources include all sorts of school supplies necessary for a young student.
+    </div>
+  </Highlight>
+
+  const HcbHighlight = 
+  <Highlight toggleElement={<span className='font-semibold'>HCB</span>}>
+    <div className='flex flex-col gap-1 font-medium'>
+    The Hack Club Bank, created by the Hack Foundation, is a fiscal sponsorship organization that supports new social good initiatives.
+    </div>
+  </Highlight>
+
   let currentInitiatives;
-  const currentInitiative1 = getInitiatives('2024 Kits for Kids')
-  const currentInitiative2 = getInitiatives('2024 Book Drive')
+  const currentInitiative1 = getInitiatives('2024 Kits for Kids for Rural Southeast Nigeria')
+  const currentInitiative2 = getInitiatives('2024 Book Drive for the Divine Wounds Orphanage')
   if (currentInitiative1 && currentInitiative2) {
     currentInitiatives = [currentInitiative1, currentInitiative2]
   }
@@ -56,16 +70,15 @@ export default function Home() {
           </div>
           <div className='flex flex-row gap-2 items-center'>
             <Button path='/about-us'>
-              Learn More <Icon icon="ExternalLink" className='fill-white' size="sm"/>
+              Learn More 
             </Button>
             <Button outline path='/support-us'>
-              Support Us <Icon icon="ExternalLink" size='sm' className='fill-inherit'/>
+              Support Us
             </Button>
           </div>
         </header>
 
         <section className='relative w-full flex flex-col gap-10 items-start'>
-
           <section className='flex flex-col lg:flex-row-reverse items-center gap-10'>
               <section className='relative w-full flex flex-col gap-3'>
                 <h2 ><span className='ft-cooper'>Inspiring learners everywhere.</span></h2>
@@ -119,7 +132,7 @@ export default function Home() {
             ))}
         </section>
 
-        <section className='w-full flex flex-col gap-10 items-center'>
+        <section className='hidden w-full flex flex-col gap-10 items-center'>
           <div className='flex flex-col gap-3'>
             <h2 className='ft-cooper'>Shaping a digital platform for social good.</h2>
             <p className='text-base md:text-lg'>
@@ -166,20 +179,17 @@ export default function Home() {
               <p className='text-base md:text-lg'>
               Our kits are packed with tools for creativity, learning, and 
               giving. Each kit includes educational supplies, creative materials, 
-              and essential resources to support and inspire young learners.
+              and {EssentialResourcesHighlight} to support and inspire young learners.
               </p>
             </div>
             <div className='flex flex-col md:grid grid-cols-3 gap-5'>
                 {kits.map((item,index)=>(
                   <div 
                   key={index}
-                  className='rounded-xl p-5'
-                  style={{borderWidth: '4px', borderColor: `var(--clr-grey-light)`, borderStyle:'dotted'}}
+                  className='border-2 border-[--clr-grey-light] shadow-sm rounded-xl p-5'
                   >
-                    <span 
-                    className='text-lg font-bold' 
-                    style={{color:`var(--clr-${item.kitColor}-base)`}}>
-                      Ages {item.ageRange}
+                    <span className='text-lg font-semibold'>
+                      Kit for Ages {item.ageRange}
                     </span>
                     <ul className='ml-5' >
                       {item.supplies.map((item,index)=>(
@@ -199,7 +209,7 @@ export default function Home() {
           <div className='w-full md:w-1/2 flex flex-col gap-3 justify-center'>
             <h2 className='ft-cooper'>Support us. Make a donation today.</h2>
             <p className='text-base md:text-lg'>
-            All donations are tracked and displayed on our HCB account, ensuring complete transparency. 
+            All donations are tracked and displayed on our {HcbHighlight} account, ensuring complete transparency. 
             You can see exactly how your contributions are making a difference.
             </p>
             <p className='text-base md:text-lg'>

@@ -39,15 +39,13 @@
     --clr-pink-base: #ef9dc2;
     --clr-pink-dark: rgb(205, 66, 89);
 
-    --clr-purple-light:#F5E8F8;
-    --clr-purple-base:#EACEFE;
-    --clr-purple-dark:#5A2A87;
+    --clr-purple-base: #8879DF;
  
     --clr-green-extralight:#eefce6; /*#f5f9eb*/
-    --clr-green-light:#d2eec2;
+    --clr-green-light:#b9ea9c;
     --clr-green-base:#70D465; /*#628B21*/
     --clr-green-dark:#51AF74; /*#369e4e*/
-    --clr-green-extradark:#0FA481; /*#155a25*/
+    --clr-green-extradark:#0b7a60; /*#155a25*/
 
     --clr-red-extralight:rgb(255, 247, 247); 
     --clr-red-base: rgb(235, 82, 90);

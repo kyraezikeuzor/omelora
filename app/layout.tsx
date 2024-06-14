@@ -29,7 +29,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Navbar/>
-        <main className='px-5 py-[10vh] md:px-[13vw] md:py-[10vh]'>
+        <main className='px-5 py-[10vh] md:px-[13vw] md:py-[10vh] m-auto'>
           {children}
         </main>
         <Footer/>

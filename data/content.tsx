@@ -24,20 +24,8 @@ export const pillars = [
 
 export const initiatives = [
     {
-        "title":"2024 Book Drive",
-        "description":"Fundraiser for the creation of kits for the Divine Wounds of Jesus Christ Orphanage. ",
-        "location":"Houston, TX",
-        "startDate": "2024-05-01",
-        "endDate": "2024-07-31",
-        "goalValue": 100,
-        "currentValue": 85,
-        "measurement": "books",
-        'orgsSupporting':['Divine Wounds of Jesus Christ Orphanage'],
-        "image":"https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/07/10/13/childrens-book-collage-lifestyle-imagery.jpg?width=1200"
-    },
-    {
-        "title":"2024 Kits for Kids",
-        "description":"Fundraising for the creation of kits for the Divine Wounds of Jesus Christ Orphanage. ",
+        "title":"Build a Computer Lab for the Divine Wounds Orphanage",
+        "description":"Building a computer lab for the Divine Wounds of Jesus Christ Orphanage. ",
         "location":"Houston, TX",
         "startDate": "2024-05-01",
         "endDate": "2024-07-31",
@@ -45,7 +33,31 @@ export const initiatives = [
         "currentValue": 10,
         "measurement": "$",
         'orgsSupporting':['Divine Wounds of Jesus Christ Orphanage'],
-        "image":"https://cdn.thewirecutter.com/wp-content/uploads/2017/08/learning-toys-2x1-fullres-5308.jpg?auto=webp&quality=75&crop=1.91:1&width=1200"
+        "image":"/img/dwo-img1.jpg"
+    },
+    {
+        "title":"2024 Book Drive for the Divine Wounds Orphanage",
+        "description":"Receiving books for the Divine Wounds of Jesus Christ Orphanage. ",
+        "location":"Houston, TX",
+        "startDate": "2024-05-01",
+        "endDate": "2024-07-31",
+        "goalValue": 100,
+        "currentValue": 100,
+        "measurement": "books",
+        'orgsSupporting':['Divine Wounds of Jesus Christ Orphanage'],
+        "image":"/img/african-children-img.jpg"
+    },
+    {
+        "title":"2024 Kits for Kids for Rural Southeast Nigeria",
+        "description":"Creating  kits for the Divine Wounds of Jesus Christ Orphanage. ",
+        "location":"Houston, TX",
+        "startDate": "2024-05-01",
+        "endDate": "2024-07-31",
+        "goalValue": 500,
+        "currentValue": 10,
+        "measurement": "$",
+        'orgsSupporting':['Divine Wounds of Jesus Christ Orphanage'],
+        "image":"/img/dwo-img1.jpg"
     }
 ]
 
