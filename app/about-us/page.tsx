@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 export default function AboutPage() {
 
     const OmeloraHighlight = 
-    <Highlight toggleElement={<span className='font-semibold ' >Omelora</span>}>
+    <Highlight toggleElement={<span className='font-semibold'>Omelora</span>}>
         <div className='flex flex-col gap-1 font-medium'>
-        Omelora is an Igbo Nigerian word that means "One who does good for the community."
+        Omelora is an Igbo Nigerian word that means &quot;One who does good for the community.&quot;
         </div>
     </Highlight>
 
