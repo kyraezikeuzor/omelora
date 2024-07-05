@@ -1,5 +1,5 @@
-import {initiatives} from '@/data/content'
-import {toPath, undoPath} from '@/data/helpers'
+import {initiatives} from '@/data/initiatives'
+import {toPath, undoPath} from '@/lib/utils'
 
 export const getInitiative = (initiativeName:string) => {
 

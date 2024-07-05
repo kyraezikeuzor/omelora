@@ -1,6 +1,8 @@
 export const navbar = [
-    'About Us',
-    'Support Us',
+    'About',
+    'Take Action',
+    'Kits for Kids',
+    'Community Events',
     'Initiatives',
     'Partnerships',
 ]
@@ -8,11 +10,23 @@ export const navbar = [
 
 export const footer = [
     {
-        "name" : "Resources",
-        "pages" : ["About Us","Support Us"]
+        "name" : "Omelora",
+        "pages" : [
+            "About",
+            "Take Action",
+            "Our Team",
+            "Join Us",
+            "Donate"
+        ]
     },
     {
-        "name" : "Community",
-        "pages" : ["Initiatives", "Partnerships"]
+        "name" : "Resources",
+        "pages" : [
+            "Community Events",
+            "Initiatives", 
+            "Support Us",
+            "Partnerships",
+            "Sponsorships"
+        ]
     }
 ]
