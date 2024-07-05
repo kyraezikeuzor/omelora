@@ -50,7 +50,7 @@ export default function Navbar() {
             <div className='w-full flex flex-row lg:hidden px-5 py-[1vh] justify-between items-center'>
                 <Logo/>
                 <Modal
-                modalClassName='absolute top-8 right-4 pr-14'
+                modalClassName='absolute top-3 right-3 pr-14'
                 toggleElement={<Icon icon='HamburgerMenu'/>}
                 >
                     <div className='w-full flex flex-col items-start gap-8'>
