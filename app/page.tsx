@@ -54,15 +54,15 @@ export default function Home() {
         <header className='relative w-full flex flex-col gap-8 items-center justify-center text-center'>
           <div className='flex flex-col gap-5'>
             <div className='flex flex-col gap-2'>
-              <span className='text-base 2xl:text-xl font-bold text-center opacity-75'>
+              <span className='text-base 2xl:text-xl font-semibold text-center'>
                 WELCOME TO OMELORA
               </span>
-              <h1 className='inline-block 2xl:text-[72px] ft-cooper'> 
-                Shaping <Graphic src='/g/soft-star.png'/> tomorrow with <br className='hidden lg:inline'/> youth-driven social good.
+              <h1 className='inline-block 2xl:text-[76px] ft-cooper'> 
+                Shaping <Graphic src='/g/soft-star.png'/> tomorrow with <br className='hidden lg:inline'/> youth-driven <br className='inline md:hidden'/> social good.
               </h1>
             </div>
             <p className='text-base lg:text-xl font-medium'>
-              {OmeloraHighlight} is an initiative dedicated to <span className='txt-gradient'>mobilizing youth</span> to create <br/> a 
+              {OmeloraHighlight} is an initiative dedicated to <span className='txt-gradient'>mobilizing youth</span> to create <br className='hidden lg:inline'/> a 
               <span className='txt-gradient'> brighter future</span> through <span className='txt-gradient'>social good</span> and environmental awareness.
             </p>
           </div>
@@ -128,8 +128,8 @@ export default function Home() {
             ))}
         </section>
 
-        <section data-aos="fade-up" className='relative w-full shadow-md rounded-2xl border-4 border-[--clr-orange-light] bg-gradient-to-b from-[--clr-orange-extralight]  overflow-y-hidden overflow-x-hidden px-5 py-8 sm:p-10 md:p-14 lg:p-24 flex flex-col items-start justify-start md:items-end md:justify-end gap-3'>
-          <h2 className='text-2xl md:text-4xl font-bold txt-gradient tracking-tight text-left md:text-right'>
+        <section data-aos="fade-up" className='relative w-full shadow-md rounded-2xl border-4 border-[--clr-orange-light] bg-gradient-to-b from-[--clr-orange-extralight] overflow-y-hidden overflow-x-hidden px-8 py-8 sm:p-10 md:p-14 lg:p-24 flex flex-col items-start justify-start md:items-end md:justify-end gap-3'>
+          <h2 className='text-[30px] md:text-4xl font-bold txt-gradient tracking-tight text-left md:text-right'>
             We are giving 100 school supply kits to the Divine Wounds Orphanage in Enugu, Nigeria.
           </h2>
           <p className='text-left md:text-right text-base lg:text-lg text-[--clr-base-text] font-medium'>
@@ -159,8 +159,8 @@ export default function Home() {
 
         <section data-aos="fade-up" className='flex flex-col items-center justify-center gap-5'>
           <div className='flex flex-col items-center justify-center gap-5'>
-            <h2 className='text-center'>
-              <span className='ft-cooper'>Sharing news</span> <Graphic className='hidden' src='/logos/logo-1.png' size='sm'/> <span className='tracking-tighter text-2xl lg:text-[40px] font-bold txt-gradient' >@omeloraorg</span>
+            <h2 className='text-center flex flex-col items-center'>
+              <span className='ft-cooper'>Sharing news</span> <Graphic className='hidden' src='/logos/logo-1.png' size='sm'/> <span className='tracking-tighter text-3xl lg:text-[40px] font-bold txt-gradient py-1' >@omeloraorg</span>
             </h2>
             <p className='text-base lg:text-lg text-center font-medium'>
               From breaking down political events to covering the <span className='txt-gradient'>intersection of pop culture</span> and the environment,
@@ -206,7 +206,7 @@ export default function Home() {
             <h2 className='ft-cooper text-center'>Our work, so far.</h2>
             <p className='text-base lg:text-lg font-medium text-center'>
             Through <span className='txt-gradient'>community</span> efforts, we&apos;re making education resources <span className='txt-gradient'>accessible</span>
-            <br/> and impactful for those <span className='txt-gradient'>in need</span>. See some of our ongoing initiatives.
+            <br className='hidden lg:inline'/> and impactful for those <span className='txt-gradient'>in need</span>. See some of our ongoing initiatives.
             </p>
           </div>
           <section className='w-full flex flex-col'>
@@ -241,12 +241,12 @@ export default function Home() {
           </Button>
         </section>
 
-        <section className='flex flex-col lg:flex-row gap-10 items-center bg-gradient-to-b from-[--clr-red-extralight] border-4 border-[--clr-red-light] px-5 py-10 md:p-14 lg:p-16 rounded-3xl shadow-md'>
-            <section data-aos="fade-up" className='w-full lg:w-1/2 flex flex-col items-start gap-3'>
-              <h2 className='text-left text-[--clr-red-base] font-bold tracking-tight'>
-                {DonateHighlight} <span className='ft-inter txt-gradient font-extrabold'>$5</span> to help us <br className='hidden md:inline'/> create more impact.
-              </h2>
-              <ul className='ml-5 flex flex-col gap-2 font-medium text-base lg:text-lg text-[#434242]'>
+        <section className='flex flex-col lg:flex-row gap-10 items-center bg-gradient-to-b from-[--clr-red-extralight] border-4 border-[--clr-red-light] px-6 py-8 md:p-14 lg:p-16 rounded-3xl shadow-md'>
+            <section data-aos="fade-up" className='w-full lg:w-1/2 flex flex-col items-start gap-5'>
+              <span className='text-3xl lg:text-4xl 2xl:text-5xl text-left text-[--clr-red-base] font-bold tracking-tight'>
+                Donate <span className='ft-inter txt-gradient font-extrabold'>$5</span> to help us <br className='hidden md:inline'/> create more impact.
+              </span>
+              <ul className='lg:ml-5 flex flex-col gap-2 font-medium text-base lg:text-lg text-[#434242]'>
                 <li className="list-disc">
                   With your donation, we can provide <span className='txt-gradient'>essential</span> resources and opportunities for young people to make a tangible impact, especially for children in West Africa.
                 </li>

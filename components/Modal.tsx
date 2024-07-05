@@ -42,7 +42,7 @@ export default function Modal({children, modalClassName, toggleElement}:ModalPro
             </div>
         </div>
         {isOpen && (
-          <div className={`${modalClassName} p-5 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-2xl shadow-lg`}>
+          <div className={`${modalClassName} p-5 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-2xl shadow-xl`}>
             <div onClick={handleToggleModal} className='flex flex-col items-center absolute top-5 right-5 bg-[--clr-base-accent] rounded-full p-1 cursor-pointer'>
                 <Icon icon='X' size='sm' fillColor='var(--clr-grey-base)' />
             </div>
