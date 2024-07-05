@@ -1,0 +1,66 @@
+.button {
+    padding:.5rem 1.8rem;
+    background-color: var(--clr-navy-base);
+    border: 2px solid var(--clr-navy-base);
+    border-radius: 124px;
+    color: white;
+    fill: white;
+    white-space: nowrap;
+    font-weight:600;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap: 5px;
+    width:fit-content;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    opacity:80%;
+}
+
+.outline {
+    fill: var(--clr-grey-base);
+    background-color: var(--clr-grey-extralight);
+    border:2px solid var(--clr-grey-extralight);
+    color: var(--clr-grey-dark);
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.donate {
+    padding:.6rem 2rem;
+    background: linear-gradient(to right, var(--clr-red-base), var(--clr-red-light), var(--clr-orange-base));
+    border:none;
+    fill:white;
+    color:white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.task {
+    padding:.4rem 1.2rem;
+    border-radius: 6px;
+    background-color: var(--clr-base);
+    border: 2px solid var(--clr-grey-light);
+    color: var(--clr-base-text);
+    fill: var(--clr-base-text);
+    font-size:14px;
+    box-shadow:none;
+}
+
+
+.icon {
+    padding:.4rem .4rem;
+    border-radius: 10px;
+    border: 2px solid var(--clr-grey-light);
+    background-color: var(--clr-base);
+    fill: var(--clr-grey-light);
+    box-shadow:none;
+}

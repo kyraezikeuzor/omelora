@@ -66,29 +66,29 @@ export default function Highlight({ children, toggleElement }: ModalProps) {
   return (
     <>
       <span
-        className='ease-in relative w-fit inline cursor-pointer underline 
-        underline-offset-4 decoration-[--clr-green-base] decoration-4'
+        className='ease-in relative w-fit inline cursor-pointer td-underline-base'
         onMouseEnter={showModal}
         onMouseLeave={hideModal}
         ref={toggleRef}
       >
         {toggleElement}
+        
         {!isOpen && (
         <span
           className='z-40 w-6 h-6 inline whitespace-nowrap w-fit font-bold text-xs absolute left-0 right-0 top-[85%] 
           bg-[--clr-green-base] text-white px-2 py-1 rounded-b-2xl rounded-r-2xl shadow-xl'
         >
-          <Icon icon='Sun' size='sm' className='fill-white' />
+          <Icon icon='Sun' size='sm' fillColor='white' />
         </span>
         )}
       </span>
       
       {isOpen && (
         <div ref={modalRef}
-          className={`min-w-[300px] max-w-[500px] z-50 absolute ease-in p-3 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-lg shadow-lg`}
+          className={`min-w-[300px] max-w-[400px] z-50 absolute ease-in p-4 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-2xl shadow-lg`}
           style={{ top: positionTop, left: positionLeft}}
         >
-          <div className="flex flex-col text-base">
+          <div className="w-full ft-inter tracking-wide flex flex-col text-base font-medium items-start text-left">
             {children}
           </div>
         </div>

@@ -1,9 +1,8 @@
 .section {
     display:grid;
     grid-template-columns: 3fr 2fr 3fr;
-    gap:80px;
-    background-color:var(--clr-blue-dark);
-    color:white;
+    gap:60px;
+    color:rgb(223, 222, 222);
 }
 
 @media (max-width: 1024px) {

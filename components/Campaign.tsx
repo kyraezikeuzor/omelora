@@ -1,9 +1,21 @@
-import ListIcon from './ListIcon'
 import Link from 'next/link'
 import Icon from './Icon'
-import Button from './Button'
-import {toDate, toPath} from '@/data/helpers' 
-import {donateSiteLink} from '@/data/content'
+import Button from './ui/Button'
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+  } from "@/components/ui/Card"
+import {
+    toDate, 
+    toPath,
+    getDaysLeftOrAgo
+} from '@/lib/utils' 
+import { donateSiteLink } from '@/data/content'
+
 
 type CampaignProps = {
     title:string;
@@ -18,29 +30,15 @@ type CampaignProps = {
     image:string;
 }
 
-/*
-<div className='flex flex-row gap-4 items-center text-[--clr-grey-base]'>
-                    <span className='flex flex-row'>
-                        {orgsSupporting.map((item,index)=>(  
-                        <span key={index} className='inline rounded-full bg-[--clr-green-base] h-6 w-6 flex flex-col items-center -mr-2'>
-                            <Icon icon="Sun" className='inline fill-white' size='sm'/> 
-                        </span>
-                        ))}
-                    </span>
-                    <span className='text-xs'>
-                        Supporting the {orgsSupporting.map((item,index)=>(<span key={index} className=''>{item}</span>))}
-                    </span>
-                </div>
- */
 
 function ProgressBar({goalValue, currentValue}: {goalValue:number, currentValue:number}) {
     
     const percentage = `${(currentValue / goalValue) * 100}%`;
 
     return (
-    <div className='w-full h-2 bg-[--clr-grey-light] rounded-xl'>
+    <div className='w-full h-[8px] bg-[--clr-base-accent] rounded-2xl'>
         <div 
-        className='h-full justify-center bg-[--clr-green-light] rounded-xl ' 
+        className='h-full justify-center bg-gradient-to-r from-[--clr-red-base] via-[--clr-red-light] to-[--clr-orange-base] rounded-2xl ' 
         style={{width: percentage}}
         />
     </div>
@@ -48,7 +46,56 @@ function ProgressBar({goalValue, currentValue}: {goalValue:number, currentValue:
 }
 
 export default function Campaign({title, description, startDate, endDate, goalValue, currentValue, measurement, orgsSupporting, location, image}:CampaignProps) {
+    
+    
     return (
+    <Link href={`/initiatives/${toPath(title)}`}>
+        <Card className='w-full lg:w-[278px] p-2 cursor-pointer bg-[--clr-base] border-none shadow-none rounded-2xl hover:opacity-75'>
+            <div className='w-full px-0'>
+                <img src={image} className='w-full object-cover h-48 rounded-2xl'/>
+            </div>
+            <CardHeader className='px-0 py-4'>
+                <div className='flex flex-row justify-between'>
+                    <span className='text-[14px] text-[--clr-red-base] font-semibold '>
+                        <Icon icon='Location' className='mb-[1px]' fillColor='var(--clr-red-base)' inline size='sm'/> {location}
+                    </span>
+                    <span className='hidden text-[14px] text-[--clr-base-text] font-semibold '>
+                        <Icon icon='Compass' className='mb-[1px]' fillColor='var(--clr-base-text)' inline size='sm'/> Enugu, Nigeria
+                    </span>
+                </div>
+                <CardTitle className='text-lg font-bold text-[--clr-base-text] tracking-normal leading-6'>
+                    {title}
+                </CardTitle>
+                <span className='hidden w-full font-semibold text-sm opacity-50 text-left'>
+                    <Icon icon='Calendar' className='mb-[1px]' inline size='sm'/> {toDate(startDate)} → {toDate(endDate)}
+                </span>
+            </CardHeader>
+            <CardContent className='px-0 py-2'>
+                <div className='flex flex-col gap-2 items-center text-sm '>
+                    <ProgressBar goalValue={goalValue} currentValue={currentValue}/>
+                    <div className='w-full flex flex-row justify-between'>
+                        <span className=' flex flex-row gap-1 self-end items-center font-semibold'>
+                            <span className='text-[--clr-grey-base]'>{currentValue}</span>
+                            <span className='text-[--clr-grey-base]'>/</span>
+                            <span className='flex flex-row items-center opacity-75'>
+                                {measurement === "$" ?
+                                <span>${goalValue}</span> :
+                                <span>{goalValue} {measurement}</span>
+                                }
+                            </span>
+                        </span>
+                        <span className='text-[--clr-grey-base] font-medium'>
+                            {getDaysLeftOrAgo(endDate)}
+                        </span>
+                    </div>
+                </div>
+            </CardContent>
+        </Card>
+    </Link>
+    )
+}
+
+/*
         <div className='relative flex flex-col justify-between border-2 border-[--clr-base-accent] bg-[--clr-base] rounded-xl shadow-md'>
 
             <img src={image} className='w-full object-cover h-40 rounded-t-xl'/>
@@ -62,13 +109,12 @@ export default function Campaign({title, description, startDate, endDate, goalVa
                     <Link 
                     target="_blank" 
                     href={`/initiatives/${toPath(title)}`} 
-                    className='font-bold text-xl lg:text-xl'>
+                    className='font-bold text-lg lg:text-xl'>
                         {title} <Icon icon="ExternalLink" className='inline fill-[--clr-grey-base]' size='sm' />
                     </Link>
-                    <span className='text-sm leading-2 text-[--clr-grey-base]'>
+                    <span className='text-base leading-2 text-[--clr-grey-base]'>
                         <span className=' font-semibold'>{location} • </span> <span>{description}</span>
                     </span>
-
                     <div className='flex flex-row justify-between text-sm text-[--clr-grey-base]'>
                         <span>
                             <span className="font-medium">Starts:</span> {toDate(startDate)}
@@ -78,9 +124,6 @@ export default function Campaign({title, description, startDate, endDate, goalVa
                         </span>
                     </div>
                 </div>
-
-                
-
                 <div className='flex flex-row gap-2 items-center text-sm '>
                     <ProgressBar goalValue={goalValue} currentValue={currentValue}/>
                     <span className='flex flex-row gap-1 items-center font-medium'>
@@ -92,12 +135,10 @@ export default function Campaign({title, description, startDate, endDate, goalVa
             </div>
 
             <div className='w-full flex flex-row items-center justify-between px-5 pb-5'>
-                <Link href={donateSiteLink} className='w-full'>
-                    <button className='w-full bg-[--clr-green-dark] rounded-full text-white text-base font-semibold py-1'>
-                        Donate
-                    </button>
-                </Link>
+                <Button fullWidth path={donateSiteLink}>
+                    Donate <Icon icon='HeartFilled' size='sm' fillColor='inherit'/>
+                </Button>
             </div>
+            
         </div>
-    )
-}
+ */

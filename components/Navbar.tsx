@@ -1,53 +1,67 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
+import {usePathname} from 'next/navigation'
 import Logo from './Logo'
-import Button from './Button'
+import Button from './ui/Button'
 import Icon from './Icon'
 import Modal from './Modal'
 import {navbar} from '@/data/sitemap'
-import {toPath} from '@/data/helpers'
+import {toPath} from '@/lib/utils'
 
-const navList = 
-navbar.map((item,index)=>(
-    <Link 
-    key={index} 
-    href={`/${toPath(item)}`} 
-    className='hover:underline underline-offset-4 decoration-2 decoration-[--clr-green-base]'>
-        <li>{item}</li>
-    </Link>
-))     
+
+
+export const NavList = () => {
+    const pathname = usePathname()
+
+    return (
+        <>
+        {navbar.map((item,index)=>(
+            <Link 
+            key={index} 
+            href={`/${toPath(item)}`} 
+            className={`${pathname === `/${toPath(item)}` ? 'td-underline-base' : ''} hover:underline underline-offset-4 decoration-[--clr-green-base] decoration-2`}>
+                <li>{item}</li>
+            </Link>
+        )) } 
+        </>
+    )
+}
+    
 
 export default function Navbar() {
 
     return (
-        <nav className='w-full flex flex-col items-center sticky top-0 z-[100]
-         shadow-sm bg-[--clr-base] backdrop-blur'>
+        <nav className='w-full flex flex-col items-center sticky top-0 z-[100] shadow-sm bg-[--clr-base] backdrop-blur'>
             
-            <div className='hidden lg:flex w-full flex-row md:px-[10vw] py-[2vh]
-            justify-between items-center font-medium '>
+            <div className='hidden lg:flex w-full flex-row md:px-[10vw] py-[2vh] justify-center items-center gap-10'>
                 <Logo/>
-                <ul className='hidden md:flex flex-row items-center gap-5 justify-center'>
-                    {navList}
+                <ul className='hidden md:flex flex-row items-center gap-3 font-medium  justify-center'>
+                    <NavList/>
                     <br/>
-                    <Button path='https://hcb.hackclub.com/donations/start/omelora'>
-                        Donate <Icon icon='HeartFilled' size='sm' className='fill-white'/>
-                    </Button>
+                    <div className='flex flex-row items-center justify-center gap-3'>
+                        <Button variant='donate' path='https://hcb.hackclub.com/donations/start/omelora'>
+                            Donate <Icon icon='HeartFilled' size='sm' fillColor='inherit'/>
+                        </Button>
+                    </div>
                 </ul>
             </div>
 
             <div className='w-full flex flex-row lg:hidden px-5 py-[1vh] justify-between items-center'>
                 <Logo/>
                 <Modal
-                modalClassName='absolute top-8 right-4'
+                modalClassName='absolute top-8 right-4 pr-14'
                 toggleElement={<Icon icon='HamburgerMenu'/>}
                 >
-                    <div className='flex flex-col items-start gap-5 text-lg font-medium'>
-                        <ul className='flex flex-col items-start gap-3'>
-                            {navList}
+                    <div className='w-full flex flex-col items-start gap-8 text-base font-semibold'>
+                        <ul className='flex flex-col items-start gap-5'>
+                            <NavList/>
                         </ul>
-                        <Button path='https://hcb.hackclub.com/donations/start/omelora'>
-                            Donate <Icon icon='HeartFilled' size='sm' className='fill-white'/>
-                        </Button>
+                        <div className='flex flex-row items-center justify-center'>
+                            <Button variant='donate' path='https://hcb.hackclub.com/donations/start/omelora'>
+                                Donate <Icon icon='HeartFilled' size='sm' fillColor='inherit'/>
+                            </Button>
+                        </div>
                     </div>
                 </Modal>
             </div>

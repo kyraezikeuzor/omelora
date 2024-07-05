@@ -21,30 +21,7 @@ export default function SupportOurCausePage() {
 
     return (
         <section className="h-full flex flex-col lg:flex-row gap-10 items-center">
-            <div className='w-full lg:w-7/12 flex flex-col gap-5'>
-                <h1 className='ft-cooper'>Support Us</h1>
-                <p className='text-base md:text-lg'>
-                Based in Houston, Texas, Omelora is a social good initiative dedicated to empowering rural Nigerian youth with health and educational kits. We&apos;re creating content to make a digital platform for young people converned with social good and the environment.
-                </p>
-                <p className='text-base md:text-lg'>
-                Your donation helps us send {ThousandHighlight} health and science kits to rural youth in Nigeria. These kits are filled with science pamphlets, books, and school supplies, providing students with the tools they need to learn and explore in a fun, hands-on way.
-                </p>
-                <p className='text-base md:text-lg'>
-                In addition, each donation directly supports Omelora&apos;s initiatives for sustainable development, improving the lives of many young individuals. We aim to inspire a lasting interest in health and science among youth, not just providing immediate resources.
-                </p>
-                <p className='text-base md:text-lg'>
-                In addition to providing kits, Omelora leads community projects inspiring learning through books and science activities. These projects involve youth in hands-on activities that promote curiosity. With your support, together we make a lasting impact on young lives and communities.
-                </p>
-                <p className='text-base md:text-lg'>
-                Omelora is developing a content platform sharing facts about health and environmentalism worldwide. Your support drives this initiative, helping us become a platform for young people seeking change, globally.
-                </p>
-                <p className='text-base md:text-lg'>
-                By supporting Omelora, you play a vital role in bridging the education gap for rural communities. Also, follow us on Instagram where we have partnered with the Houston Climate Strike to share explainers on how local actions can impact international environmental and health-focused wellbeing.
-                </p>
-            </div>
-            <div className='w-full lg:w-5/12 h-full'>
-                <Donate/>
-            </div>
+            
         </section>
     )
 }

@@ -1,6 +1,6 @@
 'use client'
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
-import Button  from './Button';
+import Button  from './ui/Button';
 import Icon from './Icon'
 
 function EmailForm() {
@@ -21,26 +21,25 @@ function EmailForm() {
   });
 
   return (
-    <div className=''>
-      <form className="flex flex-col gap-5"
+    <div className='w-full'>
+      <form className="w-full flex flex-col gap-5"
         onSubmit={event => {
           event.preventDefault();
           handleSubmit(fields);
         }}
       >
-        <div className='flex flex-col gap-1'>
+        <div className='hidden flex flex-col gap-1'>
             <span className="font-bold text-2xl">Subscribe to our email list</span>
             <p>Learn about our latest events, resources, programs, and more!</p>
         </div>
 
-        <fieldset className='flex flex-col md:flex-row gap-5'>
+        <fieldset className='w-full flex flex-col md:flex-row gap-5'>
             <input
                 id="FNAME"
                 type="text"
                 placeholder="First name"
                 value={fields.FNAME}
                 onChange={handleFieldChange}
-                className='py-2 px-4 border-none rounded-md bg-[--clr-base] placeholder:text-[--clr-grey-base]'
             />
             <input
                 id="LNAME"
@@ -48,21 +47,22 @@ function EmailForm() {
                 placeholder="Last name"
                 value={fields.LNAME}
                 onChange={handleFieldChange}
-                className='py-2 px-4 border-none rounded-md bg-[--clr-base] placeholder:text-[--clr-grey-base]'
             />
         </fieldset>
+
         <input
           id="EMAIL"
           type="email"
           placeholder="Email"
           value={fields.EMAIL}
           onChange={handleFieldChange}
-          className='py-2 px-4 border-none rounded-md bg-[--clr-base] placeholder:text-[--clr-grey-base]'
         />
-        <button className='bg-[--clr-green-dark] text-lg text-white font-semibold rounded-3xl px-4 py-2'>
-            Subscribe <Icon className='fill-white inline' icon="ExternalLink" size='sm'/>
-        </button>
+
+        <Button >
+          Subscribe <Icon inline fillColor='white' icon="Mail" size='sm'/>
+        </Button>
       </form>
+      
       {loading && "Submitting..."}
       {error && message}
       {success && message}

@@ -7,18 +7,7 @@ export const metadata: Metadata = {
 export default function Partnerships() {
     return (
         <section className="flex flex-col gap-10">
-            <header className='flex flex-col gap-5'>
-                <h1 className='ft-cooper'>Partnerships</h1>
-                <p className='text-base md:text-lg'>
-                We are establishing strong partnerships with local businesses to support 
-                our mission, enhancing our impact and reach. Additionally, we welcome 
-                media inquiries and collaboration opportunities. For more information 
-                or to get involved, please contact us.
-                </p>
-                <p>
-                For any inquiries, contact us at <b>omelorachildren@gmail.com</b>.
-                </p>
-            </header>
+            
         </section>
     )
 }

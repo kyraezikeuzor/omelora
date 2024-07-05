@@ -36,17 +36,15 @@ export default function Modal({children, modalClassName, toggleElement}:ModalPro
     return (
     
     <div className='w-fit'>
-
-        <div className={`cursor-pointer`}>
+        <div className='cursor-pointer'>
             <div className='w-full py-1' onClick={handleToggleModal}>
               {toggleElement}
             </div>
         </div>
-        
         {isOpen && (
-          <div className={`${modalClassName} p-5 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-lg shadow-lg`}>
-            <div onClick={handleToggleModal} className='flex flex-col items-center absolute top-2 right-2 bg-[--clr-base-accent] rounded-full p-1 cursor-pointer'>
-                <Icon icon='X' size='sm' className='block fill-[--clr-grey-dark]' />
+          <div className={`${modalClassName} p-5 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-2xl shadow-lg`}>
+            <div onClick={handleToggleModal} className='flex flex-col items-center absolute top-5 right-5 bg-[--clr-base-accent] rounded-full p-1 cursor-pointer'>
+                <Icon icon='X' size='sm' fillColor='var(--clr-grey-base)' />
             </div>
             <div className="flex flex-col modal-content mt-5">
               {children}
@@ -54,8 +52,6 @@ export default function Modal({children, modalClassName, toggleElement}:ModalPro
             <div className="modal-overlay"></div>
           </div>
         )}
-    
-    </div>
-        
+    </div>  
     )
 }

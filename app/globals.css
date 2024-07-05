@@ -2,11 +2,150 @@
 @tailwind components;
 @tailwind utilities;
 
+/*-----------------
+VARIABLES
+------------------*/
 
+@layer base {
+  :root {
+    --clr-base: #fcfcfc;
+    --clr-base-accent:rgb(243, 243, 243);
+    --clr-base-text: #434242;
+
+    --clr-purple-base: #8879DF;
+  
+    --clr-green-extralight:#eefce6; /*#f5f9eb*/
+    --clr-green-light:#cfee87;
+    --clr-green-base:#70D465; /*#628B21*/
+    --clr-green-dark:#51AF74; /*#369e4e*/
+    --clr-green-extradark:#24735F; /*#155a25*/
+
+    --clr-red-extralight:#fff9f8;
+    --clr-red-light:#ff8c79; 
+    --clr-red-base: rgb(230, 96, 103);
+
+    --clr-orange-extralight:rgb(249, 246, 232);
+    --clr-orange-light:rgb(255, 228, 179);
+    --clr-orange-base:rgb(255, 192, 74);
+
+    --clr-yellow-extralight: #fffefb;
+    --clr-yellow-base:#f0e477;
+
+    --clr-grey-extralight:#f4f4f4;
+    --clr-grey-light: #e5e2e2;
+    --clr-grey-base:#8e9398;
+    --clr-grey-dark: #6D747A;
+
+    --clr-blue-extralight:rgb(246, 250, 251);
+    --clr-blue-base:rgb(101, 190, 237);
+    --clr-blue-dark:#006adc;
+
+    --clr-navy-base:#2e3943;
+    --clr-navy-dark: #17171D;
+
+    
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --clr-base: #1f1f1f;
+      --clr-base-accent:rgb(24, 23, 23);
+      --clr-base-text: #F9F8F8;
+  
+      --clr-grey-extralight:#313131;
+      --clr-grey-light: rgb(63, 61, 61);
+      --clr-grey-base: rgba(204, 202, 202, 0.671);
+      --clr-grey-dark: rgb(207, 207, 207);
+
+      --clr-orange-extralight:rgba(247, 229, 141, 0.212);
+
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
+
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+    }    
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/*-----------------
+ANIMATIONS
+------------------*/
+
+/*-----------------
+FONTS
+------------------*/
 @font-face {
   font-family: "Cooper";
   src: url("/fonts/CooperLtBT-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Lyon";
+  src: url('/fonts/LyonTextRegular.ttf')
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 .ft-cooper {
   font-family: "Cooper", serif;
@@ -19,85 +158,70 @@
   font-family: "Inter", sans-serif;
 }
 
-.txt-underline-base {
-  text-decoration:underline;
-  text-underline-offset: 4px;
-  text-decoration-color:var(--clr-green-base);
-  text-decoration-thickness: 4px;
-  font-weight:600;
+/*-----------------
+MEDIA QUERIES
+------------------*/
+@media screen and (min-width: 1024px) {
+  h1 {font-size: 4rem;}
+  h2 {font-size: 3rem;}
+  h3 {font-size: 2.5rem;}
+  h4 {font-size: 2.25rem;}
+  h5 {font-size: 1.875rem;}
+  h6 {font-size: 1.5rem;}
+  p {font-size: 18px}
+  button {font-size:18px;}
 }
 
-
-:root {
-    --bg-base: linear-gradient(to bottom, #ffff, #fdfdfa, #fefef4);
-    --clr-base: #fffefe;
-    --clr-base-accent:rgb(243, 243, 243);
-    --clr-base-text: #434242;
-
-    --clr-pink-extralight: #fdf7fd;
-    --clr-pink-light: #fff2f4;
-    --clr-pink-base: #ef9dc2;
-    --clr-pink-dark: rgb(205, 66, 89);
-
-    --clr-purple-base: #8879DF;
- 
-    --clr-green-extralight:#eefce6; /*#f5f9eb*/
-    --clr-green-light:#b9ea9c;
-    --clr-green-base:#70D465; /*#628B21*/
-    --clr-green-dark:#51AF74; /*#369e4e*/
-    --clr-green-extradark:#0b7a60; /*#155a25*/
-
-    --clr-red-extralight:rgb(255, 247, 247); 
-    --clr-red-base: rgb(235, 82, 90);
-
-    --clr-orange-extralight:rgb(255, 253, 249);
-    --clr-orange-base:rgb(255, 192, 74);
-
-    --clr-yellow-extralight: #fffefb;
-    --clr-yellow-base:#f0e477;
-
-    --clr-grey-light:rgb(233, 233, 233);
-    --clr-grey-base:rgb(119, 118, 118);
-
-    --clr-blue-extralight:rgb(246, 250, 251);
-    --clr-blue-base:rgb(101, 190, 237);
-    --clr-blue-dark:#141425;
-
-    --clr-navy-dark:rgb(6, 4, 24);
+@media screen and (min-width: 768px) {
+  h1 {font-size: 3.9rem;}
+  h2 {font-size: 2.5rem;}
+  h3 {font-size: 1.5rem;}
+  h4 {font-size: 1.25rem;}
+  h5 {font-size: 1.25rem;}
+  h6 {font-size: 1rem;}
+  p {font-size: 16px}
+  button {font-size:18px;}
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-base:#1e1d1d;
-    --clr-base: #1d1d1d;
-    --clr-base-text: #ffffff;
-    --clr-base-accent: rgb(46, 45, 45);
-
-    --clr-grey-light:rgb(70, 70, 70);
-    --clr-grey-base:rgb(162, 162, 162);
-
-    --clr-blue-dark:#0f0f15;
-  }
+@media screen and (max-width: 768px) {
+  h1 {font-size: 3rem;}
+  h2 {font-size: 2.5rem;}
+  h3 {font-size: 1.25rem;}
+  h4 {font-size: 1.125rem;}
+  h5 {font-size: 1rem;}
+  h6 {font-size: 0.75rem;}
+  p {font-size: 15px}
+  button {font-size:16px;}
 }
 
+@media screen and (max-width: 480px) {
+  h1 {font-size: 2.75rem;}
+  h2 {font-size: 2.25rem;}
+  h3 {font-size: 1.2rem;}
+  h4 {font-size: 1rem;}
+  h5 {font-size: 0.75rem;}
+  h6 {font-size: 0.5rem;}
+  p {font-size: 15px}
+  button {font-size:16px;}
+}
 
+/*-----------------
+GLOBALS
+------------------*/
 body {
   background: var(--clr-base);
   color: var(--clr-base-text);
 }
 
-svg {
-  fill: var(--clr-base-text);
-}
-
 h1,h2,h3,h4,h5,h6 {
   font-weight:700;
-  line-height:1;
+  line-height:1.1;
 }
 
-
 p {
-  color: var(--clr-grey-dark);
+  color: var(--clr-base-text);
+  font-size: 16px;
+  line-height: 23px;
 }
 
 a {
@@ -105,46 +229,66 @@ a {
 }
 
 input {
-  background-color:transparent;
-  border: solid 1px var(--clr-base-accent);
+  background-color:var(--clr-base);
+  border: solid 1px var(--clr-grey-light);
+  border-radius:16px;
+  padding: 0.8rem 1.2rem;
+  color:var(--clr-base-text);
+}
+
+input::placeholder{
+  color:var(--clr-grey-base);
 }
 
 input:focus {
   outline:none;
 }
 
-
-iframe::-webkit-scrollbar {
-  width: 0px;
-  height:0px;
+/*-----------------
+TEXT STYLES
+------------------*/
+.td-underline-base {
+  text-decoration:underline;
+  text-underline-offset: 4px;
+  text-decoration-color:var(--clr-green-base);
+  text-decoration-thickness: 2px;
+  font-weight:600;
 }
 
-@media screen and (min-width: 1024px) {
-  h1 {font-size: 4.5rem;}
-  h2 {font-size: 3.75rem;}
-  h3 {font-size: 3rem;}
-  h4 {font-size: 2.25rem;}
-  h5 {font-size: 1.875rem;}
-  h6 {font-size: 1.5rem;}
-  p {font-size: 18px}
+.td-underline-gradient {
+  text-decoration: none;
+  background-image: linear-gradient(to right, var(--clr-red-base),var(--clr-red-light),var(--clr-orange-base));
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% 3px;
+  font-weight:700;
+  padding:2px;
+  transition: background-size 500ms ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
-  h1 {font-size: 3.75rem;}
-  h2 {font-size: 3rem;}
-  h3 {font-size: 2.25rem;}
-  h4 {font-size: 1.875rem;}
-  h5 {font-size: 1.5rem;}
-  h6 {font-size: 1.125rem;}
-  p {font-size: 17px}
+.txt-gradient {
+  background: linear-gradient(to right, var(--clr-red-base),var(--clr-red-light),var(--clr-orange-base));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 786px) {
-  h1 {font-size: 3rem;}
-  h2 {font-size: 2.25rem;}
-  h3 {font-size: 1.875rem;}
-  h4 {font-size: 1.5rem;}
-  h5 {font-size: 1.25rem;}
-  h6 {font-size: 1.125rem;}
-  p {font-size: 15px}
+/*-----------------
+BACKGROUND STYLES
+------------------*/
+
+.bg-pattern-dotted {
+  background-color: var(--clr-navy-dark);
+  background-image:  radial-gradient(#bcbbbb 0.5px, transparent 0.5px), radial-gradient(#bcbbbb 0.5px, var(--clr-navy-dark) 0.5px);
+  background-size: 50px 50px;
+  background-position: 0 0, 30px 30px;
 }
+  
+.bg-radial-green {
+  background: radial-gradient(ellipse 75% 50% at left, #e3fdcb, #defcc9, #daf8cf, #eaffda, #eeffe1 70%, rgba(238, 255, 225, 0.5) 85%, transparent 100%);
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+
+
+  
