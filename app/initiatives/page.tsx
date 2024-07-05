@@ -1,4 +1,4 @@
-import {initiatives, dwaSiteLink} from '@/data/content'
+import {dwaSiteLink} from '@/data/content'
 import Campaign from '@/components/Campaign'
 import Highlight from '@/components/Highlight'
 
@@ -29,7 +29,7 @@ export default function OurInitiativesPage() {
                 </p>
             </header>
 
-            <div className='flex flex-col lg:grid grid-cols-3 gap-5'>
+            {/*<div className='flex flex-col lg:grid grid-cols-3 gap-5'>
               {initiatives.map((item,index)=>(
                 <Campaign
                 key={index}
@@ -45,7 +45,7 @@ export default function OurInitiativesPage() {
                 image={item.image}
                 />
               ))}
-            </div>
+            </div>*/}
         </section>
     )
 }

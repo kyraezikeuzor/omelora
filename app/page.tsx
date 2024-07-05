@@ -34,7 +34,7 @@ export default function Home() {
   <Highlight toggleElement={<span>Omelora</span>}>
     <div className='w-full flex flex-col md:flex-row gap-3 items-center'>
       <p>
-      Omelora means 'One who does good for the community' in Igbo, a language spoken in Nigeria.
+      Omelora means &apos;One who does good for the community&apos; in Igbo, a language spoken in Nigeria.
       </p>
     </div>
   </Highlight>
@@ -297,7 +297,7 @@ export default function Home() {
           </span>
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((item,index)=>(
-              <AccordionItem value={`item-${index+1}`}>
+              <AccordionItem value={`item-${index+1}`} key={index}>
                 <AccordionTrigger>{item.q}</AccordionTrigger>
                 <AccordionContent>
                   {item.a}
