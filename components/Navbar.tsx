@@ -36,7 +36,7 @@ export default function Navbar() {
             
             <div className='hidden lg:flex w-full flex-row md:px-[10vw] py-[2vh] justify-center items-center gap-10'>
                 <Logo/>
-                <ul className='hidden md:flex flex-row items-center gap-3 font-medium  justify-center'>
+                <ul className='hidden md:flex flex-row items-center gap-3 font-semibold justify-center'>
                     <NavList/>
                     <br/>
                     <div className='flex flex-row items-center justify-center gap-3'>
@@ -53,8 +53,8 @@ export default function Navbar() {
                 modalClassName='absolute top-8 right-4 pr-14'
                 toggleElement={<Icon icon='HamburgerMenu'/>}
                 >
-                    <div className='w-full flex flex-col items-start gap-8 text-base font-semibold'>
-                        <ul className='flex flex-col items-start gap-5'>
+                    <div className='w-full flex flex-col items-start gap-8'>
+                        <ul className='flex flex-col items-start gap-5 text-[18px] font-semibold'>
                             <NavList/>
                         </ul>
                         <div className='flex flex-row items-center justify-center'>

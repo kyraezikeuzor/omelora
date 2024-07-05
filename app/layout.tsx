@@ -29,7 +29,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Navbar/>
-        <main className=' m-auto px-2 py-[5vh] sm:px-[3vw] md:px-[6vw] lg:px-[12vw]'>
+        <main className='m-auto px-5 py-[5vh] sm:px-[3vw] md:px-[6vw] lg:px-[12vw]'>
           <Animate>
             {children}
           </Animate>
