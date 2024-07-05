@@ -160,7 +160,7 @@ export default function Home() {
         <section data-aos="fade-up" className='flex flex-col items-center justify-center gap-5'>
           <div className='flex flex-col items-center justify-center gap-5'>
             <h2 className='text-center flex flex-col items-center'>
-              <span className='ft-cooper'>Sharing news</span> <Graphic className='hidden' src='/logos/logo-1.png' size='sm'/> <span className='tracking-tighter text-3xl lg:text-[44px] font-bold txt-gradient' >@omeloraorg</span>
+              <span className='ft-cooper'>Sharing news</span> <Graphic className='hidden' src='/logos/logo-1.png' size='sm'/> <span className='tracking-tighter text-3xl lg:text-[40px] font-bold txt-gradient py-1' >@omeloraorg</span>
             </h2>
             <p className='text-base lg:text-lg text-center font-medium'>
               From breaking down political events to covering the <span className='txt-gradient'>intersection of pop culture</span> and the environment,
