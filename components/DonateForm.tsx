@@ -50,7 +50,7 @@ export default function Donate() {
             <iframe 
             src={src}
             className='w-full md:w-[600px] h-[560px] md:h-[630px] 
-            border-[3px] border-[--clr-red-light] rounded-2xl p-[3px] shadow-md'
+            border-[3px] border-[--clr-orange-light] rounded-2xl p-[3px] shadow-md'
             style={{width:'100%'}}
             aria-hidden="false"
             />
