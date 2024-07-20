@@ -128,7 +128,7 @@ export default function Home() {
             ))}
         </section>
 
-        <section data-aos="fade-up" className='relative w-full shadow-md rounded-2xl border-4 border-[--clr-orange-light] bg-gradient-to-b from-[--clr-orange-extralight] overflow-y-hidden overflow-x-hidden px-6 py-12 sm:p-10 md:p-14 lg:p-24 flex flex-col items-start justify-start md:items-end md:justify-end gap-3'>
+        <section data-aos="fade-up" className='relative w-full shadow-md rounded-2xl border-4 border-[--clr-orange-light] bg-gradient-to-b from-[--clr-orange-extralight] overflow-y-hidden overflow-x-hidden px-8 py-8 sm:p-10 md:p-14 lg:p-24 flex flex-col items-start justify-start md:items-end md:justify-end gap-3'>
           <h2 className='text-[30px] md:text-4xl font-bold txt-gradient tracking-tight text-left md:text-right'>
             We are giving 100 school supply kits to the Divine Wounds Orphanage in Enugu, Nigeria.
           </h2>
@@ -241,22 +241,22 @@ export default function Home() {
           </Button>
         </section>
 
-        <section className='flex flex-col lg:flex-row gap-10 items-center bg-gradient-to-b from-[--clr-red-extralight] border-4 border-[--clr-orange-light] px-6 py-12 md:p-14 lg:p-16 rounded-3xl shadow-md'>
+        <section className='flex flex-col lg:flex-row gap-10 items-center bg-gradient-to-b from-[--clr-red-extralight] border-4 border-[--clr-red-light] px-6 py-8 md:p-14 lg:p-16 rounded-3xl shadow-md'>
             <section data-aos="fade-up" className='w-full lg:w-1/2 flex flex-col items-start gap-5'>
-              <span className='text-3xl 2xl:text-4xl text-left font-bold'>
-                Donate <span className='ft-inter bg-[#FF694F] py-1 px-2 rounded-lg text-white font-extrabold'>$5</span> to help us <br className='hidden md:inline'/> create <span className='txt-gradient'>more impact.</span>
+              <span className='text-3xl lg:text-4xl 2xl:text-5xl text-left text-[--clr-red-base] font-bold tracking-tight'>
+                Donate <span className='ft-inter txt-gradient font-extrabold'>$5</span> to help us <br className='hidden md:inline'/> create more impact.
               </span>
-              <div className='flex flex-col gap-3 font-medium text-base lg:text-lg text-[#434242]'>
-                <span>
+              <ul className='lg:ml-5 flex flex-col gap-2 font-medium text-base lg:text-lg text-[#434242]'>
+                <li className="list-disc">
                   With your donation, we can provide <span className='txt-gradient'>essential</span> resources and opportunities for young people to make a tangible impact, especially for children in West Africa.
-                </span>
-                <span>
+                </li>
+                <li className="list-disc">
                   Your generosity enables us to offer educational programs, health initiatives, and sustainable practices that promote a brighter, more equitable future.
-                </span>
-                <span>
+                </li>
+                <li className="list-disc">
                   By donating today, you become a <span className='txt-gradient'>vital</span> part of our efforts to foster social good, environmental stewardship, and the well-being of children across the globe.
-                </span>
-              </div>
+                </li>
+              </ul>
               <div className='w-full md:w-1/3 lg:w-1/2 flex flex-col '>
                 <Button variant='donate' path={donateSiteLink}>
                   Visit Donation Page <Icon icon='ExternalLink' fillColor='inherit' size='sm' inline/>
