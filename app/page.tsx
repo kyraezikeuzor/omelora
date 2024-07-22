@@ -253,7 +253,7 @@ export default function Home() {
               <h2 className='ft-cooper '>
                 Contribute <span className='ft-inter txt-gradient'>$5</span> to help us in making our impact global.
               </h2>
-              <ul className='lg:ml-5 flex flex-col gap-2 text-base lg:text-lg text-[#434242]'>
+              <ul className='ml-5 flex flex-col gap-2 text-base lg:text-lg text-[#434242]'>
                 <li className="list-disc">
                   With your donation, we can provide <span className='txt-gradient'>essential</span> resources and opportunities for young people to make a tangible impact, especially for children in West Africa.
                 </li>

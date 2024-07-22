@@ -57,7 +57,7 @@ export default function Navbar() {
                 toggleElement={<Icon icon='HamburgerMenu'/>}
                 >
                     <div className='w-full flex flex-col items-start gap-8'>
-                        <ul className='flex flex-col items-start gap-5 text-[18px]'>
+                        <ul className='flex flex-col items-start gap-3 text-[17px]'>
                             <NavList/>
                         </ul>
                         <div className='flex flex-row items-center justify-center'>
