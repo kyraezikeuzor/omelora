@@ -56,7 +56,7 @@ export default function Home() {
 
 
   return (
-    <section className="w-full flex min-h-screen flex-col gap-24 justify-between py-[10vh]">
+    <section className="w-full flex min-h-screen flex-col gap-24 justify-between py-[5vh] lg:py-[10vh]">
         
         <header className='relative w-full flex flex-col gap-8 items-center justify-center text-center'>
           <div className='flex flex-col gap-5'>
