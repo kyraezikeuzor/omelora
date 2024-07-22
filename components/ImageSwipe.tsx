@@ -3,6 +3,11 @@ import React, {useState} from 'react'
 import {getNextIndex} from '@/lib/utils'
 import Icon from '@/components/Icon'
 
+import {
+  ChevronRight,
+  ChevronLeft
+} from 'lucide-react'
+
 type Content = {
   image:any,
   alt:any
@@ -36,8 +41,8 @@ export default function ImageSwipe({content}:ImageSwipeProps) {
     return (
         <div className='relative mx-0 sm:mx-6 md:mx-20 lg:mx-0'>
             <div className='h-full w-full'>
-                <button className="z-20 absolute -left-4 top-0 bottom-0 text-4xl text-neutral-300" onClick={prevSlide}>
-                    &#10094;
+                <button className="z-20 absolute -left-6 top-0 bottom-0 text-4xl text-neutral-300" onClick={prevSlide}>
+                    <ChevronLeft className='w-10 h-10'/>
                 </button>
 
                 <div className='relative mx-3'>
@@ -61,8 +66,8 @@ export default function ImageSwipe({content}:ImageSwipeProps) {
                     ))}
                 </div>
                 
-                <button className="z-20 absolute -right-4 top-0 bottom-0 text-4xl text-neutral-300" onClick={nextSlide}>
-                    &#10095;
+                <button className="z-20 absolute -right-6 top-0 bottom-0 text-4xl text-neutral-300" onClick={nextSlide}>
+                    <ChevronRight className='w-10 h-10'/>
                 </button>
             </div>
         </div>

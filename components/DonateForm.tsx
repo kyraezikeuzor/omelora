@@ -49,8 +49,7 @@ export default function Donate() {
         <div className='relative h-full flex flex-col shadow-lg rounded-2xl'>
             <iframe 
             src={src}
-            className='w-full md:w-[600px] h-[560px] md:h-[630px] 
-            border-[3px] border-[--clr-red-light] rounded-2xl p-[3px] shadow-md'
+            className='w-full md:w-[600px] h-[560px] md:h-[630px] rounded-2xl p-[3px] shadow-md'
             style={{width:'100%'}}
             aria-hidden="false"
             />

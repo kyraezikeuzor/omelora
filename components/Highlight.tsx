@@ -85,7 +85,7 @@ export default function Highlight({ children, toggleElement }: ModalProps) {
       
       {isOpen && (
         <div ref={modalRef}
-          className={`min-w-[300px] max-w-[400px] z-50 absolute ease-in p-4 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-2xl shadow-lg`}
+          className={`min-w-[300px] max-w-[350px] z-50 absolute ease-in p-4 border-[1px] border-[--clr-base-accent] bg-[--clr-base] rounded-2xl shadow-lg`}
           style={{ top: positionTop, left: positionLeft}}
         >
           <div className="w-full ft-inter tracking-wide flex flex-col text-base font-medium items-start text-left">

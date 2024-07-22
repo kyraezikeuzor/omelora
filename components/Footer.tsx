@@ -10,7 +10,7 @@ import Logo from './Logo'
 
 import {footer} from '@/data/sitemap';
 import {toPath} from '@/lib/utils';
-import {socialLinks} from '@/data/content'
+import {socials} from '@/data/content'
 
 function Footer() {
 
@@ -36,7 +36,7 @@ function Footer() {
         </div>
         <div className='flex flex-col justify-self-start'>
           <div className='flex flex-row gap-3'>
-            {socialLinks.map((item,index)=>(
+            {socials.map((item,index)=>(
               <Link 
               key={index}
               target="_blank"

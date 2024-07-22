@@ -2,7 +2,8 @@ export const navbar = [
     'About',
     'Take Action',
     'Kits for Kids',
-    'Community Events',
+    'Blog',
+    'Events',
     'Initiatives',
     'Partnerships',
 ]
@@ -22,7 +23,7 @@ export const footer = [
     {
         "name" : "Resources",
         "pages" : [
-            "Community Events",
+            "Events",
             "Initiatives", 
             "Support Us",
             "Partnerships",

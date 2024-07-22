@@ -63,7 +63,7 @@ export default function Campaign({title, description, startDate, endDate, goalVa
                         <Icon icon='Compass' className='mb-[1px]' fillColor='var(--clr-base-text)' inline size='sm'/> Enugu, Nigeria
                     </span>
                 </div>
-                <CardTitle className='text-lg font-bold text-[--clr-base-text] tracking-normal leading-6'>
+                <CardTitle className='text-lg font-medium text-[--clr-base-text] tracking-normal leading-6'>
                     {title}
                 </CardTitle>
                 <span className='hidden w-full font-semibold text-sm opacity-50 text-left'>
@@ -74,7 +74,7 @@ export default function Campaign({title, description, startDate, endDate, goalVa
                 <div className='flex flex-col gap-2 items-center text-sm '>
                     <ProgressBar goalValue={goalValue} currentValue={currentValue}/>
                     <div className='w-full flex flex-row justify-between'>
-                        <span className=' flex flex-row gap-1 self-end items-center font-semibold'>
+                        <span className=' flex flex-row gap-1 self-end items-center font-medium'>
                             <span className='text-[--clr-grey-base]'>{currentValue}</span>
                             <span className='text-[--clr-grey-base]'>/</span>
                             <span className='flex flex-row items-center opacity-75'>

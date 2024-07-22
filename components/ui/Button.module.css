@@ -2,11 +2,11 @@
     padding:.5rem 1.8rem;
     background-color: var(--clr-navy-base);
     border: 2px solid var(--clr-navy-base);
-    border-radius: 124px;
+    border-radius: 12px;
     color: white;
     fill: white;
     white-space: nowrap;
-    font-weight:600;
+    font-weight: 500;
     display: flex;
     flex-direction: row;
     align-items:center;

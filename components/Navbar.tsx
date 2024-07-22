@@ -1,14 +1,17 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
-import {usePathname} from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import Logo from './Logo'
 import Button from './ui/Button'
 import Icon from './Icon'
 import Modal from './Modal'
-import {navbar} from '@/data/sitemap'
-import {toPath} from '@/lib/utils'
-
+import { navbar } from '@/data/sitemap'
+import { toPath } from '@/lib/utils'
+import {
+    MessageCircleHeart,
+    PiggyBank
+} from 'lucide-react'
 
 
 export const NavList = () => {
@@ -36,30 +39,30 @@ export default function Navbar() {
             
             <div className='hidden lg:flex w-full flex-row md:px-[10vw] py-[2vh] justify-center items-center gap-10'>
                 <Logo/>
-                <ul className='hidden md:flex flex-row items-center gap-3 font-semibold justify-center'>
+                <ul className='hidden md:flex flex-row items-center gap-5 font-medium justify-center'>
                     <NavList/>
                     <br/>
                     <div className='flex flex-row items-center justify-center gap-3'>
                         <Button variant='donate' path='https://hcb.hackclub.com/donations/start/omelora'>
-                            Donate <Icon icon='HeartFilled' size='sm' fillColor='inherit'/>
+                            Donate <PiggyBank/>
                         </Button>
                     </div>
                 </ul>
             </div>
 
-            <div className='w-full flex flex-row lg:hidden px-5 py-[1vh] justify-between items-center'>
+            <div className='w-full flex flex-row lg:hidden px-5 py-[1vh] justify-between font-medium items-center'>
                 <Logo/>
                 <Modal
                 modalClassName='absolute top-3 right-3 pr-14'
                 toggleElement={<Icon icon='HamburgerMenu'/>}
                 >
                     <div className='w-full flex flex-col items-start gap-8'>
-                        <ul className='flex flex-col items-start gap-5 text-[18px] font-semibold'>
+                        <ul className='flex flex-col items-start gap-5 text-[18px]'>
                             <NavList/>
                         </ul>
                         <div className='flex flex-row items-center justify-center'>
                             <Button variant='donate' path='https://hcb.hackclub.com/donations/start/omelora'>
-                                Donate <Icon icon='HeartFilled' size='sm' fillColor='inherit'/>
+                                Donate <PiggyBank/>
                             </Button>
                         </div>
                     </div>

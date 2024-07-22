@@ -1,23 +1,34 @@
+import {
+    MessageCircleHeart,
+    HeartPulse,
+    Flower,
+    Earth,
+    School,
+    Leaf,
+    HandHelping
+} from 'lucide-react'
+
+
 export const pillars = [
     {
         "name": "Health",
         "text": "We strive to improve the health and wellbeing of children in need by creating initiatives to support access to health necessities.",
-        "icon":"pink-flower"
+        "icon": <HeartPulse/>
     },
     {
         "name": "Environment",
-        "text": "We work to create a cleaner and safer environment for those in need by using our platforms to promote sustainable practices and addressing environmental challenges.",
-        "icon": "sienna-flower"
+        "text": "We work to create a cleaner and safer environment for those in need by promoting sustainable practices and addressing environmental challenges.",
+        "icon": <Leaf/>
     },
     {
         "name": "Social Good",
         "text": "We aim to make a positive impact by creating, explainers, resources, and stories for all to learn about how our local actions impact the lives of those throughout the world.",
-        "icon":"peach-flower"
+        "icon": <MessageCircleHeart/>
     },
     {
-        "name": "Education",
+        "name": "Learning",
         "text": "We provide educational resources to in need children, aiming to empower them to build a brighter future for themselves.",
-        "icon":"soft-star"
+        "icon": <School/>
     }
 ]
 
@@ -48,14 +59,14 @@ export const faqs = [
       }
 ]
 
-export const socialLinks = [
+export const socials = [
     {
         "name":"Mail",
-        "link":""
+        "link":"mailto:kyra@omelora.org"
     },
     {
         "name":"Instagram",
-        "link":""
+        "link":"https://www.instagram.com/omeloraorg/"
     },
     {
         "name":"Threads",
