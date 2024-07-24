@@ -50,14 +50,14 @@ export default function Campaign({title, description, startDate, endDate, goalVa
     
     return (
     <Link href={`/initiatives/${toPath(title)}`}>
-        <Card className='w-full lg:w-[278px] p-2 cursor-pointer bg-[--clr-base] border-none shadow-none rounded-2xl hover:opacity-75'>
+        <Card className='w-full lg:w-[278px] p-2 cursor-pointer bg-[--clr-base] border-none shadow-none rounded-xl hover:opacity-75'>
             <div className='w-full px-0'>
                 <img src={image} className='w-full object-cover h-48 rounded-2xl'/>
             </div>
             <CardHeader className='px-0 py-4'>
                 <div className='flex flex-row justify-between'>
-                    <span className='text-[14px] text-[--clr-red-base] font-semibold '>
-                        <Icon icon='Location' className='mb-[1px]' fillColor='var(--clr-red-base)' inline size='sm'/> {location}
+                    <span className='text-[14px] text-[--clr-red-light] font-medium '>
+                        <Icon icon='Location' className='mb-[1px]' fillColor='var(--clr-red-light)' inline size='sm'/> {location}
                     </span>
                     <span className='hidden text-[14px] text-[--clr-base-text] font-semibold '>
                         <Icon icon='Compass' className='mb-[1px]' fillColor='var(--clr-base-text)' inline size='sm'/> Enugu, Nigeria

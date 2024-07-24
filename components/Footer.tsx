@@ -23,7 +23,7 @@ function Footer() {
         <div className='flex flex-row gap-20 justify-start'>
           {footer.map((item,index) => (
             <div key={index} className='flex flex-col gap-5'>
-              <span className='text-xl lg:text-2xl tracking-tight font-extrabold'>{item.name}</span>
+              <span className='text-xl tracking-tight font-bold'>{item.name}</span>
               <ul className='flex flex-col gap-3 font-medium'>
                 {item.pages.map((page,index)=> (
                   <li key={index} className='hover:opacity-75'> 
@@ -43,7 +43,7 @@ function Footer() {
               href={item.link !== "" ? item.link : "/"} 
               className='hover:opacity-75'
               >
-                <Icon icon={item.name} fillColor='white' size='lg' />
+                <Icon icon={item.name} fillColor='white' size='lg'/>
               </Link>
             ))}
           </div>

@@ -18,7 +18,7 @@ Container.propTypes = {
 // ContainerTitle component
 const ContainerTitle = ({ children, triggerLink }:{children:React.ReactNode, triggerLink:string}) => {
   return (
-    <div className="w-full flex justify-between items-center">
+    <div className="w-full flex justify-between items-center py-2">
         <div className="text-2xl font-medium">
             {children}
         </div>

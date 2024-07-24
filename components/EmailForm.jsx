@@ -22,24 +22,21 @@ function EmailForm() {
 
   return (
     <div className='w-full'>
-      <form className="w-full flex flex-col gap-5"
+      <form className="w-full flex flex-col gap-3"
         onSubmit={event => {
           event.preventDefault();
           handleSubmit(fields);
         }}
       >
-        <div className='hidden flex flex-col gap-1'>
-            <span className="font-bold text-2xl">Subscribe to our email list</span>
-            <p>Learn about our latest events, resources, programs, and more!</p>
-        </div>
 
-        <fieldset className='w-full flex flex-col md:flex-row gap-5'>
+        <div className='w-full flex flex-col md:flex-row justify-between gap-3'>
             <input
                 id="FNAME"
                 type="text"
                 placeholder="First name"
                 value={fields.FNAME}
                 onChange={handleFieldChange}
+                className='w-full'
             />
             <input
                 id="LNAME"
@@ -47,20 +44,28 @@ function EmailForm() {
                 placeholder="Last name"
                 value={fields.LNAME}
                 onChange={handleFieldChange}
+                className='w-full'
             />
-        </fieldset>
+        </div>
 
-        <input
-          id="EMAIL"
-          type="email"
-          placeholder="Email"
-          value={fields.EMAIL}
-          onChange={handleFieldChange}
-        />
-
-        <Button >
-          Subscribe <Icon inline fillColor='white' icon="Mail" size='sm'/>
-        </Button>
+        <div className='w-full flex flex-col gap-1'>
+          <input
+            id="EMAIL"
+            type="email"
+            placeholder="Email"
+            value={fields.EMAIL}
+            onChange={handleFieldChange}
+          />
+          <span className='text-sm opacity-45'>No spam emails. You can unsubscribe at any time!</span>
+        </div>
+        
+        <div className='w-full flex flex-row'>
+          <div className='w-full'>
+            <Button >
+              Subscribe <Icon inline fillColor='white' icon="Mail" size='sm'/>
+            </Button>
+          </div>
+        </div>
       </form>
       
       {loading && "Submitting..."}

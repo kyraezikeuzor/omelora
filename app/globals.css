@@ -8,7 +8,7 @@ VARIABLES
 
 @layer base {
   :root {
-    --clr-base: #fcfcfc;
+    --clr-base: #ffffff;
     --clr-base-accent:rgb(243, 243, 243);
     --clr-base-text: #434242;
 
@@ -37,8 +37,13 @@ VARIABLES
     --clr-grey-dark: #6D747A;
 
     --clr-blue-extralight:rgb(246, 250, 251);
-    --clr-blue-base:rgb(101, 190, 237);
+    --clr-blue-light: rgb(240, 248, 250);
+    --clr-blue-base:#2e9ff5;
     --clr-blue-dark:#006adc;
+
+    --clr-purple-extralight:#fdfcff;
+    --clr-purple-light:#e7dbff;
+    --clr-purple-base:#bb86ef;
 
     --clr-navy-base:#2e3943;
     --clr-navy-dark: #17171D;
@@ -75,6 +80,7 @@ VARIABLES
     --radius: 0.5rem;
   }
 
+  /*
   @media (prefers-color-scheme: dark) {
     :root {
       --clr-base: #1f1f1f;
@@ -116,8 +122,9 @@ VARIABLES
       --input: 217.2 32.6% 17.5%;
       --ring: 212.7 26.8% 83.9%;
     }    
-  }
+  }*/
 }
+
 
 @layer base {
   * {
@@ -231,7 +238,7 @@ a {
 input {
   background-color:var(--clr-base);
   border: solid 1px var(--clr-grey-light);
-  border-radius:16px;
+  border-radius: 8px;
   padding: 0.8rem 1.2rem;
   color:var(--clr-base-text);
 }
@@ -279,8 +286,8 @@ BACKGROUND STYLES
 
 .bg-pattern-dotted {
   background-color: var(--clr-navy-dark);
-  background-image:  radial-gradient(#bcbbbb 0.5px, transparent 0.5px), radial-gradient(#bcbbbb 0.5px, var(--clr-navy-dark) 0.5px);
-  background-size: 50px 50px;
+  background-image:  radial-gradient(#82849e93 0.8px, transparent 0.8px);
+  background-size: 35px 35px;
   background-position: 0 0, 30px 30px;
 }
   

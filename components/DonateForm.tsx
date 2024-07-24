@@ -46,10 +46,10 @@ export default function Donate() {
     const src = `https://hcb.hackclub.com/donations/start/omelora?background=${primaryColor}`
     
     return (
-        <div className='relative h-full flex flex-col shadow-lg rounded-2xl'>
+        <div className='relative h-full flex flex-col shadow-md rounded-2xl'>
             <iframe 
             src={src}
-            className='w-full md:w-[600px] h-[560px] md:h-[630px] rounded-2xl p-[3px] shadow-md'
+            className='w-full md:w-[600px] h-[560px] md:h-[630px] rounded-2xl p-[3px]'
             style={{width:'100%'}}
             aria-hidden="false"
             />

@@ -37,14 +37,14 @@ export default function Navbar() {
     return (
         <nav className='w-full flex flex-col items-center sticky top-0 z-[100] shadow-sm bg-[--clr-base] backdrop-blur'>
             
-            <div className='hidden lg:flex w-full flex-row md:px-[10vw] py-[2vh] justify-center items-center gap-10'>
+            <div className='hidden lg:flex w-full flex-row md:px-[10vw] py-[2vh] justify-between items-center gap-10'>
                 <Logo/>
                 <ul className='hidden md:flex flex-row items-center gap-5 font-medium justify-center'>
                     <NavList/>
                     <br/>
                     <div className='flex flex-row items-center justify-center gap-3'>
                         <Button variant='donate' path='https://hcb.hackclub.com/donations/start/omelora'>
-                            Donate <PiggyBank/>
+                            Contribute <PiggyBank/>
                         </Button>
                     </div>
                 </ul>

@@ -11,7 +11,7 @@ type ButtonProps = {
 
 const Button = ({ children, path, variant, fullWidth }: ButtonProps) => {
     const buttonClassNames = [
-        'shadow-lg',
+        'shadow-sm',
         styles.button,
         fullWidth && 'w-full',
         variant && styles[variant]

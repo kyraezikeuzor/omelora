@@ -8,27 +8,34 @@ import {
     HandHelping
 } from 'lucide-react'
 
+/*
+    {
+        "name": "Spreading social good",
+        "text": "We create and share explainers, resources, and stories for all to show how local actions impact lives globally.",
+        "icon": <MessageCircleHeart/>
+    },
+ */
 
 export const pillars = [
     {
-        "name": "Health",
-        "text": "We strive to improve the health and wellbeing of children in need by creating initiatives to support access to health necessities.",
+        "name": "Championing for health & wellbeing",
+        "text": "We create initiatives to support access to necessities to improve the health and wellbeing of children in need.",
         "icon": <HeartPulse/>
     },
     {
-        "name": "Environment",
-        "text": "We work to create a cleaner and safer environment for those in need by promoting sustainable practices and addressing environmental challenges.",
+        "name": "Building a sustainable future",
+        "text": "We promote sustainability and address environmental concerns to create a cleaner and safer environment.",
         "icon": <Leaf/>
     },
     {
-        "name": "Social Good",
-        "text": "We aim to make a positive impact by creating, explainers, resources, and stories for all to learn about how our local actions impact the lives of those throughout the world.",
-        "icon": <MessageCircleHeart/>
+        "name": "Supporting tech growth & innovation",
+        "text": "Supporting the next gen of leaders in tech and advocacy to build a more inclusive and safe online world.",
+        "icon": <School/>
     },
     {
-        "name": "Learning",
-        "text": "We provide educational resources to in need children, aiming to empower them to build a brighter future for themselves.",
-        "icon": <School/>
+        "name": "Spreading social good & impact",
+        "text": "We create and share explainers, resources, and stories for all to show how local actions impact lives globally.",
+        "icon": <MessageCircleHeart/>
     }
 ]
 
