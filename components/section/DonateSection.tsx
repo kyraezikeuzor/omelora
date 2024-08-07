@@ -55,10 +55,8 @@ export default function DonateSection() {
                         By donating today, you become a vital part of our efforts to foster social good, environmental stewardship, and the well-being of children.
                         </p>
                     </div>
-                    <Button>
-                        <div zeffy-form-link="https://www.zeffy.com/peer-to-peer/5505fdf7-4c46-46fc-b92a-825700d447e1?modal=true">
-                            Donate
-                        </div>
+                    <Button path='https://www.zeffy.com/en-US/peer-to-peer/5505fdf7-4c46-46fc-b92a-825700d447e1'>
+                        Donate
                     </Button>
                 </div>
                 <img className='rounded-lg w-full lg:w-1/2' src='/img/dwa-group-img.jpg'/>
