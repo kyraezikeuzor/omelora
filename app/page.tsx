@@ -9,50 +9,25 @@ import Button from '@/components/ui/Button'
 import ImageSwipe from '@/components/ImageSwipe'
 import Campaign from "@/components/Campaign";
 import Highlight from '@/components/Highlight'
-import DonateForm from '@/components/DonateForm'
-import EmailForm from '@/components/EmailForm'
+import DonateForm from '@/components/form/DonateForm'
+import EmailForm from '@/components/form/EmailForm'
 import {
   Container,
   ContainerTitle,
   ContainerContent
 } from '@/components/ui/Container'
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/Accordion"
-import {
   Emphasis
 } from '@/components/ui/Emphasis'
 import {
-  MessageCircleHeart,
-  Users,
-  PiggyBank,
   HandHelping,
   Info,
   Sprout
 } from 'lucide-react'
+import FAQSection from '@/components/section/FAQSection'
+import DonateSection from '@/components/section/DonateSection'
 
 export default function Home() {
-
-  const OmeloraHighlight = 
-  <Highlight toggleElement={<span>Omelora</span>}>
-    <div className='w-full flex flex-col md:flex-row gap-3 items-center'>
-      <p>
-      Omelora means &apos;One who does good for the community&apos; in Igbo, a language spoken in Nigeria.
-      </p>
-    </div>
-  </Highlight>
-
-  const DonateHighlight = 
-  <Highlight toggleElement={<span className='font-bold tracking-tight'>Donate</span>}>
-    <div className='w-full flex flex-col gap-1 font-medium'>
-    You can choose to make one-time or monthly donations to Omelora through the Hack Club Bank website.
-    Omelora is sponsored by The Hack Club Bank, created by the Hack Foundation, which is a fiscal sponsorship 
-    organization that supports up and coming initiatives.
-    </div>
-  </Highlight>
 
 
   return (
@@ -61,15 +36,15 @@ export default function Home() {
         <header className='relative w-full flex flex-col gap-8 items-center justify-center text-center'>
           <div className='flex flex-col gap-5'>
             <div className='flex flex-col gap-5'>
-              <span className='text-base xl:text-lg tracking-wide font-medium text-center opacity-75'>
-                WE ARE OMELORA <Sprout className='inline mb-2'/>
+              <span className='text-base xl:text-lg font-semibold text-center opacity-75'>
+                WELCOME TO OMELORA
               </span>
               <h1 className='inline-block xl:text-[74px] ft-cooper'> 
                 Shaping <Graphic className='hidden' src='/g/soft-star.png'/> the future with <br className='hidden lg:inline'/> youth-driven <br className='inline md:hidden'/> social good
               </h1>
             </div>
             <p className='text-base lg:text-xl'>
-              Omelora <span className='txt-gradient'>mobilizes</span> youth to create a brighter future <br className='hidden lg:inline'/>
+              Omelora mobilizes youth to <span className='txt-gradient'>create</span> a brighter future <br className='hidden lg:inline'/>
               through social good, health initiatives, and <span className='txt-gradient'>environmental</span> awareness.
             </p>
           </div>
@@ -83,7 +58,7 @@ export default function Home() {
           </div>
         </header>
 
-        <section className='w-full flex flex-col lg:flex-row-reverse items-center gap-10'>
+        <section className='pd-section w-full flex flex-col lg:flex-row-reverse items-center gap-10'>
             <section className='relative w-full flex flex-col gap-3'>
               <h2 className='ft-cooper'>
                 We inspire and engage young people to take positive action
@@ -117,18 +92,18 @@ export default function Home() {
             </section>
         </section>
 
-        <section data-aos="fade-up" className='w-full flex flex-col lg:grid grid-cols-2 gap-10  items-center justify-center my-[3vh]'>
+        <section data-aos="fade-up" className='pd-section bg-[--clr-grey-extralight] w-full flex flex-col lg:grid grid-cols-3 gap-5  items-center justify-center'>
             {pillars.map((item,index)=>(
-              <div key={index} className='flex flex-col lg:flex-row gap-3'>
+              <div key={index} className='flex flex-col  gap-3 bg-[--clr-base] border border-[--clr-grey-light] rounded-xl px-6 py-4'>
                 <div>
                   {item.icon}
                 </div>
-                <div key={index} className='w-full lg:w-11/12 flex flex-col gap-2'>
-                  <h3>
+                <div key={index} className='w-full lg:w-11/12 flex flex-col gap-1'>
+                  <h3 className='text-xl font-medium'>
                     {item.name}
                   </h3>
-                  <p className='text-base lg:text-lg'>
-                    <Emphasis emphasize={['impact','sustainability']}>
+                  <p className='text-base lg:text-base'>
+                    <Emphasis emphasize={[]}>
                       {item.text}
                     </Emphasis>
                   </p>
@@ -137,12 +112,50 @@ export default function Home() {
             ))}
         </section>
 
-        <section data-aos="fade-up" className='flex flex-col items-center justify-center gap-5 my-[3vh]'>
+        <section data-aos="fade-up" className='pd-section flex flex-col items-center justify-center gap-5'>
+          <div className='flex flex-col items-center justify-center gap-3'>
+            <h2 className='ft-cooper text-center'>Our work, so far</h2>
+            <p className='text-base lg:text-lg text-center'>
+            Through <span className='txt-gradient'>community</span> efforts, we&apos;re making educational resources accessible
+            <br className='hidden lg:inline'/> and impactful for those <span className='txt-gradient'>in need</span>. See some of our ongoing initiatives.
+            </p>
+          </div>
+          <section className='w-full flex flex-col mb-5'>
+            <Container>
+              <ContainerTitle triggerLink='/initiatives'>
+                <h2 className='text-base xl:text-lg tracking-tight font-medium text-center'>
+                  Our Projects
+                </h2>
+              </ContainerTitle>
+              <ContainerContent>
+                {initiatives.map((item,index)=>(
+                  <Campaign
+                    key={index}
+                    title={item.title}
+                    location={item.location}
+                    description={item.description}
+                    goalValue={item.goalValue}
+                    currentValue={item.currentValue}
+                    startDate={item.startDate}
+                    measurement={item.measurement}
+                    endDate={item.endDate}
+                    orgsSupporting={item.orgsSupporting}
+                    image={item.image}
+                  />
+                ))}
+              </ContainerContent>
+            </Container>
+          </section>
+        </section>
+
+        <DonateSection/>
+
+        <section data-aos="fade-up" className='pd-section flex flex-col items-center justify-center gap-5'>
           <div className='flex flex-col items-center justify-center gap-5'>
             <h2 className='text-center flex flex-row items-center'>
-              <span className='ft-cooper'>Helping Gen Zers make an impact</span>
+              <span className='ft-cooper'>Sharing informative content for change</span>
             </h2>
-            <p className='text-base lg:text-lg text-center'>
+            <p className='text-base lg:text-base text-center'>
               From breaking down political events to covering the <span className='txt-gradient'>intersection of pop culture</span> and the environment,
               <br className='hidden lg:inline'/> 
               we provide easily digestible, <span className='txt-gradient'>accessible </span> 
@@ -182,135 +195,12 @@ export default function Home() {
               </ContainerContent>
             </Container>
           </section>
-          <Button>
-            Follow our Instagram <Icon icon="Instagram" size='sm' fillColor='inherit'/>
-          </Button>
         </section>
+      
 
-        <section data-aos="fade-up" className='relative w-full shadow-sm rounded-2xl border-[3px] border-[--clr-orange-light] overflow-y-hidden overflow-x-hidden px-8 py-14 sm:p-10 md:p-14 lg:p-24 flex flex-col items-start justify-start md:items-end md:justify-end gap-5 my-[3vh]'>
-          <h2 className='text-[28px] leading-8 md:text-4xl font-semibold txt-gradient tracking-normal lg:tracking-tight text-left md:text-right'>
-            We are giving 100 school supply kits to the Divine Wounds Orphanage in Enugu, Nigeria
-          </h2>
-          <p className='text-left md:text-right text-base lg:text-lg text-[--clr-base-text]'>
-            We have the goal of supplying 100 kits to a connected orphanage in Enugu, Nigeria. <br className='hidden xl:inline'/>
-            As of June 2024 we&apos;ve raised <span className='txt-gradient'>over one-hundred</span> books and novels <br className='hidden xl:inline'/> in Houston, Texas to send abroad in our kits.
-          </p>
-          <Button path='/initiatives'>
-            Learn About Kits for Kids <Icon icon='ExternalLink' size='sm' fillColor='inherit'/>
-          </Button>
-          <div className='xl:absolute left-[43%] top-[65%] bg-[#FF694F] px-8 py-3 rounded-2xl text-white font-bold text-center flex flex-col items-center justify-center text-center'>
-            <span className='text-xl'>Donate</span>
-            <span className='text-5xl'>$5+</span>
-          </div>
-          <img src='/img/africa-kids-transparent.png' className='hidden md:block -z-10 xl:z-10 md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] absolute left-0 bottom-0'/>
-          <Graphic src='/g/sienna-flower.png' className='absolute right-[15%] -top-5'/>
-          <Graphic src='/g/sienna-flower.png' className='absolute left-20 -top-5' />
-          <Graphic src='/g/sienna-flower.png' className='absolute -right-5 bottom-0'/>
-          <Graphic src='/g/sienna-flower.png' className='absolute right-80 -bottom-5'/>
-          <Graphic src='/g/sienna-flower.png' className='absolute -left-5 top-20'/>
-          <Graphic src='/g/peach-flower.png' className='hidden lg:block -z-10 absolute left-[35%] top-[55%]' size='sm'/>
-          <Graphic src='/g/peach-flower.png' className='absolute -left-5 bottom-0' />
-          <Graphic src='/g/peach-flower.png' className='absolute right-[15%] top-[85%] opacity-50' size='sm'/>
-          <Graphic src='/g/peach-flower.png' className='absolute left-20 top-20' size='sm'/>
-          <Graphic src='/g/peach-flower.png' className='absolute left-80 top-10 opacity-50' size='sm'/>
-          <Graphic src='/g/peach-flower.png' className='absolute left-[40%] bottom-5 opacity-50' size='sm'/>
-        </section>
-
-        <section data-aos="fade-up" className='flex flex-col items-center justify-center gap-5 my-[3vh]'>
-          <div className='flex flex-col items-center justify-center gap-3'>
-            <h2 className='ft-cooper text-center'>Our work, so far</h2>
-            <p className='text-base lg:text-lg text-center'>
-            Through <span className='txt-gradient'>community</span> efforts, we&apos;re making educational resources accessible
-            <br className='hidden lg:inline'/> and impactful for those <span className='txt-gradient'>in need</span>. See some of our ongoing initiatives.
-            </p>
-          </div>
-          <section className='w-full flex flex-col mb-5'>
-            <Container>
-              <ContainerTitle triggerLink='/initiatives'>
-                <h2 className='text-base xl:text-lg tracking-tight font-medium text-center'>
-                  Our Projects
-                </h2>
-              </ContainerTitle>
-              <ContainerContent>
-                {initiatives.map((item,index)=>(
-                  <Campaign
-                    key={index}
-                    title={item.title}
-                    location={item.location}
-                    description={item.description}
-                    goalValue={item.goalValue}
-                    currentValue={item.currentValue}
-                    startDate={item.startDate}
-                    measurement={item.measurement}
-                    endDate={item.endDate}
-                    orgsSupporting={item.orgsSupporting}
-                    image={item.image}
-                  />
-                ))}
-              </ContainerContent>
-            </Container>
-          </section>
-          <Button path='/initiatives'>
-            Support Our Work <Icon icon="ExternalLink" size='sm' fillColor='inherit'/>
-          </Button>
-        </section>
-
-        <section className='flex flex-col lg:flex-row gap-10 items-center my-[3vh]'>
-            <section data-aos="fade-up" className='w-full lg:w-1/2 flex flex-col items-start gap-5'>
-              <h2 className='ft-cooper'>
-                Contribute <span className='ft-inter txt-gradient'>$5</span> to make <br className='hidden lg:inline'/> our impact worldwide
-              </h2>
-              <div className='flex flex-col gap-2 text-base lg:text-lg text-[#434242] mb-5'>
-                <span>
-                  With your donation, we can provide <span className='txt-gradient'>essential</span> resources and opportunities for young people to make a tangible impact, especially for children in West Africa.
-                </span>
-                <span>
-                  Your generosity enables us to offer educational programs, health initiatives, and sustainable practices that promote a brighter, more equitable future.
-                </span>
-                <span>
-                  By donating today, you become a <span className='txt-gradient'>vital</span> part of our efforts to foster social good, environmental stewardship, and the well-being of children across the globe.
-                </span>
-              </div>
-              <div className='w-full flex flex-col lg:flex-row gap-3 items-start lg:items-center'>
-                <Button path={donateSiteLink}>
-                  View Donation Page <Icon icon="ExternalLink" size='sm' fillColor='inherit'/>
-                </Button>
-                <Link href='/sponsorships'>
-                  <span className='text-lg'>
-                    or <span className='text-[--clr-purple-base] font-medium'>Sponsor us</span>
-                  </span>
-                </Link>
-              </div>
-            </section>
-            <section data-aos="fade-up" className='w-full lg:w-1/2 flex flex-col gap-2'>
-              <DonateForm/>
-              <Link target="_blank" href='https://hcb.hackclub.com/omelora' className='underline underline-offset-2 hover:opacity-50'>
-                <span className='flex flex-row items-center justify-center gap-1 text-sm opacity-45'><Info className="w-4 h-4"/> We are fiscally sponsored by the Hack Foundation. </span>
-              </Link>
-            </section>
-        </section>
-
-        <section className='p-2 rounded-lg bg-[--clr-red-light] text-white my-[3vh]'>
-          <div className='p-12 flex flex-col lg:flex-row items-center justify-between gap-10 border-2 border-[--clr-grey-extralight] rounded-md'>
-            <div className='w-full flex flex-col gap-2'>
-              <h2 className='text-5xl ft-cooper font-bold tracking-tight '>
-                Subscribe <Icon inline fillColor='white' icon="Mail" size='lg'/> to <br/> <i>Impact, Delivered</i> <Sprout className='w-10 h-10 inline'/>
-                </h2>
-              <p className='text-base lg:text-lg text-white'>
-                Our newsletter keeps you updated on what&apos;s going on in the world and provides you with actionable ways to enact change.
-                <br/><br/>
-                All in under 5 minutes. <Link href='/blog' className='underline underline-offset-2 text-[--clr-red-light] hover:opacity-75'>Learn more here.</Link>
-              </p>
-            </div>
-            <div className='w-full'>
-              <EmailForm/>
-            </div>
-          </div>
-        </section>
-
-        <section className='flex flex-col items-center justify-center gap-10 my-[3vh]'>
-          <span className='text-xl lg:text-2xl font-medium text-center'>
-            Our Supporters
+        <section className='hidden flex flex-col items-center justify-center gap-10'>
+          <span className='text-base uppercase xl:text-lg font-semibold text-center opacity-75'>
+            Our Sponsors
           </span>
           <div className='flex flex-col md:flex-row gap-5 font-semibold text-xl text-center items-center justify-center opacity-50'>
             <span>Friends of the <br/>Sugar Land Library</span>
@@ -322,21 +212,8 @@ export default function Home() {
           </Button>
         </section>
 
-        <section className='w-full flex flex-col gap-10 items-center justify-center my-[3vh]'>
-          <span className='w-full flex flex-col gap-5 text-center'>
-            <h2 className='ft-cooper'>Frequently Asked Questions</h2>
-          </span>
-          <Accordion type="single" collapsible className="w-full">
-            {faqs.map((item,index)=>(
-              <AccordionItem value={`item-${index+1}`} key={index}>
-                <AccordionTrigger>{item.q}</AccordionTrigger>
-                <AccordionContent>
-                  {item.a}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </section>
+
+        <FAQSection/>
         
     </section>
   );

@@ -5,7 +5,7 @@ import {usePathname} from 'next/navigation'
 import styles from './Footer.module.css'
 
 import Icon from './Icon'
-import EmailForm from './EmailForm'
+import EmailForm from './form/EmailForm'
 import Logo from './Logo'
 
 import {footer} from '@/data/sitemap';
@@ -27,7 +27,7 @@ function Footer() {
               <ul className='flex flex-col gap-3 font-medium'>
                 {item.pages.map((page,index)=> (
                   <li key={index} className='hover:opacity-75'> 
-                    <Link href={toPath(page)}>{page}</Link>
+                    <Link href={page.url}>{page.name}</Link>
                   </li>
                 ))}
               </ul>

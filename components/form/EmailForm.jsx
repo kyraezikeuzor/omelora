@@ -1,7 +1,7 @@
 'use client'
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
-import Button  from './ui/Button';
-import Icon from './Icon'
+import Button  from '../ui/Button';
+import Icon from '../Icon'
 
 function EmailForm() {
     const url = "https://computefutures.us8.list-manage.com/subscribe/post?u=65c2aba71bc6d41953c14cc83&amp;id=5a1e70d2cb&amp;f_id=007105e0f0";

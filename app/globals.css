@@ -8,7 +8,7 @@ VARIABLES
 
 @layer base {
   :root {
-    --clr-base: #ffffff;
+    --clr-base: #fcfcfc;
     --clr-base-accent:rgb(243, 243, 243);
     --clr-base-text: #434242;
 
@@ -31,7 +31,7 @@ VARIABLES
     --clr-yellow-extralight: #fffefb;
     --clr-yellow-base:#f0e477;
 
-    --clr-grey-extralight:#f4f4f4;
+    --clr-grey-extralight:#f7f7f7;
     --clr-grey-light: #e5e2e2;
     --clr-grey-base:#8e9398;
     --clr-grey-dark: #6D747A;
@@ -152,6 +152,11 @@ FONTS
   src: url('/fonts/LyonTextRegular.ttf')
 }
 
+@font-face {
+  font-family: "Georgia";
+  src: url('/fonts/Georgia.ttf')
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 .ft-cooper {
@@ -161,8 +166,23 @@ FONTS
   font-style: normal;
 }
 
+.ft-georgia {
+  font-family: "Georgia", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .ft-inter {
   font-family: "Inter", sans-serif;
+}
+
+/*-----------------
+CLASSES
+------------------*/
+
+.pd-section {
+  padding: 5vh 15vw;
 }
 
 /*-----------------
@@ -188,6 +208,9 @@ MEDIA QUERIES
   h6 {font-size: 1rem;}
   p {font-size: 16px}
   button {font-size:17px;}
+  .pd-section {
+    padding: 5vh 12vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -199,6 +222,9 @@ MEDIA QUERIES
   h6 {font-size: 0.75rem;}
   p {font-size: 15px}
   button {font-size:15px;}
+  .pd-section {
+    padding: 2vh 1.25rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -210,7 +236,11 @@ MEDIA QUERIES
   h6 {font-size: 0.5rem;}
   p {font-size: 15px}
   button {font-size:15px;}
+  .pd-section {
+    padding: 2vh 1.25rem;
+  }
 }
+
 
 /*-----------------
 GLOBALS
@@ -250,6 +280,7 @@ input::placeholder{
 input:focus {
   outline:none;
 }
+
 
 /*-----------------
 TEXT STYLES
