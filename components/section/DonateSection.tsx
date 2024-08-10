@@ -59,7 +59,7 @@ export default function DonateSection() {
                         Donate
                     </Button>
                 </div>
-                <img className='rounded-lg w-full lg:w-1/2' src='http://divinewoundapostolate.altervista.org/blog/wp-content/uploads/2015/03/DIVINE-WOUND-STUDENTS-IN-THE-CLASS-B-DSC_1573-1024x685.jpg'/>
+                <img className='rounded-lg w-full lg:w-1/2' src='/img/dwa-class.jpg'/>
             </div>
         </div>
 
