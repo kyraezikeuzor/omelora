@@ -33,7 +33,9 @@ type CampaignProps = {
 
 function ProgressBar({goalValue, currentValue}: {goalValue:number, currentValue:number}) {
     
-    const percentage = `${(currentValue / goalValue) * 100}%`;
+    const percentage = currentValue < goalValue ? `${(currentValue / goalValue) * 100}%`: `${100}%`;
+
+    
 
     return (
     <div className='w-full h-[8px] bg-[--clr-base-accent] rounded-2xl'>

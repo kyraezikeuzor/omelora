@@ -30,7 +30,7 @@ export const initiatives = [
         "startDate": "2024-05-01",
         "endDate": "2024-07-31",
         "goalValue": 100,
-        "currentValue": 100,
+        "currentValue": 300,
         "measurement": "books",
         'orgsSupporting':['Divine Wounds of Jesus Christ Orphanage'],
         "image":"/img/african-children-img.jpg"

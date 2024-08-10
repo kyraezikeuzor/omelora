@@ -26,7 +26,7 @@
  */
 
 export const navbar = [
-
+    "About"
 ]
 
 
@@ -35,8 +35,8 @@ export const footer = [
         "name" : "Omelora",
         "pages" : [
             {
-                "name": "Home",
-                "url": '/'
+                "name": "About",
+                "url": '/about'
             }
         ]
     },

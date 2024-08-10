@@ -49,7 +49,7 @@ export default function DonateSection() {
         <div className='py-[10vh] px-5 lg:px-[18vw] bg-[--clr-grey-extralight] relative h-full flex flex-col'>
             <div className='flex flex-col md:flex-row gap-10 items-center justify-between'>
                 <div className='flex flex-col gap-2'>
-                    <span className='text-4xl ft-cooper'>Support the Kids of the Divine Wounds Orphanage in Enugu, Nigeria.</span>
+                    <span className='text-5xl ft-editorial'>Support the the Divine Wounds Orphanage in Enugu, Nigeria.</span>
                     <div className='mb-3'>
                         <p className='text-lg'>
                         By donating today, you become a vital part of our efforts to foster social good, environmental stewardship, and the well-being of children.

@@ -39,13 +39,13 @@ export default function Home() {
               <span className='text-base xl:text-lg font-semibold text-center opacity-75'>
                 WELCOME TO OMELORA
               </span>
-              <h1 className='inline-block xl:text-[74px] ft-cooper'> 
-                Shaping <Graphic className='hidden' src='/g/soft-star.png'/> the future with <br className='hidden lg:inline'/> youth-driven <br className='inline md:hidden'/> social good
+              <h1 className='inline-block xl:text-8xl tracking-tight ft-editorial'> 
+              Giving 1000 kits to kids <br/> in need in southeast Nigeria
               </h1>
             </div>
             <p className='text-base lg:text-xl'>
-              Omelora mobilizes youth to <span className='txt-gradient'>create</span> a brighter future <br className='hidden lg:inline'/>
-              through social good, health initiatives, and <span className='txt-gradient'>environmental</span> awareness.
+              Omelora mobilizes youth to <span className='txt-gradient'>create</span> a brighter future
+              through <br className='hidden lg:inline'/> social good, health initiatives, and <span className='txt-gradient'>environmental</span> awareness.
             </p>
           </div>
           <div className='flex flex-row gap-2 items-center'>
@@ -60,7 +60,7 @@ export default function Home() {
 
         <section className='pd-section w-full flex flex-col lg:flex-row-reverse items-center gap-10'>
             <section className='relative w-full flex flex-col gap-3'>
-              <h2 className='ft-cooper'>
+              <h2 className='ft-editorial'>
                 We inspire and engage young people to take positive action
               </h2>
               <div className='flex flex-col gap-3'>
@@ -114,7 +114,7 @@ export default function Home() {
 
         <section data-aos="fade-up" className='pd-section flex flex-col items-center justify-center gap-5'>
           <div className='flex flex-col items-center justify-center gap-3'>
-            <h2 className='ft-cooper text-center'>Our work, so far</h2>
+            <h2 className='ft-editorial text-center'>Our work, so far</h2>
             <p className='text-base lg:text-lg text-center'>
             Through <span className='txt-gradient'>community</span> efforts, we&apos;re making educational resources accessible
             <br className='hidden lg:inline'/> and impactful for those <span className='txt-gradient'>in need</span>. See some of our ongoing initiatives.
@@ -153,7 +153,7 @@ export default function Home() {
         <section data-aos="fade-up" className='pd-section flex flex-col items-center justify-center gap-5'>
           <div className='flex flex-col items-center justify-center gap-5'>
             <h2 className='text-center flex flex-row items-center'>
-              <span className='ft-cooper'>Sharing informative content for change</span>
+              <span className='ft-editorial'>Follow us to make an impact today</span>
             </h2>
             <p className='text-base lg:text-base text-center'>
               From breaking down political events to covering the <span className='txt-gradient'>intersection of pop culture</span> and the environment,
@@ -175,7 +175,7 @@ export default function Home() {
                 ))}
               </div>
               <hr className='h-10 w-[2px] bg-[--clr-grey-light]'/>
-              <span className='w-1/2 text-xl ft-cooper font-semibold'>
+              <span className='w-1/2 text-xl ft-editorial font-semibold'>
                 <Graphic className='rounded-sm' src='/logos/logo-1.png' size='sm'/> @omeloraorg
               </span>
             </div>
@@ -211,7 +211,6 @@ export default function Home() {
             Become a Sponsor <HandHelping className='text-inherit'/>
           </Button>
         </section>
-
 
         <FAQSection/>
         

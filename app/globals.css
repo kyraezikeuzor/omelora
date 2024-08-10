@@ -142,20 +142,23 @@ ANIMATIONS
 /*-----------------
 FONTS
 ------------------*/
-@font-face {
-  font-family: "Cooper";
-  src: url("/fonts/CooperLtBT-Regular.ttf");
-}
 
 @font-face {
-  font-family: "Lyon";
-  src: url('/fonts/LyonTextRegular.ttf')
+  font-family: "Cooper";
+  src: url("/fonts/cooper/CooperLtBT-Regular.ttf");
 }
+
 
 @font-face {
   font-family: "Georgia";
-  src: url('/fonts/Georgia.ttf')
+  src: url('/fonts/georgia/Georgia.ttf')
 }
+
+@font-face {
+  font-family: "Editorial";
+  src: url('/fonts/editorial/EditorialNew-Ultralight.ttf')
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
@@ -166,8 +169,8 @@ FONTS
   font-style: normal;
 }
 
-.ft-georgia {
-  font-family: "Georgia", serif;
+.ft-editorial {
+  font-family: "Editorial", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -201,7 +204,7 @@ MEDIA QUERIES
 
 @media screen and (min-width: 768px) {
   h1 {font-size: 3.9rem;}
-  h2 {font-size: 2.5rem;}
+  h2 {font-size: 2.75rem;}
   h3 {font-size: 1.5rem;}
   h4 {font-size: 1.25rem;}
   h5 {font-size: 1.25rem;}
