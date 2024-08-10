@@ -35,9 +35,9 @@ export default function Home() {
         
         <header className='relative w-full flex flex-col gap-8 items-center justify-center text-center'>
           <div className='flex flex-col gap-5'>
-            <div className='flex flex-col gap-5'>
-              <span className='text-base xl:text-lg font-semibold text-center opacity-75'>
-                WELCOME TO OMELORA
+            <div className='flex flex-col gap-8'>
+              <span className='text-base xl:text-lg font-medium text-center opacity-50'>
+                WE ARE OMELORA
               </span>
               <h1 className='inline-block xl:text-8xl tracking-tight ft-editorial'> 
               Giving 1000 kits to kids <br/> in need in southeast Nigeria
