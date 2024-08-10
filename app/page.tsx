@@ -153,7 +153,7 @@ export default function Home() {
         <section data-aos="fade-up" className='pd-section flex flex-col items-center justify-center gap-5'>
           <div className='flex flex-col items-center justify-center gap-5'>
             <h2 className='text-center flex flex-row items-center'>
-              <span className='ft-editorial'>Follow us to make an impact today</span>
+              <span className='ft-editorial'>Follow us and make an impact today</span>
             </h2>
             <p className='text-base lg:text-base text-center'>
               From breaking down political events to covering the <span className='txt-gradient'>intersection of pop culture</span> and the environment,

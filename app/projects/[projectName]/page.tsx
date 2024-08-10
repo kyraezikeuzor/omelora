@@ -3,7 +3,7 @@ import getInitiative from '@/lib/getInitiative'
 import Link from 'next/link'
 
 type InitiativePageProps = {
-  params: {initiativePathName:string}
+  params: {projectName:string}
 };
 
 export async function generateMetadata(
@@ -13,23 +13,23 @@ export async function generateMetadata(
     // read route params
 
     // fetch data
-    const initiative = getInitiative(params.initiativePathName)
+    const project = getInitiative(params.projectName)
    
     return {
-      title: `${initiative?.title} | Omelora`,
+      title: `${project?.title} | Omelora`,
     }
   }
 
 export default function OurInitiativesPage({params}:InitiativePageProps) {
 
-    const initiative = getInitiative(params.initiativePathName)
+    const project = getInitiative(params.projectName)
 
     return (
-        <section className="flex flex-col gap-10">
+        <section className="pd-section flex flex-col gap-10">
             <header className='flex flex-col gap-5'>
-                <h1 className='ft-cooper'>{initiative?.title}</h1>
+                <h1 className='ft-editorial'>{project?.title}</h1>
                 <p className='text-base md:text-lg'>
-                    {initiative?.description}
+                    {project?.description}
                 </p>
             </header>
         </section>

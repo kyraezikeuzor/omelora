@@ -1,6 +1,7 @@
 import {dwaSiteLink} from '@/data/content'
 import Campaign from '@/components/Campaign'
 import Highlight from '@/components/Highlight'
+import {initiatives} from '@/data/initiatives'
 
 import Link from 'next/link'
 
@@ -13,23 +14,19 @@ export const metadata: Metadata = {
 export default function OurInitiativesPage() {
 
     return (
-        <section className="flex flex-col gap-10">
+        <section className="pd-section flex flex-col gap-10">
             <header className='flex flex-col gap-5'>
-                <h1 className='ft-cooper'>Our Initiatives</h1>
-                <p className='text-base md:text-lg'>
-                  Our current focus is the children of the 
-                  Divine Wounds of Jesus Christ Orphanage Home in Enugu, Nigeria.
-                  We&apos;re extending educational support through charitable endeavors.
-                </p>
+                <h1 className='ft-editorial text-center'>Our Projects</h1>
+                
                 <p className='text-base md:text-lg'>
                   In Houston, we&apos;re collaborating with local businesses to gather 
                   essential school supplies for the Divine Wounds of Jesus Christ Orphanage Home 
                   in Enugu, Nigeria, ensuring these children have the tools they need to learn and grow. 
-                  Through community efforts, we&apos;re making education accessible and impactful for those in need.
+                  <br/><br/>Through community efforts, we&apos;re making education accessible and impactful for those in need.
                 </p>
             </header>
 
-            {/*<div className='flex flex-col lg:grid grid-cols-3 gap-5'>
+            {<div className='flex flex-col gap-5 sm:grid sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4'>
               {initiatives.map((item,index)=>(
                 <Campaign
                 key={index}
@@ -45,7 +42,7 @@ export default function OurInitiativesPage() {
                 image={item.image}
                 />
               ))}
-            </div>*/}
+            </div>}
         </section>
     )
 }

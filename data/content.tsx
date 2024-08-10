@@ -25,7 +25,7 @@ export const pillars = [
         "icon": <Heart/>
     },
     {
-        "name": "Environmental Sustainability",
+        "name": "Environmental Care",
         "text": "We advocate for sustainable practices and address environmental challenges to create a healthier planet for future generations, ensuring that all children can thrive in a cleaner world.",
         "icon": <Leaf/>
     },

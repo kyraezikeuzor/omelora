@@ -46,10 +46,10 @@ export default function DonateSection() {
     const src = `https://hcb.hackclub.com/donations/start/omelora?background=${primaryColor}`
     
     return (
-        <div className='py-[10vh] px-5 lg:px-[18vw] bg-[--clr-grey-extralight] relative h-full flex flex-col'>
+        <div className='py-[10vh] px-5 lg:px-[12vw] bg-[--clr-grey-extralight] relative h-full flex flex-col'>
             <div className='flex flex-col md:flex-row gap-10 items-center justify-between'>
                 <div className='flex flex-col gap-2'>
-                    <span className='text-5xl ft-editorial'>Support the the Divine Wounds Orphanage in Enugu, Nigeria.</span>
+                    <span className='text-5xl ft-editorial'>Support the Divine Wounds Orphanage in Enugu, Nigeria.</span>
                     <div className='mb-3'>
                         <p className='text-lg'>
                         By donating today, you become a vital part of our efforts to foster social good, environmental stewardship, and the well-being of children.
@@ -59,7 +59,7 @@ export default function DonateSection() {
                         Donate
                     </Button>
                 </div>
-                <img className='rounded-lg w-full lg:w-1/2' src='/img/dwa-group-img.jpg'/>
+                <img className='rounded-lg w-full lg:w-1/2' src='http://divinewoundapostolate.altervista.org/blog/wp-content/uploads/2015/03/DIVINE-WOUND-STUDENTS-IN-THE-CLASS-B-DSC_1573-1024x685.jpg'/>
             </div>
         </div>
 
