@@ -49,7 +49,7 @@ export default function Home() {
             </p>
           </div>
           <div className='flex flex-row gap-2 items-center'>
-            <Button variant="outline" path='/about'>
+            <Button variant="outline" path='/who-we-are'>
               Learn More
             </Button>
             <Button path='https://www.instagram.com/omeloraorg/'>
