@@ -23,9 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta property="og:image" content="/img/dwo-img1.jpg" />
-        <link href="https://api.fontshare.com/v2/css?f[]=zodiak@401&display=swap" rel="stylesheet"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link rel="preload" href="/fonts/editorial/EditorialNew-Ultralight.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>
       </head>
       <body className={inter.className}>
         <Navbar/>

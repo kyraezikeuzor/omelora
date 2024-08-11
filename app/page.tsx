@@ -40,7 +40,7 @@ export default function Home() {
                 WE ARE OMELORA
               </span>
               <h1 className='inline-block xl:text-8xl tracking-tight ft-editorial'> 
-              Giving 1000 kits to kids <br/> in need in southeast Nigeria
+              Giving kits to kids <br/> in need in southeast Nigeria
               </h1>
             </div>
             <p className='text-base lg:text-xl'>
