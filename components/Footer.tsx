@@ -17,7 +17,7 @@ function Footer() {
   const pathname = usePathname()
   
   return (
-    <footer className={`p-5 md:px-[10vw] py-[8vh] flex-col gap-20 text-[--clr-cream-base] bg-pattern-dotted`}>
+    <footer className='w-full p-5 md:px-[10vw] py-[8vh] flex-col gap-20 text-[--clr-cream-base] bg-pattern-dotted'>
       
       <section className={styles.section}>
         <div className='flex flex-row gap-20 justify-start'>

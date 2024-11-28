@@ -27,7 +27,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Navbar/>
-        <main className='m-auto py-[5vh]'>
+        <main className='max-w-screen-xl mx-auto py-[5vh] px-4'>
           <Animate>
             {children}
           </Animate>
