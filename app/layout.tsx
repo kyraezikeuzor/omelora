@@ -24,6 +24,10 @@ export default function RootLayout({
       <head>
         <meta property="og:image" content="/img/dwo-img1.jpg" />
         <link rel="preload" href="/fonts/editorial/EditorialNew-Ultralight.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>
+        <script
+          async
+          src="https://widgets.givebutter.com/latest.umd.cjs?acct=HxU9VtEzUYiT3cW6&p=webflow"
+        ></script>
       </head>
       <body className={inter.className}>
         <Navbar/>

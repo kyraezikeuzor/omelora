@@ -1,6 +1,5 @@
-
 import type { Metadata } from "next";
-import Highlight from '@/components/Highlight'
+import Highlight from "@/components/Highlight";
 
 export const metadata: Metadata = {
   title: "About | Omelora",
@@ -8,27 +7,41 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  return (
+    <section className="flex flex-col gap-5 ">
+      <section className="pd-section flex flex-col gap-5 items-center">
+        <h1 className="ft-cooper">Who we are</h1>
 
-
-    return (
-        <section className="flex flex-col gap-5 ">
-            <section className='pd-section flex flex-col gap-5 items-center'>
-              <h1 className='ft-editorial'>Who we are</h1>
-              
-              <div className='flex flex-col lg:flex-row gap-5'>
-                <div className='w-full lg:w-2/3'>
-                  <p className='text-base lg:text-lg'>
-                    Kyra Ezikeuzor, a Nigerian-American high school student in Texas, founded Omelora after recognizing a gap in resources tailored for children in West Africa, particularly in southern Nigeria. While Kyra and her peers had access to books and resources that expanded their futures, many kids in West Africa did not. 
-                    <br/><br/>Although many nonprofits focus on essential needs like aid, food, and water, they often overlook the importance of supporting young imaginations. 
-                    <br/><br/>Omelora&apos;s mission is to bridge this gap by delivering educational resources that empower children and foster their potential. Through targeted initiatives and community partnerships, the organization strives to create opportunities for learning and growth, ensuring that every child has the tools they need to dream big and achieve their goals.
-                  </p>
-                </div>
-                <img className='w-full lg:w-1/3 h-auto rounded-sm' src='https://res.cloudinary.com/hxn9dbuhd/image/upload/v1723081582/vcsbelo5ypkha6le1xlf.jpg'/>
-              </div>
-              <p className='text-base lg:text-lg'>
-                Omelora aims to bridge this gap by bringing young people from all over, starting in southeast Nigeria, into the global conversation. To learn more about Omelora and support their mission, visit their Instagram @omeloraorg.
-              </p>
-            </section>
-        </section>
-    )
+        <div className="flex flex-col lg:flex-row gap-5">
+          <div className="w-full ">
+            <p className="text-base lg:text-lg">
+              Kyra Ezikeuzor, a Nigerian-American high school student in Texas,
+              founded Omelora after recognizing a gap in resources tailored for
+              children in West Africa, particularly in southern Nigeria. While
+              Kyra and her peers had access to books and resources that expanded
+              their futures, many kids in West Africa did not.
+              <br />
+              <br />
+              Omelora&apos;s mission is to bridge this gap by delivering
+              educational resources that empower children and foster their
+              potential. Through targeted initiatives and community
+              partnerships, the organization strives to create opportunities for
+              learning and growth, ensuring that every child has the tools they
+              need to dream big and achieve their goals.
+            </p>
+          </div>
+          <img
+            className="w-[400px] h-[400px] rounded-sm"
+            src="https://res.cloudinary.com/hxn9dbuhd/image/upload/v1723081582/vcsbelo5ypkha6le1xlf.jpg"
+          />
+        </div>
+        <p className="text-base lg:text-lg">
+          Omelora aims to bridge this gap by bringing young people from all
+          over, starting in southeast Nigeria, into the global conversation. To
+          learn more about Omelora and support their mission, visit their
+          Instagram @omeloraproject.
+        </p>
+      </section>
+    </section>
+  );
 }

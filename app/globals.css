@@ -9,46 +9,45 @@ VARIABLES
 @layer base {
   :root {
     --clr-base: #fcfcfc;
-    --clr-base-accent:rgb(243, 243, 243);
+    --clr-base-accent: rgb(243, 243, 243);
     --clr-base-text: #434242;
 
-    --clr-purple-base: #8879DF;
-  
-    --clr-green-extralight:#eefce6; /*#f5f9eb*/
-    --clr-green-light:#cfee87;
-    --clr-green-base:#70D465; /*#628B21*/
-    --clr-green-dark:#51AF74; /*#369e4e*/
-    --clr-green-extradark:#24735F; /*#155a25*/
+    --clr-purple-base: #8879df;
 
-    --clr-red-extralight:#fff9f8;
-    --clr-red-light:#ff8c79; 
+    --clr-green-extralight: #eefce6; /*#f5f9eb*/
+    --clr-green-light: #cfee87;
+    --clr-green-base: #70d465; /*#628B21*/
+    --clr-green-dark: #51af74; /*#369e4e*/
+    --clr-green-extradark: #24735f; /*#155a25*/
+
+    --clr-red-extralight: #fff9f8;
+    --clr-red-light: #ff8c79;
     --clr-red-base: rgb(230, 96, 103);
 
-    --clr-orange-extralight:rgb(249, 246, 232);
-    --clr-orange-light:rgb(255, 228, 179);
-    --clr-orange-base:rgb(255, 192, 74);
+    --clr-orange-extralight: rgb(249, 246, 232);
+    --clr-orange-light: rgb(255, 228, 179);
+    --clr-orange-base: rgb(255, 192, 74);
 
     --clr-yellow-extralight: #fffefb;
-    --clr-yellow-base:#f0e477;
+    --clr-yellow-base: #f0e477;
 
-    --clr-grey-extralight:#f7f7f7;
+    --clr-grey-extralight: #f7f7f7;
     --clr-grey-light: #e5e2e2;
-    --clr-grey-base:#8e9398;
-    --clr-grey-dark: #6D747A;
+    --clr-grey-base: #8e9398;
+    --clr-grey-dark: #6d747a;
 
-    --clr-blue-extralight:rgb(246, 250, 251);
+    --clr-blue-extralight: rgb(246, 250, 251);
     --clr-blue-light: rgb(240, 248, 250);
-    --clr-blue-base:#2e9ff5;
-    --clr-blue-dark:#006adc;
+    --clr-blue-base: #2e9ff5;
+    --clr-blue-dark: #006adc;
 
-    --clr-purple-extralight:#fdfcff;
-    --clr-purple-light:#e7dbff;
-    --clr-purple-base:#bb86ef;
+    --clr-purple-extralight: #fdfcff;
+    --clr-purple-light: #e7dbff;
+    --clr-purple-base: #bb86ef;
 
-    --clr-navy-base:#2e3943;
-    --clr-navy-dark: #17171D;
+    --clr-navy-base: #2e3943;
+    --clr-navy-dark: #17171d;
 
-    
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -125,7 +124,6 @@ VARIABLES
   }*/
 }
 
-
 @layer base {
   * {
     @apply border-border;
@@ -148,21 +146,15 @@ FONTS
   src: url("/fonts/cooper/CooperLtBT-Regular.ttf");
 }
 
-
-@font-face {
-  font-family: "Georgia";
-  src: url('/fonts/georgia/Georgia.ttf')
-}
-
 @font-face {
   font-family: "Editorial";
-  src: url('/fonts/editorial/EditorialNew-Ultralight.woff2')
+  src: url("/fonts/editorial/EditorialNew-Ultralight.woff2");
 }
 
 .ft-cooper {
   font-family: "Cooper", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -187,58 +179,112 @@ CLASSES
 MEDIA QUERIES
 ------------------*/
 @media screen and (min-width: 1024px) {
-  h1 {font-size: 4rem;}
-  h2 {font-size: 3rem;}
-  h3 {font-size: 2.5rem;}
-  h4 {font-size: 2.25rem;}
-  h5 {font-size: 1.875rem;}
-  h6 {font-size: 1.5rem;}
-  p {font-size: 18px}
-  button {font-size:17px;}
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2.25rem;
+  }
+  h5 {
+    font-size: 1.875rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 18px;
+  }
+  button {
+    font-size: 17px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  h1 {font-size: 3.9rem;}
-  h2 {font-size: 2.75rem;}
-  h3 {font-size: 1.5rem;}
-  h4 {font-size: 1.25rem;}
-  h5 {font-size: 1.25rem;}
-  h6 {font-size: 1rem;}
-  p {font-size: 16px}
-  button {font-size:17px;}
-  .pd-section {
-    padding: 5vh 12vw;
+  h1 {
+    font-size: 3.9rem;
+  }
+  h2 {
+    font-size: 2.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 16px;
+  }
+  button {
+    font-size: 17px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  h1 {font-size: 3rem;}
-  h2 {font-size: 2.5rem;}
-  h3 {font-size: 1.25rem;}
-  h4 {font-size: 1.125rem;}
-  h5 {font-size: 1rem;}
-  h6 {font-size: 0.75rem;}
-  p {font-size: 15px}
-  button {font-size:15px;}
-  .pd-section {
-    padding: 2vh 1.25rem;
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.75rem;
+  }
+  p {
+    font-size: 15px;
+  }
+  button {
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  h1 {font-size: 3rem;}
-  h2 {font-size: 2.25rem;}
-  h3 {font-size: 1.2rem;}
-  h4 {font-size: 1rem;}
-  h5 {font-size: 0.75rem;}
-  h6 {font-size: 0.5rem;}
-  p {font-size: 15px}
-  button {font-size:15px;}
-  .pd-section {
-    padding: 2vh 1.25rem;
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 0.75rem;
+  }
+  h6 {
+    font-size: 0.5rem;
+  }
+  p {
+    font-size: 15px;
+  }
+  button {
+    font-size: 15px;
   }
 }
-
 
 /*-----------------
 GLOBALS
@@ -248,9 +294,14 @@ body {
   color: var(--clr-base-text);
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-weight:500;
-  line-height:1.1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.1;
 }
 
 p {
@@ -260,50 +311,59 @@ p {
 }
 
 a {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 input {
-  background-color:var(--clr-base);
+  background-color: var(--clr-base);
   border: solid 1px var(--clr-grey-light);
   border-radius: 8px;
   padding: 0.8rem 1.2rem;
-  color:var(--clr-base-text);
+  color: var(--clr-base-text);
 }
 
-input::placeholder{
-  color:var(--clr-grey-base);
+input::placeholder {
+  color: var(--clr-grey-base);
 }
 
 input:focus {
-  outline:none;
+  outline: none;
 }
-
 
 /*-----------------
 TEXT STYLES
 ------------------*/
 .td-underline-base {
-  text-decoration:underline;
+  text-decoration: underline;
   text-underline-offset: 4px;
-  text-decoration-color:var(--clr-green-base);
+  text-decoration-color: var(--clr-green-base);
   text-decoration-thickness: 2px;
-  font-weight:600;
+  font-weight: 600;
 }
 
 .td-underline-gradient {
   text-decoration: none;
-  background-image: linear-gradient(to right, var(--clr-red-base),var(--clr-red-light),var(--clr-orange-base));
+  background-image: linear-gradient(
+    to right,
+    var(--clr-red-base),
+    var(--clr-red-light),
+    var(--clr-orange-base)
+  );
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 100% 3px;
-  font-weight:700;
-  padding:2px;
+  font-weight: 700;
+  padding: 2px;
   transition: background-size 500ms ease-in-out;
 }
 
 .txt-gradient {
-  background: linear-gradient(to right, var(--clr-red-base),var(--clr-red-light),var(--clr-orange-base));
+  background: linear-gradient(
+    to right,
+    var(--clr-red-base),
+    var(--clr-red-light),
+    var(--clr-orange-base)
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -315,16 +375,21 @@ BACKGROUND STYLES
 
 .bg-pattern-dotted {
   background-color: var(--clr-navy-dark);
-  background-image:  radial-gradient(#82849e93 0.8px, transparent 0.8px);
+  background-image: radial-gradient(#82849e93 0.8px, transparent 0.8px);
   background-size: 35px 35px;
   background-position: 0 0, 30px 30px;
 }
-  
+
 .bg-radial-green {
-  background: radial-gradient(ellipse 75% 50% at left, #e3fdcb, #defcc9, #daf8cf, #eaffda, #eeffe1 70%, rgba(238, 255, 225, 0.5) 85%, transparent 100%);
+  background: radial-gradient(
+    ellipse 75% 50% at left,
+    #e3fdcb,
+    #defcc9,
+    #daf8cf,
+    #eaffda,
+    #eeffe1 70%,
+    rgba(238, 255, 225, 0.5) 85%,
+    transparent 100%
+  );
   background-repeat: no-repeat; /* Prevent tiling */
 }
-
-
-
-  

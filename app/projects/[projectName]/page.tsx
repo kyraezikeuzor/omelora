@@ -1,37 +1,34 @@
-import type { Metadata, ResolvingMetadata } from 'next'
-import getInitiative from '@/lib/getInitiative'
-import Link from 'next/link'
+import type { Metadata, ResolvingMetadata } from "next";
+import getInitiative from "@/lib/getInitiative";
+import Link from "next/link";
 
 type InitiativePageProps = {
-  params: {projectName:string}
+  params: { projectName: string };
 };
 
 export async function generateMetadata(
-    { params }: InitiativePageProps,
-    parent: ResolvingMetadata
-  ): Promise<Metadata> {
-    // read route params
+  { params }: InitiativePageProps,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
 
-    // fetch data
-    const project = getInitiative(params.projectName)
-   
-    return {
-      title: `${project?.title} | Omelora`,
-    }
-  }
+  // fetch data
+  const project = getInitiative(params.projectName);
 
-export default function OurInitiativesPage({params}:InitiativePageProps) {
+  return {
+    title: `${project?.title} | Omelora`,
+  };
+}
 
-    const project = getInitiative(params.projectName)
+export default function OurInitiativesPage({ params }: InitiativePageProps) {
+  const project = getInitiative(params.projectName);
 
-    return (
-        <section className="pd-section flex flex-col gap-10">
-            <header className='flex flex-col gap-5'>
-                <h1 className='ft-editorial'>{project?.title}</h1>
-                <p className='text-base md:text-lg'>
-                    {project?.description}
-                </p>
-            </header>
-        </section>
-    )
+  return (
+    <section className="pd-section flex flex-col gap-10">
+      <header className="flex flex-col gap-5">
+        <h1 className="ft-cooper">{project?.title}</h1>
+        <p className="text-base md:text-lg">{project?.description}</p>
+      </header>
+    </section>
+  );
 }

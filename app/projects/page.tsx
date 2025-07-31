@@ -1,9 +1,9 @@
-import {dwaSiteLink} from '@/data/content'
-import Campaign from '@/components/Campaign'
-import Highlight from '@/components/Highlight'
-import {initiatives} from '@/data/initiatives'
+import { dwaSiteLink } from "@/data/content";
+import Campaign from "@/components/Campaign";
+import Highlight from "@/components/Highlight";
+import { initiatives } from "@/data/initiatives";
 
-import Link from 'next/link'
+import Link from "next/link";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
@@ -12,37 +12,42 @@ export const metadata: Metadata = {
 };
 
 export default function OurInitiativesPage() {
+  return (
+    <section className="pd-section flex flex-col gap-10">
+      <header className="flex flex-col gap-5">
+        <h1 className="ft-cooper text-center">Our Projects</h1>
 
-    return (
-        <section className="pd-section flex flex-col gap-10">
-            <header className='flex flex-col gap-5'>
-                <h1 className='ft-editorial text-center'>Our Projects</h1>
-                
-                <p className='text-base md:text-lg'>
-                  In Houston, we&apos;re collaborating with local businesses to gather 
-                  essential school supplies for the Divine Wounds of Jesus Christ Orphanage Home 
-                  in Enugu, Nigeria, ensuring these children have the tools they need to learn and grow. 
-                  <br/><br/>Through community efforts, we&apos;re making education accessible and impactful for those in need.
-                </p>
-            </header>
+        <p className="text-base md:text-lg">
+          In Houston, we&apos;re collaborating with local businesses to gather
+          essential school supplies for the Divine Wounds of Jesus Christ
+          Orphanage Home in Enugu, Nigeria, ensuring these children have the
+          tools they need to learn and grow.
+          <br />
+          <br />
+          Through community efforts, we&apos;re making education accessible and
+          impactful for those in need.
+        </p>
+      </header>
 
-            {<div className='flex flex-col gap-5 sm:grid sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4'>
-              {initiatives.map((item,index)=>(
-                <Campaign
-                key={index}
-                title={item.title}
-                location={item.location}
-                description={item.description}
-                goalValue={item.goalValue}
-                currentValue={item.currentValue}
-                startDate={item.startDate}
-                endDate={item.endDate}
-                measurement={item.measurement}
-                orgsSupporting={item.orgsSupporting}
-                image={item.image}
-                />
-              ))}
-            </div>}
-        </section>
-    )
+      {
+        <div className="gap-1 sm:grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+          {initiatives.map((item, index) => (
+            <Campaign
+              key={index}
+              title={item.title}
+              location={item.location}
+              description={item.description}
+              goalValue={item.goalValue}
+              currentValue={item.currentValue}
+              startDate={item.startDate}
+              endDate={item.endDate}
+              measurement={item.measurement}
+              orgsSupporting={item.orgsSupporting}
+              image={item.image}
+            />
+          ))}
+        </div>
+      }
+    </section>
+  );
 }
