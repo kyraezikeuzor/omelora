@@ -124,6 +124,14 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center justify-center gap-1">
             <span className="text-2xl lg:text-4xl font-semibold text-center">
+              192
+            </span>
+            <span className="text-base lg:text-lg text-center">
+              kids supported
+            </span>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-1">
+            <span className="text-2xl lg:text-4xl font-semibold text-center">
               400+
             </span>
             <span className="text-base lg:text-lg text-center">

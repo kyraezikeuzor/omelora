@@ -10,7 +10,7 @@ import Animate from '@/components/ui/Animate'
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Omelora | Shaping tomorrow with youth-driven social good.",
+  title: "Omelora | Uplifting youth with education & advocacy",
   description: "Based in Houston, Texas, Omelora hopes to provide support for kids in need through health and educational kits. Our wellness initiatives aim to enrich lives across West Africa, with the goal of distributing 1,000 school supply kits.",
 };
 
