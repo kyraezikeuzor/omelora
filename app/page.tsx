@@ -213,7 +213,7 @@ export default function Home() {
         </div>
         <section className="w-full flex flex-col mb-5">
           <Container>
-            <ContainerTitle triggerLink="/initiatives">
+            <ContainerTitle triggerLink="/projects">
               <h2 className="text-base xl:text-lg tracking-tight font-medium text-center">
                 Our Projects
               </h2>
