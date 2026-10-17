@@ -1,0 +1,26 @@
+/*
+ * Styles for the project pages only. They keep the Bridge look while the
+ * rest of omelora.org is being redesigned, so these tokens live here and not
+ * in app/globals.css.
+ */
+/* "important" so these classes beat the unlayered `* { margin: 0; padding: 0 }`
+   reset in app/globals.css, which would otherwise wipe all spacing here. */
+@import "tailwindcss" important;
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #202124;
+  --color-muted: #f7f7f5;
+  --color-muted-foreground: #666a73;
+  --color-border: #e7e7e4;
+  --color-destructive: #ef4444;
+  --color-sunrise-50: #fff9f2;
+  --color-bridge-action: #1aa1ff;
+  --color-bridge-action-hover: #178fdb;
+  --color-bridge-action-soft: #eef8ff;
+}
+
+.projects-root {
+  font-family: Inter, "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+  color: var(--color-foreground);
+}
